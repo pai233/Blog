@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.pai233.top/manifest.json</loc>
+    
+    <lastmod>2022-02-03T06:22:18.465Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/20210829/server-changing-to-cloudflare-pages/</loc>
     
     <lastmod>2022-02-02T14:29:41.753Z</lastmod>
