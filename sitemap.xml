@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.pai233.top/server-list/index.html</loc>
+    
+    <lastmod>2022-02-05T10:18:55.671Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/message-board/index.html</loc>
     
     <lastmod>2022-02-03T08:56:49.280Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>https://blog.pai233.top/friend-links/index.html</loc>
     
     <lastmod>2022-01-31T07:51:07.417Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/server-list/index.html</loc>
-    
-    <lastmod>2021-09-19T01:16:41.384Z</lastmod>
     
   </url>
   

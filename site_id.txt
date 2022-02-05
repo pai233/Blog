@@ -15,5 +15,12 @@
     "_pai233_blog_eu_herokuapp_com": "heroku-eu",
     "_4everland_cdn_blog_pai233_top": "4everland-mainserver",
     "_pai233_blog__everland_app": "4everland-backupserver",
-    "_pai233_bitbucket_io": "bitbucket"
+    "_pai233_bitbucket_io": "bitbucket",
+    "_render_cdn_blog_pai233_top": "render-main",
+    "_blog_tlbh_onrender_com": "render-bak",
+    "_pai233_blog_frge_io": "getforge",
+    "_hostman_cdn_blog_pai233_top": "hostman",
+    "_firebase_cdn_blog_pai233_top": "firebase-main",
+    "_pai233_blog_web_app": "firebase-bak1",
+    "_pai233_blog_firebaseapp_com": "firebase-bak2"
 }
