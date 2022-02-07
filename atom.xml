@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-01-31T13:38:27.953Z</updated>
+  <updated>2022-02-07T14:56:43.403Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客正式切换主题到Butterfly！</title>
+    <link href="https://blog.pai233.top/20220207/change-the-theme-to-butterfly/"/>
+    <id>https://blog.pai233.top/20220207/change-the-theme-to-butterfly/</id>
+    <published>2022-02-07T14:40:33.000Z</published>
+    <updated>2022-02-07T14:56:43.403Z</updated>
+    
+    <content type="html"><![CDATA[<p>博主的博客从今天起正式切换到Butterfly啦！</p><a id="more"></a><h1 id="新特性"><a class="markdownIt-Anchor" href="#新特性"></a> 新特性</h1><p>更换主题后，在保留原有功能的同时，还增加了许多新功能：</p><ol><li>支持双系统评论！（Twikoo/Gitalk）</li><li>文章结尾支持自动推荐</li><li>新增了“咕言咕语”、“留言板”等栏目</li><li>等你发现 <s>（才不是我不记得了）</s></li></ol><h1 id="新增了几个cdn"><a class="markdownIt-Anchor" href="#新增了几个cdn"></a> 新增了几个CDN</h1><ol><li>Render</li><li>Forge</li><li>Hostman</li><li>Google Firebase</li></ol><h1 id="google-adsense"><a class="markdownIt-Anchor" href="#google-adsense"></a> Google AdSense</h1><p>这个东西的自动广告真的太迷惑了，在调了在调了😅</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/03/09/VBmOqyIPEHSZ2Nl.gif" alt="qwq" /></p><h1 id="the-old-one"><a class="markdownIt-Anchor" href="#the-old-one"></a> The Old One</h1><p>原NexT主题的博客页面已经备份好了：<a href="https://old.blog.pai233.top/">https://old.blog.pai233.top/</a></p><p>但是应该不会再更新了……</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博主的博客从今天起正式切换到Butterfly啦！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="咕咕小站" scheme="https://blog.pai233.top/categories/%E5%92%95%E5%92%95%E5%B0%8F%E7%AB%99/"/>
+    
+      <category term="博客动态" scheme="https://blog.pai233.top/categories/%E5%92%95%E5%92%95%E5%B0%8F%E7%AB%99/%E5%8D%9A%E5%AE%A2%E5%8A%A8%E6%80%81/"/>
+    
+    
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+  </entry>
   
   <entry>
     <title>如何修复具有双BIOS的某G姓主板的BIOS</title>
@@ -66,9 +91,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -128,9 +153,9 @@
       <category term="数论" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/"/>
     
     
-      <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
-    
       <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
+    
+      <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
@@ -371,9 +396,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -431,9 +456,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -515,11 +540,11 @@
       <category term="洛谷API" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E6%B4%9B%E8%B0%B7API/"/>
     
     
-      <category term="API" scheme="https://blog.pai233.top/tags/API/"/>
+      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
-      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="API" scheme="https://blog.pai233.top/tags/API/"/>
     
   </entry>
   
@@ -571,44 +596,11 @@
       <category term="编辑框" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/VS-Code%E6%89%A9%E5%B1%95/%E7%BC%96%E8%BE%91%E6%A1%86/"/>
     
     
-      <category term="VS Code" scheme="https://blog.pai233.top/tags/VS-Code/"/>
-    
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
+      <category term="VS Code" scheme="https://blog.pai233.top/tags/VS-Code/"/>
+    
       <category term="扩展" scheme="https://blog.pai233.top/tags/%E6%89%A9%E5%B1%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【NexT主题美化】点击页面浮现24字核心价值观</title>
-    <link href="https://blog.pai233.top/20210815/hexo-clicker/"/>
-    <id>https://blog.pai233.top/20210815/hexo-clicker/</id>
-    <published>2021-08-15T14:04:40.000Z</published>
-    <updated>2022-01-31T09:08:46.857Z</updated>
-    
-    <content type="html"><![CDATA[<p>在许多时候，我们希望用户点击页面时会有一定的反馈（如浮现字幕、放烟花）。这次，我们来实现一下如何使用户点击页面时，弹出24字核心价值观。</p><a id="more"></a><h1 id="创建clickerjs文件"><a class="markdownIt-Anchor" href="#创建clickerjs文件"></a> 创建<code>clicker.js</code>文件</h1><p>在博客根目录往下找<code>\themes\next\source\js</code>文件夹，创建<code>clicker.js</code>，文件内容如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">!<span class="function"><span class="keyword">function</span> (<span class="params">e, t, a</span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">var</span> e = <span class="number">0</span>; e &lt; s.length; e++) s[e].alpha &lt;= <span class="number">0</span> ? (t.body.removeChild(s[e].el), s.splice(e, <span class="number">1</span>)) : (s[e].y--, s[e].scale += <span class="number">.004</span>, s[e].alpha -= <span class="number">.013</span>, s[e].el.style.cssText = <span class="string">&quot;left:&quot;</span> + s[e].x + <span class="string">&quot;px;top:&quot;</span> + s[e].y + <span class="string">&quot;px;opacity:&quot;</span> + s[e].alpha + <span class="string">&quot;;transform:scale(&quot;</span> + s[e].scale + <span class="string">&quot;,&quot;</span> + s[e].scale + <span class="string">&quot;) rotate(45deg);background:&quot;</span> + s[e].color + <span class="string">&quot;;z-index:99999&quot;</span>);</span><br><span class="line">      requestAnimationFrame(r)</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> t = <span class="string">&quot;function&quot;</span> == <span class="keyword">typeof</span> e.onclick &amp;&amp; e.onclick;</span><br><span class="line">      e.onclick = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">        t &amp;&amp; t(), o(e)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> a = t.createElement(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">      a.className = <span class="string">&quot;heart&quot;</span>, s.push(&#123;</span><br><span class="line">        el: a,</span><br><span class="line">        x: e.clientX - <span class="number">5</span>,</span><br><span class="line">        y: e.clientY - <span class="number">5</span>,</span><br><span class="line">        scale: <span class="number">1</span>,</span><br><span class="line">        alpha: <span class="number">1</span>,</span><br><span class="line">        color: c()</span><br><span class="line">      &#125;), t.body.appendChild(a)</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> a = t.createElement(<span class="string">&quot;style&quot;</span>);</span><br><span class="line">      a.type = <span class="string">&quot;text/css&quot;</span>;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        a.appendChild(t.createTextNode(e))</span><br><span class="line">      &#125; <span class="keyword">catch</span> (t) &#123;</span><br><span class="line">        a.styleSheet.cssText = e</span><br><span class="line">      &#125;</span><br><span class="line">      t.getElementsByTagName(<span class="string">&quot;head&quot;</span>)[<span class="number">0</span>].appendChild(a)</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">&quot;rgb(&quot;</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;,&quot;</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;,&quot;</span> + ~~(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;)&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = [];</span><br><span class="line">    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">setTimeout</span>(e, <span class="number">1e3</span> / <span class="number">60</span>)</span><br><span class="line">    &#125;, i(<span class="string">&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &#x27;&#x27;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;</span>), n(), r()</span><br><span class="line">  &#125;(<span class="built_in">window</span>, <span class="built_in">document</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">/* 社会主体核心价值观效果 */</span></span><br><span class="line">  <span class="keyword">var</span> a_idx = <span class="number">0</span>;</span><br><span class="line">  jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $(<span class="string">&quot;body&quot;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">&quot;富强&quot;</span>, <span class="string">&quot;民主&quot;</span>, <span class="string">&quot;文明&quot;</span>, <span class="string">&quot;和谐&quot;</span>, <span class="string">&quot;自由&quot;</span>, <span class="string">&quot;平等&quot;</span>, <span class="string">&quot;公正&quot;</span>, <span class="string">&quot;法治&quot;</span>, <span class="string">&quot;爱国&quot;</span>, <span class="string">&quot;敬业&quot;</span>, <span class="string">&quot;诚信&quot;</span>, <span class="string">&quot;友善&quot;</span>);</span><br><span class="line">      <span class="keyword">var</span> $i = $(<span class="string">&quot;&lt;span/&gt;&quot;</span>).text(a[a_idx]);</span><br><span class="line">      a_idx = (a_idx + <span class="number">1</span>) % a.length;</span><br><span class="line">      <span class="keyword">var</span> x = e.pageX,</span><br><span class="line">        y = e.pageY;</span><br><span class="line">      $i.css(&#123;</span><br><span class="line">        <span class="string">&quot;z-index&quot;</span>: <span class="number">100000000</span>,</span><br><span class="line">        <span class="string">&quot;top&quot;</span>: y - <span class="number">20</span>,</span><br><span class="line">        <span class="string">&quot;left&quot;</span>: x,</span><br><span class="line">        <span class="string">&quot;position&quot;</span>: <span class="string">&quot;absolute&quot;</span>,</span><br><span class="line">        <span class="string">&quot;font-weight&quot;</span>: <span class="string">&quot;bold&quot;</span>,</span><br><span class="line">        <span class="string">&quot;color&quot;</span>: <span class="string">&quot;#ff6651&quot;</span></span><br><span class="line">      &#125;);</span><br><span class="line">      $(<span class="string">&quot;body&quot;</span>).append($i);</span><br><span class="line">      $i.animate(&#123;</span><br><span class="line">        <span class="string">&quot;top&quot;</span>: y - <span class="number">180</span>,</span><br><span class="line">        <span class="string">&quot;opacity&quot;</span>: <span class="number">0</span></span><br><span class="line">      &#125;, <span class="number">1500</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        $i.remove();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure><p>然后保存。</p><h1 id="修改_layoutswig"><a class="markdownIt-Anchor" href="#修改_layoutswig"></a> 修改<code>_layout.swig</code></h1><p>打开<code>\themes\next\layout</code>，找到<code>_layout.swig</code>，在<code>&lt;head&gt;</code>标签内插入以下代码：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="comment">&lt;!--需要JQuery的支持--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span> =<span class="string">&quot;/js/clicker.js&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br></pre></td></tr></table></figure><p>随后可通过<code>hexo s</code>查看效果：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/15/P6yZUlIGeji5xCb.png" alt="" /></p><h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1><ol><li><a href="https://blog.csdn.net/Mculover666/article/details/90695666">【Hexo搭建个人博客】（八）添加背景效果（点击鼠标显示红心并浮现社会主义核心价值观）</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在许多时候，我们希望用户点击页面时会有一定的反馈（如浮现字幕、放烟花）。这次，我们来实现一下如何使用户点击页面时，弹出24字核心价值观。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="博客美化" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
-      <category term="页面" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%A1%B5%E9%9D%A2/"/>
-    
-    
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
-    
-      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
-    
-      <category term="JavaScript" scheme="https://blog.pai233.top/tags/JavaScript/"/>
-    
-      <category term="JQuery" scheme="https://blog.pai233.top/tags/JQuery/"/>
     
   </entry>
   

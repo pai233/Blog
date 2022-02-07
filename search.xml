@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客正式切换主题到Butterfly！</title>
+    <url>/20220207/change-the-theme-to-butterfly/</url>
+    <content><![CDATA[<p>博主的博客从今天起正式切换到Butterfly啦！</p>
+<a id="more"></a>
+<h1 id="新特性"><a class="markdownIt-Anchor" href="#新特性"></a> 新特性</h1>
+<p>更换主题后，在保留原有功能的同时，还增加了许多新功能：</p>
+<ol>
+<li>支持双系统评论！（Twikoo/Gitalk）</li>
+<li>文章结尾支持自动推荐</li>
+<li>新增了“咕言咕语”、“留言板”等栏目</li>
+<li>等你发现 <s>（才不是我不记得了）</s></li>
+</ol>
+<h1 id="新增了几个cdn"><a class="markdownIt-Anchor" href="#新增了几个cdn"></a> 新增了几个CDN</h1>
+<ol>
+<li>Render</li>
+<li>Forge</li>
+<li>Hostman</li>
+<li>Google Firebase</li>
+</ol>
+<h1 id="google-adsense"><a class="markdownIt-Anchor" href="#google-adsense"></a> Google AdSense</h1>
+<p>这个东西的自动广告真的太迷惑了，在调了在调了😅</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/03/09/VBmOqyIPEHSZ2Nl.gif" alt="qwq" /></p>
+<h1 id="the-old-one"><a class="markdownIt-Anchor" href="#the-old-one"></a> The Old One</h1>
+<p>原NexT主题的博客页面已经备份好了：<a href="https://old.blog.pai233.top/">https://old.blog.pai233.top/</a></p>
+<p>但是应该不会再更新了……</p>
+]]></content>
+      <categories>
+        <category>咕咕小站</category>
+        <category>博客动态</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何修复具有双BIOS的某G姓主板的BIOS</title>
     <url>/20220123/how-to-fix-the-bios-of-gigabyte-motherboards-which-has-dual-bios/</url>
     <content><![CDATA[<p>前几天不知道主板抽什么风，BIOS又炸了。</p>
@@ -78,8 +113,8 @@
         <category>功能</category>
       </categories>
       <tags>
-        <tag>美化</tag>
         <tag>Blog</tag>
+        <tag>美化</tag>
         <tag>Hexo</tag>
         <tag>JavaScript</tag>
       </tags>
@@ -143,8 +178,8 @@
         <category>数论</category>
       </categories>
       <tags>
-        <tag>OI</tag>
         <tag>来源未知</tag>
+        <tag>OI</tag>
         <tag>C++</tag>
         <tag>题解</tag>
       </tags>
@@ -422,8 +457,8 @@ Farmer John的农场边上的高速公路最近出现了引人注目的流量上
         <category>功能</category>
       </categories>
       <tags>
-        <tag>美化</tag>
         <tag>Blog</tag>
+        <tag>美化</tag>
         <tag>Hexo</tag>
         <tag>LaTeX</tag>
       </tags>
@@ -539,8 +574,8 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>功能</category>
       </categories>
       <tags>
-        <tag>美化</tag>
         <tag>Blog</tag>
+        <tag>美化</tag>
         <tag>Hexo</tag>
         <tag>Sweetalert</tag>
       </tags>
@@ -637,9 +672,9 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>洛谷API</category>
       </categories>
       <tags>
-        <tag>API</tag>
-        <tag>Node.js</tag>
         <tag>洛谷</tag>
+        <tag>Node.js</tag>
+        <tag>API</tag>
       </tags>
   </entry>
   <entry>
@@ -693,8 +728,8 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>编辑框</category>
       </categories>
       <tags>
-        <tag>VS Code</tag>
         <tag>Node.js</tag>
+        <tag>VS Code</tag>
         <tag>扩展</tag>
       </tags>
   </entry>
@@ -722,8 +757,8 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>页面</category>
       </categories>
       <tags>
-        <tag>美化</tag>
         <tag>Blog</tag>
+        <tag>美化</tag>
         <tag>Hexo</tag>
         <tag>JavaScript</tag>
         <tag>JQuery</tag>
