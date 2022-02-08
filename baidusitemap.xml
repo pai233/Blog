@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.pai233.top/20220208/how-to-deploy-your-hexo-blog-on-firebase/</loc>
+    <lastmod>2022-02-08</lastmod>
+  </url>  <url>
     <loc>https://blog.pai233.top/20220207/change-the-theme-to-butterfly/</loc>
     <lastmod>2022-02-07</lastmod>
   </url>  <url>
