@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-02-08T14:27:37.882Z</updated>
+  <updated>2022-02-11T14:35:01.383Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>5个免费的静态Web应用部署平台</title>
+    <link href="https://blog.pai233.top/20220209/5-free-static-page-hosting/"/>
+    <id>https://blog.pai233.top/20220209/5-free-static-page-hosting/</id>
+    <published>2022-02-09T13:47:47.000Z</published>
+    <updated>2022-02-11T14:35:01.383Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近使用很多家的静态部署服务，今天就给大家整10个我认为最好的，供大家白嫖（</p><a id="more"></a><p>为了确保评测间的公平性，我们采用了同一地区（四川成都）的三大运营商的网络进行测试。</p><h1 id="cloudflare-pages"><a class="markdownIt-Anchor" href="#cloudflare-pages"></a> Cloudflare Pages</h1><h2 id="评价"><a class="markdownIt-Anchor" href="#评价"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐⭐<br />服务器地理位置：美国自家节点<br />推荐原因：速度稳定，在全球各地均有CDN，支持从Github/Gitlab等平台自动部署<br />缺点：部署速度较慢，但不算太影响</p><h2 id="网络情况"><a class="markdownIt-Anchor" href="#网络情况"></a> 网络情况</h2><p>电信：从大陆直连美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/P9beDzP4.png" alt="1644415179959.png" /></p><p>联通：绕行欧洲后到美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/GCdojGAQ.png" alt="1644415233848.png" /></p><p>移动：到达香港后无法追踪（移动就这德性）</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/fgzXAYHP.png" alt="1644415423550.png" /></p><p>官网指路：<a href="https://www.cloudflare.com">https://www.cloudflare.com</a></p><p>自己测试：<a href="https://blog.pai233.top/">https://blog.pai233.top/</a></p><h1 id="vercel"><a class="markdownIt-Anchor" href="#vercel"></a> Vercel</h1><h2 id="评价-2"><a class="markdownIt-Anchor" href="#评价-2"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：美国AWS<br />推荐原因：部署速度快，支持自动部署<br />缺点：被墙过一次，速度有可能出现不稳定</p><h2 id="网络情况-2"><a class="markdownIt-Anchor" href="#网络情况-2"></a> 网络情况</h2><p>电信：大陆绕道日本后连接美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yGhlSKkU.png" alt="1644415777404.png" /></p><p>联通：直连美国后到新加坡（？再回美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕道香港后直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/O8KVUJaG.png" alt="1644415974820.png" /></p><p>官网指路：<a href="https://vercel.com">https://vercel.com</a></p><p>自己测试：<a href="https://vercel.cdn.blog.pai233.top/">https://vercel.cdn.blog.pai233.top/</a></p><h1 id="4everland"><a class="markdownIt-Anchor" href="#4everland"></a> 4everland</h1><h2 id="评价-3"><a class="markdownIt-Anchor" href="#评价-3"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：香港阿里云<br />推荐原因：支持自动部署，服务器邻近大陆<br />缺点：新平台，不确定是否能稳定运转</p><h2 id="网络情况-3"><a class="markdownIt-Anchor" href="#网络情况-3"></a> 网络情况</h2><p>电信：先跨运营商，通过联通出香港，后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/FlZsi0Tk.png" alt="1644416462183.png" /></p><p>联通：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/zjNLIBzB.png" alt="1644416919347.png" /></p><p>官网指路：<a href="https://4everland.org">https://4everland.org</a></p><p>自己测试：<a href="https://4everland.cdn.blog.pai233.top/">https://4everland.cdn.blog.pai233.top/</a></p><h1 id="netlify"><a class="markdownIt-Anchor" href="#netlify"></a> NetLify</h1><h2 id="评价-4"><a class="markdownIt-Anchor" href="#评价-4"></a> 评价</h2><p>推荐指数：⭐⭐⭐<br />服务器地理位置：新加坡AWS<br />推荐原因：支持自动部署，连接速度较快<br />缺点：控制台无法在国内正常打开，需要走出世界</p><h2 id="网络情况-4"><a class="markdownIt-Anchor" href="#网络情况-4"></a> 网络情况</h2><p>电信：大陆直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/bTO1CSAr.png" alt="1644416179450.png" /></p><p>联通：大陆绕道日本、美国后到新加坡<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/C7molJlA.png" alt="1644416220136.png" /></p><p>移动：绕道香港、美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yUNGbRbd.png" alt="1644416301711.png" /></p><p>官网指路：<a href="https://netlify.com">https://netlify.com</a></p><p>自己测试：<a href="https://netlify.cdn.blog.pai233.top/">https://netlify.cdn.blog.pai233.top/</a></p><h1 id="github-pages"><a class="markdownIt-Anchor" href="#github-pages"></a> Github Pages</h1><p>推荐指数：⭐⭐<br />服务器地理位置：美国<br />推荐：<code>push</code>即部署，简单快捷<br />缺点：网络连接严重不稳定</p><h2 id="网络情况-5"><a class="markdownIt-Anchor" href="#网络情况-5"></a> 网络情况</h2><p>由于博主行文至此时发现原使用的测试平台已下线四川成都移动线路，无法正常测试，这里就放张全国的测速图给大家感受一下吧：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2022/02/b43cb05df38959d1.png" alt="" /></p><p>大家看各自需要，找一个适合自己的就OK的啦~</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近使用很多家的静态部署服务，今天就给大家整10个我认为最好的，供大家白嫖（&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="推荐" scheme="https://blog.pai233.top/categories/%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Web服务" scheme="https://blog.pai233.top/categories/%E6%8E%A8%E8%8D%90/Web%E6%9C%8D%E5%8A%A1/"/>
+    
+    
+      <category term="免费" scheme="https://blog.pai233.top/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+      <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
+    
+      <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何将你的Hexo博客部署到Google Firebase上</title>
     <link href="https://blog.pai233.top/20220208/how-to-deploy-your-hexo-blog-on-firebase/"/>
     <id>https://blog.pai233.top/20220208/how-to-deploy-your-hexo-blog-on-firebase/</id>
     <published>2022-02-08T13:53:34.000Z</published>
-    <updated>2022-02-08T14:27:37.882Z</updated>
+    <updated>2022-02-09T13:52:58.192Z</updated>
     
     <content type="html"><![CDATA[<p>博主最近在 <s>白嫖万恶的资本</s> 将博客部署到新的CDN上，所以在寻找免费的静态Web应用部署工具，发现了Google Firebase。</p><a id="more"></a><h1 id="google-firebase"><a class="markdownIt-Anchor" href="#google-firebase"></a> Google Firebase</h1><blockquote><p>以下内容摘取自<a href="https://www.wikipedia.org/">Wikipedia</a>。<br />Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者平台，在2014年被Google收购。<br />截至2020年3月，Firebase平台拥有19项产品，它们被超过150万个应用程序采用。</p></blockquote><p>这 <s>万恶资本</s> Google的坑，怎么能不白嫖呢😏</p><p><strong>Tip: 以下内容在中国大陆需要掌握浏览世界的方法（嘘🤫——</strong></p><h1 id="新建项目"><a class="markdownIt-Anchor" href="#新建项目"></a> 新建项目</h1><p>打开<a href="https://firebase.google.com/">Firebase官网</a>，登陆账号并转到控制台。</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/zup1nxeh.png" alt="" /></p><p>选择“添加项目”，输入您的项目名称，如果你喜欢，可以编辑您项目的唯一标识符（位于名称框的左下角）</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/8N1PLfg0.png" alt="" /></p><p>点击下一步，到询问是否启用分析页面，这里根据你个人的喜好来吧~</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/N9f6FPMQ.png" alt="" /></p><p>选择完后，项目开始创建（如果您启用了分析，可能还要选择账户）。</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/5j0QsL4j.png" alt="" /></p><p>然后会进入到选择计划的页面（由于博主先前已经创建过了，并没有弹出），按照你的喜好来 <s>（不会有人给Google交钱吧）</s>，选择完后整个项目就OK了。</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/o1m0xdWC.png" alt="" /></p><h1 id="安装hexo插件"><a class="markdownIt-Anchor" href="#安装hexo插件"></a> 安装Hexo插件</h1><p>因为Hexo在之前并没有将博客发布到Firebase的插件，博主就自己做了一个<a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a>，但在使用前，还需要你安装Firebase CLI。</p><h2 id="安装firebase-cli命令行工具"><a class="markdownIt-Anchor" href="#安装firebase-cli命令行工具"></a> 安装Firebase CLI命令行工具</h2><p>Firebase CLI在官网上提供了两种安装方式，分别是安装包安装和<code>npm</code>安装。</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/06/ADzfV8Z1.png" alt="" /></p><p>我们既然都用Hexo了，那么肯定装好了npm了吧（</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g firebase-tools</span><br></pre></td></tr></table></figure><p>按照你想用的方式安装好，在命令行中运行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firebase login</span><br></pre></td></tr></table></figure><p>如果你无权访问<code>localhost</code>（个人电脑应该都可以吧），可以使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firebase login --no-localhost</span><br></pre></td></tr></table></figure><p>登陆您项目所对应的Google账号，登陆完后，这一步就OK了。</p><h2 id="安装插件"><a class="markdownIt-Anchor" href="#安装插件"></a> 安装插件</h2><p>将命令行切换到您的博客根目录下，运行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-deployer-firebase --save</span><br></pre></td></tr></table></figure><p>安装插件。等待进度条跑完，即安装成功。</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/dBQv8rdB.png" alt="" /></p><h1 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h1><p>打开Hexo的<code>_config.yml</code>文件，在您的<code>deploy</code>处进行配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">firebase</span></span><br><span class="line">      <span class="attr">id:</span> <span class="comment">#你Firebase项目的标识符</span></span><br></pre></td></tr></table></figure><p>例如博主的是这个样子：<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/s4G3udAw.png" alt="" /></p><p>现在，你可以愉快的将博客发布到Google Firebase上啦~</p><h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1><ol><li><a href="https://zh.wikipedia.org/wiki/Firebase">Firebase - 维基百科</a></li><li><a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a></li></ol><p>能完成这个项目，需要感谢：</p><ol><li><a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li><li><a href="https://hexo.io/zh-cn/api/">Hexo API</a></li></ol>]]></content>
     
@@ -37,11 +66,13 @@
       <category term="部署" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%83%A8%E7%BD%B2/"/>
     
     
+      <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
+    
+      <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Firebase" scheme="https://blog.pai233.top/tags/Firebase/"/>
-    
-      <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
     
   </entry>
   
@@ -120,9 +151,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -182,13 +213,13 @@
       <category term="数论" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/"/>
     
     
+      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
+    
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
     
   </entry>
   
@@ -277,11 +308,11 @@
     
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
-      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
@@ -425,9 +456,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -485,9 +516,9 @@
       <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
     
     
-      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -574,31 +605,6 @@
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
       <category term="API" scheme="https://blog.pai233.top/tags/API/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何处理Git的大小写问题</title>
-    <link href="https://blog.pai233.top/20210824/git-ignorecase/"/>
-    <id>https://blog.pai233.top/20210824/git-ignorecase/</id>
-    <published>2021-08-24T06:57:55.000Z</published>
-    <updated>2022-01-31T09:08:41.750Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天给博客搞SEO的时候，将多数的链接全部改成小写的了，然后就炸了……</p><a id="more"></a><h1 id="问题原因"><a class="markdownIt-Anchor" href="#问题原因"></a> 问题原因</h1><p>这个问题发生是因为Windows系统对大小写不敏感，所以Git也默认大小写不敏感。但像Github这类代码托管平台用的是Linux，Linux对大小写敏感。</p><h1 id="解决过程"><a class="markdownIt-Anchor" href="#解决过程"></a> 解决过程</h1><p>首先，在Git本地仓库下执行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config core.ignorecase <span class="literal">false</span></span><br></pre></td></tr></table></figure><p>这行命令表示关闭忽略大小写。</p><p>然后，修改我们的本地文件/文件夹名：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/2Fd5KZvPuOjyhGt.png" alt="image.png" /></p><p>修改完后push到Github上，然后查看效果：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin main <span class="comment">#我用的是hexo，所以跑了hexo d，普通Git仓库push就好</span></span><br></pre></td></tr></table></figure><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/d3IhPi8JU96Lc7Z.png" alt="效果" /></p><p>好家伙，之前大写的没被删掉，不过小写的成功被push上去了。</p><p>目前只能一个个手动删除远程的文件/文件夹，因为本地的已经是小写了……不知道有什么解决方法😅……</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天给博客搞SEO的时候，将多数的链接全部改成小写的了，然后就炸了……&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="Git" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Git/"/>
-    
-    
-      <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
     
   </entry>
   
