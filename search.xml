@@ -333,10 +333,10 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <category>数论</category>
       </categories>
       <tags>
+        <tag>来源未知</tag>
         <tag>OI</tag>
         <tag>C++</tag>
         <tag>题解</tag>
-        <tag>来源未知</tag>
       </tags>
   </entry>
   <entry>
@@ -452,9 +452,9 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -957,9 +957,9 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -989,8 +989,8 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
         <tag>Python</tag>
       </tags>
   </entry>
