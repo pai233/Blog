@@ -3,7 +3,7 @@
   <entry>
     <title>5个免费的静态Web应用部署平台</title>
     <url>/20220209/5-free-static-page-hosting/</url>
-    <content><![CDATA[<p>最近使用很多家的静态部署服务，今天就给大家整10个我认为最好的，供大家白嫖（</p>
+    <content><![CDATA[<p>最近使用很多家的静态部署服务，今天就给大家整5个我认为最好的，供大家白嫖（</p>
 <a id="more"></a>
 <p>为了确保评测间的公平性，我们采用了同一地区（四川成都）的三大运营商的网络进行测试。</p>
 <h1 id="cloudflare-pages"><a class="markdownIt-Anchor" href="#cloudflare-pages"></a> Cloudflare Pages</h1>
@@ -333,10 +333,10 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <category>数论</category>
       </categories>
       <tags>
-        <tag>来源未知</tag>
         <tag>OI</tag>
         <tag>C++</tag>
         <tag>题解</tag>
+        <tag>来源未知</tag>
       </tags>
   </entry>
   <entry>
@@ -452,9 +452,9 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </categories>
       <tags>
         <tag>OI</tag>
+        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
-        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -957,9 +957,9 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
+        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
-        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -989,8 +989,8 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>题解</tag>
         <tag>洛谷</tag>
+        <tag>题解</tag>
         <tag>Python</tag>
       </tags>
   </entry>

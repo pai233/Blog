@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-02-11T14:35:01.383Z</updated>
+  <updated>2022-02-12T01:44:38.108Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://blog.pai233.top/20220209/5-free-static-page-hosting/"/>
     <id>https://blog.pai233.top/20220209/5-free-static-page-hosting/</id>
     <published>2022-02-09T13:47:47.000Z</published>
-    <updated>2022-02-11T14:35:01.383Z</updated>
+    <updated>2022-02-12T01:44:38.108Z</updated>
     
-    <content type="html"><![CDATA[<p>最近使用很多家的静态部署服务，今天就给大家整10个我认为最好的，供大家白嫖（</p><a id="more"></a><p>为了确保评测间的公平性，我们采用了同一地区（四川成都）的三大运营商的网络进行测试。</p><h1 id="cloudflare-pages"><a class="markdownIt-Anchor" href="#cloudflare-pages"></a> Cloudflare Pages</h1><h2 id="评价"><a class="markdownIt-Anchor" href="#评价"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐⭐<br />服务器地理位置：美国自家节点<br />推荐原因：速度稳定，在全球各地均有CDN，支持从Github/Gitlab等平台自动部署<br />缺点：部署速度较慢，但不算太影响</p><h2 id="网络情况"><a class="markdownIt-Anchor" href="#网络情况"></a> 网络情况</h2><p>电信：从大陆直连美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/P9beDzP4.png" alt="1644415179959.png" /></p><p>联通：绕行欧洲后到美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/GCdojGAQ.png" alt="1644415233848.png" /></p><p>移动：到达香港后无法追踪（移动就这德性）</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/fgzXAYHP.png" alt="1644415423550.png" /></p><p>官网指路：<a href="https://www.cloudflare.com">https://www.cloudflare.com</a></p><p>自己测试：<a href="https://blog.pai233.top/">https://blog.pai233.top/</a></p><h1 id="vercel"><a class="markdownIt-Anchor" href="#vercel"></a> Vercel</h1><h2 id="评价-2"><a class="markdownIt-Anchor" href="#评价-2"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：美国AWS<br />推荐原因：部署速度快，支持自动部署<br />缺点：被墙过一次，速度有可能出现不稳定</p><h2 id="网络情况-2"><a class="markdownIt-Anchor" href="#网络情况-2"></a> 网络情况</h2><p>电信：大陆绕道日本后连接美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yGhlSKkU.png" alt="1644415777404.png" /></p><p>联通：直连美国后到新加坡（？再回美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕道香港后直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/O8KVUJaG.png" alt="1644415974820.png" /></p><p>官网指路：<a href="https://vercel.com">https://vercel.com</a></p><p>自己测试：<a href="https://vercel.cdn.blog.pai233.top/">https://vercel.cdn.blog.pai233.top/</a></p><h1 id="4everland"><a class="markdownIt-Anchor" href="#4everland"></a> 4everland</h1><h2 id="评价-3"><a class="markdownIt-Anchor" href="#评价-3"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：香港阿里云<br />推荐原因：支持自动部署，服务器邻近大陆<br />缺点：新平台，不确定是否能稳定运转</p><h2 id="网络情况-3"><a class="markdownIt-Anchor" href="#网络情况-3"></a> 网络情况</h2><p>电信：先跨运营商，通过联通出香港，后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/FlZsi0Tk.png" alt="1644416462183.png" /></p><p>联通：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/zjNLIBzB.png" alt="1644416919347.png" /></p><p>官网指路：<a href="https://4everland.org">https://4everland.org</a></p><p>自己测试：<a href="https://4everland.cdn.blog.pai233.top/">https://4everland.cdn.blog.pai233.top/</a></p><h1 id="netlify"><a class="markdownIt-Anchor" href="#netlify"></a> NetLify</h1><h2 id="评价-4"><a class="markdownIt-Anchor" href="#评价-4"></a> 评价</h2><p>推荐指数：⭐⭐⭐<br />服务器地理位置：新加坡AWS<br />推荐原因：支持自动部署，连接速度较快<br />缺点：控制台无法在国内正常打开，需要走出世界</p><h2 id="网络情况-4"><a class="markdownIt-Anchor" href="#网络情况-4"></a> 网络情况</h2><p>电信：大陆直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/bTO1CSAr.png" alt="1644416179450.png" /></p><p>联通：大陆绕道日本、美国后到新加坡<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/C7molJlA.png" alt="1644416220136.png" /></p><p>移动：绕道香港、美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yUNGbRbd.png" alt="1644416301711.png" /></p><p>官网指路：<a href="https://netlify.com">https://netlify.com</a></p><p>自己测试：<a href="https://netlify.cdn.blog.pai233.top/">https://netlify.cdn.blog.pai233.top/</a></p><h1 id="github-pages"><a class="markdownIt-Anchor" href="#github-pages"></a> Github Pages</h1><p>推荐指数：⭐⭐<br />服务器地理位置：美国<br />推荐：<code>push</code>即部署，简单快捷<br />缺点：网络连接严重不稳定</p><h2 id="网络情况-5"><a class="markdownIt-Anchor" href="#网络情况-5"></a> 网络情况</h2><p>由于博主行文至此时发现原使用的测试平台已下线四川成都移动线路，无法正常测试，这里就放张全国的测速图给大家感受一下吧：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2022/02/b43cb05df38959d1.png" alt="" /></p><p>大家看各自需要，找一个适合自己的就OK的啦~</p>]]></content>
+    <content type="html"><![CDATA[<p>最近使用很多家的静态部署服务，今天就给大家整5个我认为最好的，供大家白嫖（</p><a id="more"></a><p>为了确保评测间的公平性，我们采用了同一地区（四川成都）的三大运营商的网络进行测试。</p><h1 id="cloudflare-pages"><a class="markdownIt-Anchor" href="#cloudflare-pages"></a> Cloudflare Pages</h1><h2 id="评价"><a class="markdownIt-Anchor" href="#评价"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐⭐<br />服务器地理位置：美国自家节点<br />推荐原因：速度稳定，在全球各地均有CDN，支持从Github/Gitlab等平台自动部署<br />缺点：部署速度较慢，但不算太影响</p><h2 id="网络情况"><a class="markdownIt-Anchor" href="#网络情况"></a> 网络情况</h2><p>电信：从大陆直连美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/P9beDzP4.png" alt="1644415179959.png" /></p><p>联通：绕行欧洲后到美国</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/GCdojGAQ.png" alt="1644415233848.png" /></p><p>移动：到达香港后无法追踪（移动就这德性）</p><p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/fgzXAYHP.png" alt="1644415423550.png" /></p><p>官网指路：<a href="https://www.cloudflare.com">https://www.cloudflare.com</a></p><p>自己测试：<a href="https://blog.pai233.top/">https://blog.pai233.top/</a></p><h1 id="vercel"><a class="markdownIt-Anchor" href="#vercel"></a> Vercel</h1><h2 id="评价-2"><a class="markdownIt-Anchor" href="#评价-2"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：美国AWS<br />推荐原因：部署速度快，支持自动部署<br />缺点：被墙过一次，速度有可能出现不稳定</p><h2 id="网络情况-2"><a class="markdownIt-Anchor" href="#网络情况-2"></a> 网络情况</h2><p>电信：大陆绕道日本后连接美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yGhlSKkU.png" alt="1644415777404.png" /></p><p>联通：直连美国后到新加坡（？再回美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕道香港后直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/O8KVUJaG.png" alt="1644415974820.png" /></p><p>官网指路：<a href="https://vercel.com">https://vercel.com</a></p><p>自己测试：<a href="https://vercel.cdn.blog.pai233.top/">https://vercel.cdn.blog.pai233.top/</a></p><h1 id="4everland"><a class="markdownIt-Anchor" href="#4everland"></a> 4everland</h1><h2 id="评价-3"><a class="markdownIt-Anchor" href="#评价-3"></a> 评价</h2><p>推荐指数：⭐⭐⭐⭐<br />服务器地理位置：香港阿里云<br />推荐原因：支持自动部署，服务器邻近大陆<br />缺点：新平台，不确定是否能稳定运转</p><h2 id="网络情况-3"><a class="markdownIt-Anchor" href="#网络情况-3"></a> 网络情况</h2><p>电信：先跨运营商，通过联通出香港，后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/FlZsi0Tk.png" alt="1644416462183.png" /></p><p>联通：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/9JrrV5To.png" alt="1644416726065.png" /></p><p>移动：绕香港后到新加坡，最后香港<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/zjNLIBzB.png" alt="1644416919347.png" /></p><p>官网指路：<a href="https://4everland.org">https://4everland.org</a></p><p>自己测试：<a href="https://4everland.cdn.blog.pai233.top/">https://4everland.cdn.blog.pai233.top/</a></p><h1 id="netlify"><a class="markdownIt-Anchor" href="#netlify"></a> NetLify</h1><h2 id="评价-4"><a class="markdownIt-Anchor" href="#评价-4"></a> 评价</h2><p>推荐指数：⭐⭐⭐<br />服务器地理位置：新加坡AWS<br />推荐原因：支持自动部署，连接速度较快<br />缺点：控制台无法在国内正常打开，需要走出世界</p><h2 id="网络情况-4"><a class="markdownIt-Anchor" href="#网络情况-4"></a> 网络情况</h2><p>电信：大陆直连<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/bTO1CSAr.png" alt="1644416179450.png" /></p><p>联通：大陆绕道日本、美国后到新加坡<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/C7molJlA.png" alt="1644416220136.png" /></p><p>移动：绕道香港、美国<br /><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/09/yUNGbRbd.png" alt="1644416301711.png" /></p><p>官网指路：<a href="https://netlify.com">https://netlify.com</a></p><p>自己测试：<a href="https://netlify.cdn.blog.pai233.top/">https://netlify.cdn.blog.pai233.top/</a></p><h1 id="github-pages"><a class="markdownIt-Anchor" href="#github-pages"></a> Github Pages</h1><p>推荐指数：⭐⭐<br />服务器地理位置：美国<br />推荐：<code>push</code>即部署，简单快捷<br />缺点：网络连接严重不稳定</p><h2 id="网络情况-5"><a class="markdownIt-Anchor" href="#网络情况-5"></a> 网络情况</h2><p>由于博主行文至此时发现原使用的测试平台已下线四川成都移动线路，无法正常测试，这里就放张全国的测速图给大家感受一下吧：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2022/02/b43cb05df38959d1.png" alt="" /></p><p>大家看各自需要，找一个适合自己的就OK的啦~</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;最近使用很多家的静态部署服务，今天就给大家整10个我认为最好的，供大家白嫖（&lt;/p&gt;
+      &lt;p&gt;最近使用很多家的静态部署服务，今天就给大家整5个我认为最好的，供大家白嫖（&lt;/p&gt;
     
     </summary>
     
@@ -213,13 +213,13 @@
       <category term="数论" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/"/>
     
     
-      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
-    
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
     
   </entry>
   
@@ -308,11 +308,11 @@
     
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
+      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
