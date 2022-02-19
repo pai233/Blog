@@ -1,3 +1,4 @@
+https://blog.pai233.top/20220219/use-jsdelivr-by-cloudflare-worker/
 https://blog.pai233.top/20220213/friend-links-exchange-rules/
 https://blog.pai233.top/20220213/usaco2019dec-silver-moobuzz/
 https://blog.pai233.top/20220209/5-free-static-page-hosting/
@@ -7,4 +8,3 @@ https://blog.pai233.top/20220123/how-to-fix-the-bios-of-gigabyte-motherboards-wh
 https://blog.pai233.top/20220109/how-to-use-go-jumper/
 https://blog.pai233.top/20220102/noip2009tg-t4/
 https://blog.pai233.top/20211219/amp-solution-oi/
-https://blog.pai233.top/20211114/noip2004pj-t2/
