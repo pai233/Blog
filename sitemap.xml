@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.pai233.top/20220227/change-the-cdn-of-butterfly-from-jsdelivr-to-your-proxy-server/</loc>
+    
+    <lastmod>2022-02-27T09:32:24.606Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/20220219/use-jsdelivr-by-cloudflare-worker/</loc>
     
     <lastmod>2022-02-19T04:16:53.943Z</lastmod>
