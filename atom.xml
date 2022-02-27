@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>pai233の小窝</title>
-  
+  <icon>https://www.gravatar.com/avatar/bbd76a9144ca8b27e5bf398b53787e63</icon>
   <subtitle>这道题，我必选D！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>pai233</name>
-    
+    <email>gugugupai233@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -300,9 +300,9 @@
       <category term="数论" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/"/>
     
     
-      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
-    
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
+    
+      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
     
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
