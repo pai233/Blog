@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【搭建Hexo博客（一）】初始化框架</title>
+    <url>/20220312/init-your-hexo-blog/</url>
+    <content><![CDATA[<p>前几天更换了博客主题，现在趁这个机会，来写个教程。</p>
+<a id="more"></a>
+<h1 id="hexo简介"><a class="markdownIt-Anchor" href="#hexo简介"></a> Hexo简介</h1>
+<p>Hexo是一款快速、简洁且高效的博客框架，渲染速度快，支持Markdown，且支持各类型的Extensions，十分容易上手。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/y11Pi0gq.png" alt="1647071265245.png" /></p>
+<h1 id="初始化"><a class="markdownIt-Anchor" href="#初始化"></a> 初始化</h1>
+<p>在使用Hexo前，你需要先安装好Git和Node.js，本处不再赘述。在安装完成后，你只需要运行以下的Bash命令（在操作前，请先<code>cd</code>到您的目录下，以免不必要的麻烦）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>Hexo会自动将框架Clone至<code>blog</code>文件夹，我们只需要等待其完成。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/pEa5RGGU.png" alt="1647071608112.png" /></p>
+<p>在文件夹下，我们只需要运行<code>hexo s</code>就可以在本地一览博客啦！</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/LQga0xlN.png" alt="1647071680840.png" /></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/okVHTMO9.png" alt="1647071700051.png" /></p>
+<p>可以看到，Hexo已经自动创建了一篇叫<code>Hello World</code>的默认文章，这说明我们的博客框架已经初始化完成了！不过这时候的博客还很单调，需要我们后续的修改，这段内容将会在未来的教程中展开叙述。</p>
+<h1 id="新建文章页面"><a class="markdownIt-Anchor" href="#新建文章页面"></a> 新建文章/页面</h1>
+<p>如果你想新建一篇文章，可以运行以下的Bash:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;xxx&quot;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/jcRzy0YG.png" alt="1647071902142.png" /></p>
+<p>Hexo就会自动创建一篇叫<code>xxx</code>的文章。</p>
+<p>但如果我想创建的不是文章，是一个单独的页面呢？</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;xxx&quot;</span></span><br></pre></td></tr></table></figure>
+<p>这样就能创建一个叫<code>xxx</code>的页面。</p>
+<p>限于篇幅与博主的时间原因，这篇教程只能拆开来一点点讲，还请关注qaq</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>Hexo搭建</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Node.js</tag>
+        <tag>Git</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>快速将Butterfly主题的CDN从jsDelivr切换至自建反向代理源</title>
     <url>/20220227/change-the-cdn-of-butterfly-from-jsdelivr-to-your-proxy-server/</url>
     <content><![CDATA[<p>最新版的Butterfly取消了原来设置在<code>_config.yml</code>里的默认CDN，导致不能快速替换掉现在极不稳定的jsDelivr CDN。本文的默认Butterfly版本为<code>4.1.0</code>。</p>
@@ -18,9 +56,9 @@
         <category>CDN</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>jsDelivr</tag>
         <tag>反向代理</tag>
+        <tag>Blog</tag>
         <tag>Butterfly</tag>
       </tags>
   </entry>
@@ -482,10 +520,10 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <category>数论</category>
       </categories>
       <tags>
+        <tag>来源未知</tag>
         <tag>OI</tag>
         <tag>C++</tag>
         <tag>题解</tag>
-        <tag>来源未知</tag>
       </tags>
   </entry>
   <entry>
@@ -601,9 +639,9 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -1032,8 +1070,8 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>编辑框</category>
       </categories>
       <tags>
-        <tag>Node.js</tag>
         <tag>VS Code</tag>
+        <tag>Node.js</tag>
         <tag>扩展</tag>
       </tags>
   </entry>
@@ -1106,9 +1144,9 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>C++</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
@@ -1138,8 +1176,8 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </categories>
       <tags>
         <tag>OI</tag>
-        <tag>洛谷</tag>
         <tag>题解</tag>
+        <tag>洛谷</tag>
         <tag>Python</tag>
       </tags>
   </entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-02-27T09:32:24.606Z</updated>
+  <updated>2022-03-12T08:00:39.242Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【搭建Hexo博客（一）】初始化框架</title>
+    <link href="https://blog.pai233.top/20220312/init-your-hexo-blog/"/>
+    <id>https://blog.pai233.top/20220312/init-your-hexo-blog/</id>
+    <published>2022-03-12T07:42:01.000Z</published>
+    <updated>2022-03-12T08:00:39.242Z</updated>
+    
+    <content type="html"><![CDATA[<p>前几天更换了博客主题，现在趁这个机会，来写个教程。</p><a id="more"></a><h1 id="hexo简介"><a class="markdownIt-Anchor" href="#hexo简介"></a> Hexo简介</h1><p>Hexo是一款快速、简洁且高效的博客框架，渲染速度快，支持Markdown，且支持各类型的Extensions，十分容易上手。</p><p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/y11Pi0gq.png" alt="1647071265245.png" /></p><h1 id="初始化"><a class="markdownIt-Anchor" href="#初始化"></a> 初始化</h1><p>在使用Hexo前，你需要先安装好Git和Node.js，本处不再赘述。在安装完成后，你只需要运行以下的Bash命令（在操作前，请先<code>cd</code>到您的目录下，以免不必要的麻烦）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>Hexo会自动将框架Clone至<code>blog</code>文件夹，我们只需要等待其完成。</p><p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/pEa5RGGU.png" alt="1647071608112.png" /></p><p>在文件夹下，我们只需要运行<code>hexo s</code>就可以在本地一览博客啦！</p><p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/LQga0xlN.png" alt="1647071680840.png" /></p><p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/okVHTMO9.png" alt="1647071700051.png" /></p><p>可以看到，Hexo已经自动创建了一篇叫<code>Hello World</code>的默认文章，这说明我们的博客框架已经初始化完成了！不过这时候的博客还很单调，需要我们后续的修改，这段内容将会在未来的教程中展开叙述。</p><h1 id="新建文章页面"><a class="markdownIt-Anchor" href="#新建文章页面"></a> 新建文章/页面</h1><p>如果你想新建一篇文章，可以运行以下的Bash:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;xxx&quot;</span></span><br></pre></td></tr></table></figure><p><img src= "/img/loading.gif" data-lazy-src="https://xg3.jiashumao.net/2022/03/12/jcRzy0YG.png" alt="1647071902142.png" /></p><p>Hexo就会自动创建一篇叫<code>xxx</code>的文章。</p><p>但如果我想创建的不是文章，是一个单独的页面呢？</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;xxx&quot;</span></span><br></pre></td></tr></table></figure><p>这样就能创建一个叫<code>xxx</code>的页面。</p><p>限于篇幅与博主的时间原因，这篇教程只能拆开来一点点讲，还请关注qaq</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前几天更换了博客主题，现在趁这个机会，来写个教程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="Hexo搭建" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Hexo%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
+    
+      <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
+    
+      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>快速将Butterfly主题的CDN从jsDelivr切换至自建反向代理源</title>
@@ -41,11 +72,11 @@
       <category term="CDN" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/CDN/"/>
     
     
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
-    
       <category term="jsDelivr" scheme="https://blog.pai233.top/tags/jsDelivr/"/>
     
       <category term="反向代理" scheme="https://blog.pai233.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Butterfly" scheme="https://blog.pai233.top/tags/Butterfly/"/>
     
@@ -335,13 +366,13 @@
       <category term="数论" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/"/>
     
     
+      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
+    
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="来源未知" scheme="https://blog.pai233.top/tags/%E6%9D%A5%E6%BA%90%E6%9C%AA%E7%9F%A5/"/>
     
   </entry>
   
@@ -430,11 +461,11 @@
     
       <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
     
-      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
       <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
     
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
@@ -585,35 +616,6 @@
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
       <category term="LaTeX" scheme="https://blog.pai233.top/tags/LaTeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSP2021 游记</title>
-    <link href="https://blog.pai233.top/20210919/csp2021-travelogue/"/>
-    <id>https://blog.pai233.top/20210919/csp2021-travelogue/</id>
-    <published>2021-09-19T01:13:08.000Z</published>
-    <updated>2022-01-31T09:08:20.377Z</updated>
-    
-    <content type="html"><![CDATA[<p>又到了一年一度的CSP……</p><a id="more"></a><h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1><h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h2><p>早上在学校颓whk，像我们学校怎么可能会搞集训呢……/kk<br />回家看了会算法书，然后去验核酸，准备考试…… <s>（口区）</s></p><h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2><p>早上继续颓whk……感谢各位老师送的作业（</p><p>今天晚上开始放中秋假，在洛谷有题上康题目……发现自己还是不太熟悉那些阅读程序题和填代码题，瞬间慌了……<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/19/kPAHeTUV679pIYF.png" alt="image.png" /></p><h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h2><p>上一年报了rm只拿了个复赛2=，还是不敢上tg……早上收拾下东西，最后再看一下往年题，搜一下易考的知识点，蹲tg的大佬透露今早题目，据说手算base64？</p><iframe src="/files/csp-s2021-base64.pdf#toolbar=0" width="100%" height="500px"></iframe><p>下午正式开考，今年的题目除了手算base64真不会外，多数都眼瞎了……<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/gpaQrBX1u4wZ3Wc.png" alt="image.png" /><br />这一题没考虑好，忘记满二叉树也是完全二叉树的一种……<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/YL2dqTmnhClA6Jz.png" alt="image.png" /><br />这一题也脑残了，忘记看是最少的比较次数，从第二个开始遍历，那么最多只要比较 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 次就够了，代码如下：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> arr[<span class="number">1008616</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)cin&gt;&gt;arr[i];</span><br><span class="line">    <span class="keyword">int</span> ans = arr[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;<span class="comment">//遍历了n-1次</span></span><br><span class="line">        <span class="keyword">if</span>(ans&lt;arr[i])ans=arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src= "/img/loading.gif" data-lazy-src="https://tse1-mm.cn.bing.net/th/id/R-C.6ee0101d16fda7a16e87aad3d0e65153?rik=uU92SeFBKr%2bBAA&amp;riu=http%3a%2f%2fwww.biaoqingb.com%2fuploads%2fimg1%2f20201003%2f86c57cddcf5b97cbf345ec50b271832a.jpg&amp;ehk=n4GQJ%2f%2bPJY9xMIOFSFcVnW1FvpgXMp5RZf0VEsUhb0Q%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="" /><br />这一次初赛，发现自己还是有很多不足……可能没得去复赛了/kk</p><h2 id="原题预览"><a class="markdownIt-Anchor" href="#原题预览"></a> 原题预览</h2><p>CSP-S：</p><iframe src="/files/csp-s2021.pdf#toolbar=0" width="100%" height="500px"></iframe>CSP-J（仅扫描件）：<iframe src="/files/csp-j2021.pdf#toolbar=0" width="100%" height="500px"></iframe><h2 id="day"><a class="markdownIt-Anchor" href="#day"></a> Day ??</h2><p>J组63分，压着GD的线过了，好险……</p><h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1><h2 id="day-"><a class="markdownIt-Anchor" href="#day-"></a> Day -??</h2><p>给€€£支付了260CNY……</p><h2 id="day-2-2"><a class="markdownIt-Anchor" href="#day-2-2"></a> Day -2</h2><p>验核酸，正常whk…</p><h2 id="day-1-3"><a class="markdownIt-Anchor" href="#day-1-3"></a> Day -1</h2><p>晚上准备一下CSP…</p><p>好怕自己考场上一下子想不出怎么做……</p><h2 id="day-1-4"><a class="markdownIt-Anchor" href="#day-1-4"></a> Day 1</h2><p>蒟蒻只报了J组……</p><p>又一次来到了JZ。。。约了一个华附的大佬面基，结果没面到，在这里跟那位大佬说对不起QAQ</p><p>考场在旧科学馆503，同一个考场的有好几个之前一起集训的。</p><p>八点半正式开考。T1分糖果暴力求，如果在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(L,R)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span>里有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数，就得<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>，否则拿走<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>个。</p><p>T2在每次修改后排序，如果没有修改就不排，但不知道为什么第二个样例过不去……</p><p>T3判断是否合法后用<code>map</code>存储，但在你谷上测只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>65</mn></mrow><annotation encoding="application/x-tex">65</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">5</span></span></span></span>pts，预计是判断合法的问题。</p><p>T4只会暴力，但是暴力的时候倒数第二行总是多输出一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，用<code>if</code>过掉后会死循环（fxxk!）</p><h2 id="原题预览-2"><a class="markdownIt-Anchor" href="#原题预览-2"></a> 原题预览</h2><p>CSP2021 S2:</p><iframe src="/files/CSP2021-S2.pdf#toolbar=0" width="100%" height="500px"></iframe><p>CSP2021 J2:</p><iframe src="/files/CSP2021-J2.pdf#toolbar=0" width="100%" height="500px"></iframe><h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day ??</h2><p>成绩出了，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>100</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>155</mn></mrow><annotation encoding="application/x-tex">100+0+0+55+0=155</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord">5</span></span></span></span>，比上一年多了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span>分，还是做题的时候沉不下心来，不能够专注地去打完代码……今年，又结束了……</p><h1 id="赛后总结"><a class="markdownIt-Anchor" href="#赛后总结"></a> 赛后总结</h1><p>初二了，打了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>年的OI，却总是与目标擦肩而过……可能就要AFO了吧……</p><p>初三见。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;又到了一年一度的CSP……&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="游记" scheme="https://blog.pai233.top/categories/%E6%B8%B8%E8%AE%B0/"/>
-    
-      <category term="CSP" scheme="https://blog.pai233.top/categories/%E6%B8%B8%E8%AE%B0/CSP/"/>
-    
-    
-      <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
-    
-      <category term="游记" scheme="https://blog.pai233.top/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
-      <category term="CSP" scheme="https://blog.pai233.top/tags/CSP/"/>
     
   </entry>
   
