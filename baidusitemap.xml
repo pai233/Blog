@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.pai233.top/20220213/friend-links-exchange-rules/</loc>
+    <lastmod>2022-03-20</lastmod>
+  </url>  <url>
     <loc>https://blog.pai233.top/20220312/init-your-hexo-blog/</loc>
     <lastmod>2022-03-13</lastmod>
   </url>  <url>
@@ -9,9 +12,6 @@
   </url>  <url>
     <loc>https://blog.pai233.top/20220219/use-jsdelivr-by-cloudflare-worker/</loc>
     <lastmod>2022-02-19</lastmod>
-  </url>  <url>
-    <loc>https://blog.pai233.top/20220213/friend-links-exchange-rules/</loc>
-    <lastmod>2022-02-13</lastmod>
   </url>  <url>
     <loc>https://blog.pai233.top/20220213/usaco2019dec-silver-moobuzz/</loc>
     <lastmod>2022-02-13</lastmod>

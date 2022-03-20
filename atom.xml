@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>pai233の小窝</title>
+  <title>咕咕云梦泽</title>
   <icon>https://www.gravatar.com/avatar/bbd76a9144ca8b27e5bf398b53787e63</icon>
-  <subtitle>这道题，我必选D！</subtitle>
+  <subtitle>气蒸云梦泽，波撼岳阳城。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
@@ -39,9 +39,9 @@
     
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
-      <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
-    
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
+    
+      <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
@@ -114,11 +114,11 @@
   </entry>
   
   <entry>
-    <title>pai233の小窝友链交换规则</title>
+    <title>本站友链交换规则</title>
     <link href="https://blog.pai233.top/20220213/friend-links-exchange-rules/"/>
     <id>https://blog.pai233.top/20220213/friend-links-exchange-rules/</id>
     <published>2022-02-13T09:39:42.000Z</published>
-    <updated>2022-02-13T09:41:09.336Z</updated>
+    <updated>2022-03-20T07:50:46.783Z</updated>
     
     <content type="html"><![CDATA[<p>首先，感谢您愿意交换友链！但交换友链还有以下规则，还请您详细阅读！</p><h1 id="域名"><a class="markdownIt-Anchor" href="#域名"></a> 域名</h1><p>对于一个网站来说，域名相当于它的门户。所以，一个好的域名非常重要。因此，博主拒绝以下类型的域名交换友链：</p><ol><li>使用免费域名的</li><li>域名中有违反中华人民共和国法律的字眼的</li><li><code>.onion</code>等无法通过正常互联网访问的</li><li>其他此处未考虑到，但经审核后拒绝的情节</li></ol><h2 id="免费域名"><a class="markdownIt-Anchor" href="#免费域名"></a> 免费域名</h2><p>免费域名包括但<strong>不限于</strong>以下几种：</p><ol><li>由Freenom公司所运营的<code>.tk</code>、<code>.cf</code>、<code>.ga</code>、<code>.ml</code>等免费域名</li><li>由 Joshua Anderson 运营的 Afraid FreeDNS 提供的免费子域名</li><li>其它不包括在<a href="https://publicsuffix.org/list/public_suffix_list.dat">PUBLIC SUFFIX LIST</a>中的<strong>免费子域名</strong>服务</li></ol><div class="note warning flat"><p><strong>请注意</strong>，由于国内的部分Pages服务，如Gitee Pages（<code>gitee.io</code>）拒绝提交其域名至PUBLIC SUFFIX LIST，根据第三条的定义，此类申请将被拒绝。我们建议您将博客部署到其他平台，如Cloudflare Pages、Vercel等。</p></div><p>免费域名<strong>不包括</strong>以下定义：</p><ol><li>在Freenom付费购买的<code>.tk</code>等域名（需提供凭证）</li><li>Github Pages服务的免费子域名（<code>github.io</code>）</li><li>Cloudflare Pages服务的免费子域名（<code>pages.dev</code>）</li><li>其他已纳入PUBLIC SUFFIX LIST的免费子域名服务</li></ol><h1 id="内容"><a class="markdownIt-Anchor" href="#内容"></a> 内容</h1><p>对于一个博客，优质内容也是很重要的一个关键。请保证您的博客有 <strong>实质性</strong> 内容，博主拒绝站点内容多为采集、抄袭的站点交换友链。博客可以长草，但不能滥竽充数。</p><p>另外，如果您的网站出现冒用备案、传播违反中华人民共和国法律的内容时，博主将拒绝此类友链并举报至相关部门。</p><h1 id="网络"><a class="markdownIt-Anchor" href="#网络"></a> 网络</h1><p>由于本站主要向中国大陆地区用户，因此，您需要保证您的博客在中国大陆地区访问正常，未出现<code>css</code>样式丢失，大量图片<code>404</code>等严重影响用户体验的情况。<br />同时，为了保证访问的安全性，您的博客需要开启<code>https</code>。目前多数主流平台均以支持一键开启<code>https</code>，您可以搜索🔍您的平台如何开启<code>https</code>。</p><h1 id="faq"><a class="markdownIt-Anchor" href="#faq"></a> FAQ</h1><ol><li>我的免费域名已经用很久了，怎么办？<br />如果您正在使用免费域名，我们会审核您的文章内容情况，如果文章内容优质且均为原创，博主依旧会添加您的友链。</li></ol>]]></content>
     
@@ -219,11 +219,11 @@
       <category term="部署" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%83%A8%E7%BD%B2/"/>
     
     
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
-    
       <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
     
       <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Firebase" scheme="https://blog.pai233.top/tags/Firebase/"/>
     
