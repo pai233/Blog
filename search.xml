@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【搭建Hexo博客（二）】选择主题</title>
+    <url>/20220327/some-good-themes-for-hexo/</url>
+    <content><![CDATA[<p>在初始化完Hexo后，我们就应该挑选一个心仪的主题了。</p>
+<h1 id="博主推荐"><a class="markdownIt-Anchor" href="#博主推荐"></a> 👍博主推荐</h1>
+<div class="note info flat"><p>以下主题仅为博主个人意见，您也可选择其他主题。</p>
+</div>
+<h2 id="butterfly"><a class="markdownIt-Anchor" href="#butterfly"></a> Butterfly</h2>
+<p>Butterfly是一款卡片式UI设计的Hexo主题，作者来自中国香港。本站使用的即为Butterfly主题，支持浅色/深色主题调节，功能丰富，喜欢花里胡哨的可以用这款。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/cc33313189cc45d475faff9b2c4a9c5d5e4289e48ee333704ba7f105c9d04e95/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f6a65727279633132372f43444e406d322f696d672f7468656d652d627574746572666c792d726561646d652e706e67" alt="" /></p>
+<p>官方演示地址：<a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p>
+<h2 id="next"><a class="markdownIt-Anchor" href="#next"></a> NexT</h2>
+<p>博主曾经使用过NexT主题，NexT中还有四个主题，分别为Muse、Mist、Genimi、Pisces。博主认为Genimi和Mist比较好看，分明一点。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://user-images.githubusercontent.com/16272760/99784261-872d3200-2b56-11eb-807c-869042d1f6e8.png" alt="" /></p>
+<p>官方演示地址：</p>
+<ul>
+<li>Muse：<a href="https://theme-next.js.org/muse/">https://theme-next.js.org/muse/</a></li>
+<li>Mist：<a href="https://theme-next.js.org/mist/">https://theme-next.js.org/mist/</a></li>
+<li>Genimi：<a href="https://theme-next.js.org/">https://theme-next.js.org/</a></li>
+<li>Pisces：<a href="https://theme-next.js.org/pisces/">https://theme-next.js.org/pisces/</a></li>
+</ul>
+<h2 id="fluid"><a class="markdownIt-Anchor" href="#fluid"></a> Fluid</h2>
+<p>一款Material Design风格的主题，平面化的福音。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/48b250de82787ee8090df0e3a3088e10d09a12b58fe1df55045f2476aca20978/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f666c7569642d6465762f737461746963406d61737465722f6865786f2d7468656d652d666c7569642f73637265656e73686f74732f696e6465782e706e67" alt="" /></p>
+<p>官方演示地址：<a href="https://hexo.fluid-dev.com/">https://hexo.fluid-dev.com/</a></p>
+<h2 id="icarus"><a class="markdownIt-Anchor" href="#icarus"></a> Icarus</h2>
+<p>三栏卡片式设计，但是修改麻烦，博主本来想用这个主题的，但是调配置调吐了，希望作者可以优化一下吧……<br />
+<img src= "/img/loading.gif" data-lazy-src="https://camo.githubusercontent.com/fd83d8c9f8b8dbe85686812e2e186dceec728bbabad2d331aa44e0bfeee8628c/68747470733a2f2f70706f66666963652e6769746875622e696f2f6865786f2d7468656d652d6963617275732f67616c6c6572792f707265766965772e706e673f31" alt="" /></p>
+<p>官方演示地址：<a href="https://ppoffice.github.io/hexo-theme-icarus/">https://ppoffice.github.io/hexo-theme-icarus/</a></p>
+<h2 id="nexmoe"><a class="markdownIt-Anchor" href="#nexmoe"></a> Nexmoe</h2>
+<p>Uh…这个主题挺粉嫩的，可以魔改下配色🙄<br />
+<img src= "/img/loading.gif" data-lazy-src="https://user-images.githubusercontent.com/16796652/134768469-52d2426b-5c7c-4a46-8f0e-064361044d88.png" alt="" /></p>
+<p>官方演示地址：<a href="https://nexmoe.com/">https://nexmoe.com/</a></p>
+<h1 id="主题安装"><a class="markdownIt-Anchor" href="#主题安装"></a> 主题安装</h1>
+<p>主题安装从Hexo 5.0.0版本以上支持两种方式：<code>git</code>和<code>npm</code>安装。</p>
+<h2 id="npm安装"><a class="markdownIt-Anchor" href="#npm安装"></a> npm安装</h2>
+<p>优点：安装快、更新快</p>
+<p>缺点：魔改不方便</p>
+<p>安装方式：<code>npm i [Theme Name] --save</code></p>
+<h2 id="git安装"><a class="markdownIt-Anchor" href="#git安装"></a> git安装</h2>
+<p>优点：方便魔改，目录较为清晰</p>
+<p>缺点：GitHub在国内速度不稳定，<code>clone</code>易受网络波动</p>
+<p>安装方式：<code>git clone [Theme Repo] themes/[Theme Name]</code></p>
+<h1 id="应用主题"><a class="markdownIt-Anchor" href="#应用主题"></a> 应用主题</h1>
+<p>命令：<code>hexo config theme [Theme Name]</code></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>Hexo搭建</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>Node.js</tag>
+        <tag>Git</tag>
+        <tag>Hexo</tag>
+        <tag>主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【搭建Hexo博客（一）】初始化框架</title>
     <url>/20220312/init-your-hexo-blog/</url>
     <content><![CDATA[<p>前几天更换了博客主题，现在趁这个机会，来写个教程。</p>
@@ -78,9 +136,9 @@
         <category>CDN</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>jsDelivr</tag>
         <tag>反向代理</tag>
-        <tag>Blog</tag>
         <tag>Butterfly</tag>
       </tags>
   </entry>
