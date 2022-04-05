@@ -51,8 +51,8 @@
         <category>Hexo搭建</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Node.js</tag>
+        <tag>Blog</tag>
         <tag>Git</tag>
         <tag>Hexo</tag>
         <tag>主题</tag>
@@ -112,8 +112,8 @@
         <category>Hexo搭建</category>
       </categories>
       <tags>
-        <tag>Blog</tag>
         <tag>Node.js</tag>
+        <tag>Blog</tag>
         <tag>Git</tag>
         <tag>Hexo</tag>
       </tags>
@@ -416,9 +416,9 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <category>部署</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>白嫖</tag>
         <tag>部署</tag>
-        <tag>Blog</tag>
         <tag>Firebase</tag>
       </tags>
   </entry>
@@ -1094,8 +1094,8 @@ A:自行百度，以后会专门出一篇博客。</li>
         <category>洛谷API</category>
       </categories>
       <tags>
-        <tag>Node.js</tag>
         <tag>洛谷</tag>
+        <tag>Node.js</tag>
         <tag>API</tag>
       </tags>
   </entry>
