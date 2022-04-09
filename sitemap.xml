@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.pai233.top/message-board/index.html</loc>
+    
+    <lastmod>2022-04-09T03:27:43.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/20210912/hexo-pop-welcome-window/</loc>
+    
+    <lastmod>2022-04-09T03:27:24.938Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/20220327/some-good-themes-for-hexo/</loc>
     
     <lastmod>2022-03-27T13:09:13.058Z</lastmod>
@@ -93,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/message-board/index.html</loc>
-    
-    <lastmod>2022-02-03T08:56:49.280Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/about/index.html</loc>
     
     <lastmod>2022-02-03T08:49:21.381Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>https://blog.pai233.top/20220109/how-to-use-go-jumper/</loc>
     
     <lastmod>2022-01-31T09:08:56.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/20210912/hexo-pop-welcome-window/</loc>
-    
-    <lastmod>2022-01-31T09:08:51.991Z</lastmod>
     
   </url>
   

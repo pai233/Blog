@@ -136,9 +136,9 @@
         <category>CDN</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>jsDelivr</tag>
         <tag>反向代理</tag>
-        <tag>Blog</tag>
         <tag>Butterfly</tag>
       </tags>
   </entry>
@@ -958,9 +958,8 @@ CSP-J（仅扫描件）：
     <url>/20210912/hexo-pop-welcome-window/</url>
     <content><![CDATA[<p>写这篇博客的缘故是因为看到cnblogs上的<code>live2d</code>模型可以自动欢迎，但是自己又不会魔改<code>Hexo</code>的<code>live2d</code>，就想到了以弹窗的方式来欢迎。</p>
 <a id="more"></a>
-<blockquote>
-<p><em>Tips：本文基于Hexo+NexT主题，且开启Pjax局部刷新技术，其他主题的修改可能会有所不同，请自行了解文件对应位置</em></p>
-</blockquote>
+<div class="note info flat"><p>Tips：本文基于Hexo+NexT主题，且开启Pjax局部刷新技术，其他主题的修改可能会有所不同，请自行了解文件对应位置.</p>
+</div>
 <p>最终的实现效果如下：<br />
 <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/wNWvtQrYG5MaE6V.png" alt="image.png" /></p>
 <h1 id="选择一个好看的弹窗"><a class="markdownIt-Anchor" href="#选择一个好看的弹窗"></a> 选择一个好看的弹窗</h1>
