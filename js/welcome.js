@@ -3,7 +3,7 @@ function welcome(){
     if(document.referrer!==''){
         let referrer=document.referrer.split("/")[2];
         welcome_text="欢迎你，来自"+referrer.toUpperCase()+"的用户！";
-        if(referrer.toUpperCase()=="BLOG.PAI233.TOP")return;
+        if(referrer.toUpperCase()==document.domain.toUpperCase())return;
     }
     swal({
         title: " 欢迎！",

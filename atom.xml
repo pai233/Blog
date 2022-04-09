@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-03-27T13:09:13.058Z</updated>
+  <updated>2022-04-09T12:26:54.193Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Butterfly主题】弹出欢迎弹窗</title>
+    <link href="https://blog.pai233.top/20220409/butterfly-popup-welcome-window/"/>
+    <id>https://blog.pai233.top/20220409/butterfly-popup-welcome-window/</id>
+    <published>2022-04-09T09:26:19.000Z</published>
+    <updated>2022-04-09T12:26:54.193Z</updated>
+    
+    <content type="html"><![CDATA[<p>写这篇博客的缘故是因为看到cnblogs上的<code>live2d</code>模型可以自动欢迎，但是自己又不会魔改<code>Hexo</code>的<code>live2d</code>，就想到了以弹窗的方式来欢迎。</p><a id="more"></a><div class="note info flat"><p>本文基于Hexo+Butterfly主题，其他主题的修改可能会有所不同，请自行了解文件对应位置。</p></div><div class="note info flat"><p>Butterfly主题已默认开启Pjax。</p></div><div class="note info flat"><p>此版基于博主之前所发布的关于NexT主题的修改，同时修复了部分问题。</p></div><p>最终的实现效果如下：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/wNWvtQrYG5MaE6V.png" alt="image.png" /></p><h1 id="选择一个好看的弹窗"><a class="markdownIt-Anchor" href="#选择一个好看的弹窗"></a> 选择一个好看的弹窗</h1><p>首先，你既然要弹窗，就要好看，而不是<code>JavaScript</code>里的<code>alert()</code>函数，在洛谷上做题的时候，看到“提交成功”的弹窗还比较好看，就查找了一下来源（<a href="https://sweetalert.js.org/">详情</a>），然后选定了这个，感觉还不错。</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/RVUlJSnHkbPrcL2.png" alt="image.png" /></p><h1 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h1><div class="note info flat"><p>作者使用了Git进行主题安装。如果您使用的是npm安装，请将以下目录中<code>\themes\butterfly\source\</code>替换为<code>\source\</code>。</p></div><h2 id="获取javascript和css文件"><a class="markdownIt-Anchor" href="#获取javascript和css文件"></a> 获取JavaScript和CSS文件</h2><p>我们需要将<code>sweetalert.js</code>和<code>sweetalert.css</code>放到自己博客下，防止CDN炸裂导致的错误。</p><h3 id="新建javascript文件"><a class="markdownIt-Anchor" href="#新建javascript文件"></a> 新建JavaScript文件</h3><p>在博客根目录往下找到<code>\themes\butterfly\source\js</code>文件夹，新建<code>sweetalert.js</code>，文件内容<a href="/js/sweetalert.js">请看这里</a>，觉得复制麻烦的可以直接按<code>Crtl+S</code>进行保存。</p><h3 id="新建css文件"><a class="markdownIt-Anchor" href="#新建css文件"></a> 新建CSS文件</h3><p>在博客根目录往下找到<code>\themes\butterfly\source\css</code>文件夹，新建<code>sweetalert.css</code>，文件内容<a href="/css/sweetalert.css">请看这里</a>。</p><p>保存完后的结构如下：<br /><img src= "/img/loading.gif" data-lazy-src="https://s1.328888.xyz/2022/04/09/XOgx4.png" alt="" /></p><h2 id="引入到主题中"><a class="markdownIt-Anchor" href="#引入到主题中"></a> 引入到主题中</h2><p>打开主题配置文件，在<code>inject</code>配置项的<code>head</code>中进行注入：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel=&quot;stylesheet&quot; href=&quot;/xxx.css&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">type=&quot;text/javascript&quot;</span> <span class="string">src</span> <span class="string">=&quot;/js/welcome.js&quot;</span> <span class="string">&gt;&lt;/script&gt;</span> </span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;/js/sweetalert.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/sweetalert.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure><p>这样就完成了引入。</p><h2 id="自动弹窗"><a class="markdownIt-Anchor" href="#自动弹窗"></a> 自动弹窗</h2><p>在博客根目录往下找到<code>\themes\butterfly\source\js</code>文件夹，新建<code>welcome.js</code>：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">welcome</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> welcome_text = <span class="string">&#x27;欢迎光顾本蒟蒻的小窝~&#x27;</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.referrer!==<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> referrer=<span class="built_in">document</span>.referrer.split(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>];</span><br><span class="line">        welcome_text=<span class="string">&quot;欢迎你，来自&quot;</span>+referrer.toUpperCase()+<span class="string">&quot;的用户！&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span>(referrer.toUpperCase()==<span class="built_in">document</span>.domain.toUpperCase())<span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    swal(&#123;</span><br><span class="line">        title: <span class="string">&quot; 欢迎！&quot;</span>,</span><br><span class="line">        text: welcome_text+<span class="string">&#x27;\n打开页面下方音乐以获得更佳体验！&#x27;</span>,</span><br><span class="line">        imageUrl: <span class="string">&quot;/img/avatar.jpg&quot;</span>,</span><br><span class="line">        timer: <span class="number">3000</span>,</span><br><span class="line">        showConfirmButton: <span class="literal">false</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    welcome()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>这样，就大功告成了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写这篇博客的缘故是因为看到cnblogs上的&lt;code&gt;live2d&lt;/code&gt;模型可以自动欢迎，但是自己又不会魔改&lt;code&gt;Hexo&lt;/code&gt;的&lt;code&gt;live2d&lt;/code&gt;，就想到了以弹窗的方式来欢迎。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客美化" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="功能" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E5%8A%9F%E8%83%BD/"/>
+    
+    
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
+      <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
+    
+      <category term="Sweetalert" scheme="https://blog.pai233.top/tags/Sweetalert/"/>
+    
+  </entry>
   
   <entry>
     <title>【搭建Hexo博客（二）】选择主题</title>
@@ -44,11 +75,11 @@
     
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
+      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
+    
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
       <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
-    
-      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
       <category term="主题" scheme="https://blog.pai233.top/tags/%E4%B8%BB%E9%A2%98/"/>
     
@@ -77,11 +108,11 @@
     
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
+      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
+    
       <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
       <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
-    
-      <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
   </entry>
   
@@ -257,11 +288,11 @@
       <category term="部署" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%83%A8%E7%BD%B2/"/>
     
     
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
       <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
     
       <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Firebase" scheme="https://blog.pai233.top/tags/Firebase/"/>
     
@@ -592,37 +623,6 @@
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="USACO" scheme="https://blog.pai233.top/tags/USACO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【HDU 1702】ACboy needs your help again!</title>
-    <link href="https://blog.pai233.top/20211010/hdu-1702/"/>
-    <id>https://blog.pai233.top/20211010/hdu-1702/</id>
-    <published>2021-10-10T07:55:37.000Z</published>
-    <updated>2022-01-31T09:08:44.669Z</updated>
-    
-    <content type="html"><![CDATA[<p>一道简单数据结构题。</p><a id="more"></a><h1 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h1><p>模拟队列和栈，其中队列是<code>FIFO</code>，栈是<code>FILO</code>。</p><p>输入时有多个测试用例。</p><h1 id="做法"><a class="markdownIt-Anchor" href="#做法"></a> 做法</h1><p>显而易见，当需要模拟栈的时候就用STL的<code>stack</code>处理，模拟队列的时候使用<code>queue</code>。</p><p>但要注意的是测试用例可能会出现队列或栈已经空了，但仍要求出队/栈的情况，所以出队/栈时要先判空。</p><h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">int</span> task;</span><br><span class="line">    cin&gt;&gt;task;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=task;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> n;</span><br><span class="line">        string type;</span><br><span class="line">        cin&gt;&gt;n&gt;&gt;type;</span><br><span class="line">        <span class="keyword">if</span>(type==<span class="string">&quot;FIFO&quot;</span>)&#123;<span class="comment">//队列</span></span><br><span class="line">            queue&lt;<span class="keyword">int</span>&gt; Q;</span><br><span class="line">            <span class="keyword">int</span> k;</span><br><span class="line">            string func;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">                cin&gt;&gt;func;</span><br><span class="line">                <span class="keyword">if</span>(func==<span class="string">&quot;IN&quot;</span>)&#123;</span><br><span class="line">                    cin&gt;&gt;k;</span><br><span class="line">                    Q.<span class="built_in">push</span>(k);</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(func==<span class="string">&quot;OUT&quot;</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(Q.<span class="built_in">empty</span>())cout&lt;&lt;<span class="string">&quot;None&quot;</span>&lt;&lt;endl;<span class="comment">//判空</span></span><br><span class="line">                    <span class="keyword">else</span>&#123;</span><br><span class="line">                        cout&lt;&lt;Q.<span class="built_in">front</span>()&lt;&lt;endl;</span><br><span class="line">                        Q.<span class="built_in">pop</span>();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(type==<span class="string">&quot;FILO&quot;</span>)&#123;<span class="comment">//栈</span></span><br><span class="line">            stack&lt;<span class="keyword">int</span>&gt; S;</span><br><span class="line">            <span class="keyword">int</span> k;</span><br><span class="line">            string func;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">                cin&gt;&gt;func;</span><br><span class="line">                <span class="keyword">if</span>(func==<span class="string">&quot;IN&quot;</span>)&#123;</span><br><span class="line">                    cin&gt;&gt;k;</span><br><span class="line">                    S.<span class="built_in">push</span>(k);</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(func==<span class="string">&quot;OUT&quot;</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(S.<span class="built_in">empty</span>())cout&lt;&lt;<span class="string">&quot;None&quot;</span>&lt;&lt;endl;<span class="comment">//判空</span></span><br><span class="line">                    <span class="keyword">else</span>&#123;</span><br><span class="line">                        cout&lt;&lt;S.<span class="built_in">top</span>()&lt;&lt;endl;</span><br><span class="line">                        S.<span class="built_in">pop</span>();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一道简单数据结构题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="算法学习" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="数据结构" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
-    
-      <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
-    
-      <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-      <category term="HDU" scheme="https://blog.pai233.top/tags/HDU/"/>
     
   </entry>
   

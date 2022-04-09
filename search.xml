@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【Butterfly主题】弹出欢迎弹窗</title>
+    <url>/20220409/butterfly-popup-welcome-window/</url>
+    <content><![CDATA[<p>写这篇博客的缘故是因为看到cnblogs上的<code>live2d</code>模型可以自动欢迎，但是自己又不会魔改<code>Hexo</code>的<code>live2d</code>，就想到了以弹窗的方式来欢迎。</p>
+<a id="more"></a>
+<div class="note info flat"><p>本文基于Hexo+Butterfly主题，其他主题的修改可能会有所不同，请自行了解文件对应位置。</p>
+</div>
+<div class="note info flat"><p>Butterfly主题已默认开启Pjax。</p>
+</div>
+<div class="note info flat"><p>此版基于博主之前所发布的关于NexT主题的修改，同时修复了部分问题。</p>
+</div>
+<p>最终的实现效果如下：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/wNWvtQrYG5MaE6V.png" alt="image.png" /></p>
+<h1 id="选择一个好看的弹窗"><a class="markdownIt-Anchor" href="#选择一个好看的弹窗"></a> 选择一个好看的弹窗</h1>
+<p>首先，你既然要弹窗，就要好看，而不是<code>JavaScript</code>里的<code>alert()</code>函数，在洛谷上做题的时候，看到“提交成功”的弹窗还比较好看，就查找了一下来源（<a href="https://sweetalert.js.org/">详情</a>），然后选定了这个，感觉还不错。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/RVUlJSnHkbPrcL2.png" alt="image.png" /></p>
+<h1 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h1>
+<div class="note info flat"><p>作者使用了Git进行主题安装。如果您使用的是npm安装，请将以下目录中<code>\themes\butterfly\source\</code>替换为<code>\source\</code>。</p>
+</div>
+<h2 id="获取javascript和css文件"><a class="markdownIt-Anchor" href="#获取javascript和css文件"></a> 获取JavaScript和CSS文件</h2>
+<p>我们需要将<code>sweetalert.js</code>和<code>sweetalert.css</code>放到自己博客下，防止CDN炸裂导致的错误。</p>
+<h3 id="新建javascript文件"><a class="markdownIt-Anchor" href="#新建javascript文件"></a> 新建JavaScript文件</h3>
+<p>在博客根目录往下找到<code>\themes\butterfly\source\js</code>文件夹，新建<code>sweetalert.js</code>，文件内容<a href="/js/sweetalert.js">请看这里</a>，觉得复制麻烦的可以直接按<code>Crtl+S</code>进行保存。</p>
+<h3 id="新建css文件"><a class="markdownIt-Anchor" href="#新建css文件"></a> 新建CSS文件</h3>
+<p>在博客根目录往下找到<code>\themes\butterfly\source\css</code>文件夹，新建<code>sweetalert.css</code>，文件内容<a href="/css/sweetalert.css">请看这里</a>。</p>
+<p>保存完后的结构如下：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s1.328888.xyz/2022/04/09/XOgx4.png" alt="" /></p>
+<h2 id="引入到主题中"><a class="markdownIt-Anchor" href="#引入到主题中"></a> 引入到主题中</h2>
+<p>打开主题配置文件，在<code>inject</code>配置项的<code>head</code>中进行注入：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel=&quot;stylesheet&quot; href=&quot;/xxx.css&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">type=&quot;text/javascript&quot;</span> <span class="string">src</span> <span class="string">=&quot;/js/welcome.js&quot;</span> <span class="string">&gt;&lt;/script&gt;</span> </span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;/js/sweetalert.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/sweetalert.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样就完成了引入。</p>
+<h2 id="自动弹窗"><a class="markdownIt-Anchor" href="#自动弹窗"></a> 自动弹窗</h2>
+<p>在博客根目录往下找到<code>\themes\butterfly\source\js</code>文件夹，新建<code>welcome.js</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">welcome</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> welcome_text = <span class="string">&#x27;欢迎光顾本蒟蒻的小窝~&#x27;</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.referrer!==<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> referrer=<span class="built_in">document</span>.referrer.split(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>];</span><br><span class="line">        welcome_text=<span class="string">&quot;欢迎你，来自&quot;</span>+referrer.toUpperCase()+<span class="string">&quot;的用户！&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span>(referrer.toUpperCase()==<span class="built_in">document</span>.domain.toUpperCase())<span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    swal(&#123;</span><br><span class="line">        title: <span class="string">&quot; 欢迎！&quot;</span>,</span><br><span class="line">        text: welcome_text+<span class="string">&#x27;\n打开页面下方音乐以获得更佳体验！&#x27;</span>,</span><br><span class="line">        imageUrl: <span class="string">&quot;/img/avatar.jpg&quot;</span>,</span><br><span class="line">        timer: <span class="number">3000</span>,</span><br><span class="line">        showConfirmButton: <span class="literal">false</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    welcome()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这样，就大功告成了。</p>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>功能</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>美化</tag>
+        <tag>Hexo</tag>
+        <tag>Sweetalert</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【搭建Hexo博客（二）】选择主题</title>
     <url>/20220327/some-good-themes-for-hexo/</url>
     <content><![CDATA[<p>在初始化完Hexo后，我们就应该挑选一个心仪的主题了。</p>
@@ -52,9 +99,9 @@
       </categories>
       <tags>
         <tag>Blog</tag>
+        <tag>Hexo</tag>
         <tag>Node.js</tag>
         <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>主题</tag>
       </tags>
   </entry>
@@ -113,9 +160,9 @@
       </categories>
       <tags>
         <tag>Blog</tag>
+        <tag>Hexo</tag>
         <tag>Node.js</tag>
         <tag>Git</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -416,9 +463,9 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <category>部署</category>
       </categories>
       <tags>
+        <tag>Blog</tag>
         <tag>白嫖</tag>
         <tag>部署</tag>
-        <tag>Blog</tag>
         <tag>Firebase</tag>
       </tags>
   </entry>
