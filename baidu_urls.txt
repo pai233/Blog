@@ -1,3 +1,5 @@
+https://blog.pai233.top/20220503/butterfly-go-jumper/
+https://blog.pai233.top/20220503/how-to-get-a-microsoft-365-e5-account/
 https://blog.pai233.top/20220409/butterfly-popup-welcome-window/
 https://blog.pai233.top/20220327/some-good-themes-for-hexo/
 https://blog.pai233.top/20220312/init-your-hexo-blog/
@@ -6,5 +8,3 @@ https://blog.pai233.top/20220219/use-jsdelivr-by-cloudflare-worker/
 https://blog.pai233.top/20220213/friend-links-exchange-rules/
 https://blog.pai233.top/20220213/usaco2019dec-silver-moobuzz/
 https://blog.pai233.top/20220209/5-free-static-page-hosting/
-https://blog.pai233.top/20220208/how-to-deploy-your-hexo-blog-on-firebase/
-https://blog.pai233.top/20220207/change-the-theme-to-butterfly/
