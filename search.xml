@@ -234,74 +234,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSP2021 游记</title>
-    <url>/20210919/csp2021-travelogue/</url>
-    <content><![CDATA[<p>又到了一年一度的CSP……</p>
-<span id="more"></span>
-<h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1>
-<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h2>
-<p>早上在学校颓whk，像我们学校怎么可能会搞集训呢……/kk<br />
-回家看了会算法书，然后去验核酸，准备考试…… <s>（口区）</s></p>
-<h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2>
-<p>早上继续颓whk……感谢各位老师送的作业（</p>
-<p>今天晚上开始放中秋假，在洛谷有题上康题目……发现自己还是不太熟悉那些阅读程序题和填代码题，瞬间慌了……<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/19/kPAHeTUV679pIYF.png" alt="image.png" /></p>
-<h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h2>
-<p>上一年报了rm只拿了个复赛2=，还是不敢上tg……早上收拾下东西，最后再看一下往年题，搜一下易考的知识点，蹲tg的大佬透露今早题目，据说手算base64？</p>
-<iframe src="/files/csp-s2021-base64.pdf#toolbar=0" width="100%" height="500px"></iframe>
-<p>下午正式开考，今年的题目除了手算base64真不会外，多数都眼瞎了……<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/gpaQrBX1u4wZ3Wc.png" alt="image.png" /><br />
-这一题没考虑好，忘记满二叉树也是完全二叉树的一种……<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/YL2dqTmnhClA6Jz.png" alt="image.png" /><br />
-这一题也脑残了，忘记看是最少的比较次数，从第二个开始遍历，那么最多只要比较 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 次就够了，代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> arr[<span class="number">1008616</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)cin&gt;&gt;arr[i];</span><br><span class="line">    <span class="type">int</span> ans = arr[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;<span class="comment">//遍历了n-1次</span></span><br><span class="line">        <span class="keyword">if</span>(ans&lt;arr[i])ans=arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= "/img/loading.gif" data-lazy-src="https://tse1-mm.cn.bing.net/th/id/R-C.6ee0101d16fda7a16e87aad3d0e65153?rik=uU92SeFBKr%2bBAA&amp;riu=http%3a%2f%2fwww.biaoqingb.com%2fuploads%2fimg1%2f20201003%2f86c57cddcf5b97cbf345ec50b271832a.jpg&amp;ehk=n4GQJ%2f%2bPJY9xMIOFSFcVnW1FvpgXMp5RZf0VEsUhb0Q%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="" /><br />
-这一次初赛，发现自己还是有很多不足……可能没得去复赛了/kk</p>
-<h2 id="原题预览"><a class="markdownIt-Anchor" href="#原题预览"></a> 原题预览</h2>
-<p>CSP-S：</p>
-<iframe src="/files/csp-s2021.pdf#toolbar=0" width="100%" height="500px"></iframe>
-CSP-J（仅扫描件）：
-<iframe src="/files/csp-j2021.pdf#toolbar=0" width="100%" height="500px"></iframe>
-<h2 id="day"><a class="markdownIt-Anchor" href="#day"></a> Day ??</h2>
-<p>J组63分，压着GD的线过了，好险……</p>
-<h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1>
-<h2 id="day-"><a class="markdownIt-Anchor" href="#day-"></a> Day -??</h2>
-<p>给€€£支付了260CNY……</p>
-<h2 id="day-2-2"><a class="markdownIt-Anchor" href="#day-2-2"></a> Day -2</h2>
-<p>验核酸，正常whk…</p>
-<h2 id="day-1-3"><a class="markdownIt-Anchor" href="#day-1-3"></a> Day -1</h2>
-<p>晚上准备一下CSP…</p>
-<p>好怕自己考场上一下子想不出怎么做……</p>
-<h2 id="day-1-4"><a class="markdownIt-Anchor" href="#day-1-4"></a> Day 1</h2>
-<p>蒟蒻只报了J组……</p>
-<p>又一次来到了JZ。。。约了一个华附的大佬面基，结果没面到，在这里跟那位大佬说对不起QAQ</p>
-<p>考场在旧科学馆503，同一个考场的有好几个之前一起集训的。</p>
-<p>八点半正式开考。T1分糖果暴力求，如果在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(L,R)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span>里有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数，就得<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>，否则拿走<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>个。</p>
-<p>T2在每次修改后排序，如果没有修改就不排，但不知道为什么第二个样例过不去……</p>
-<p>T3判断是否合法后用<code>map</code>存储，但在你谷上测只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>65</mn></mrow><annotation encoding="application/x-tex">65</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">5</span></span></span></span>pts，预计是判断合法的问题。</p>
-<p>T4只会暴力，但是暴力的时候倒数第二行总是多输出一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，用<code>if</code>过掉后会死循环（fxxk!）</p>
-<h2 id="原题预览-2"><a class="markdownIt-Anchor" href="#原题预览-2"></a> 原题预览</h2>
-<p>CSP2021 S2:</p>
-<iframe src="/files/CSP2021-S2.pdf#toolbar=0" width="100%" height="500px"></iframe>
-<p>CSP2021 J2:</p>
-<iframe src="/files/CSP2021-J2.pdf#toolbar=0" width="100%" height="500px"></iframe>
-<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day ??</h2>
-<p>成绩出了，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>100</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>155</mn></mrow><annotation encoding="application/x-tex">100+0+0+55+0=155</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord">5</span></span></span></span>，比上一年多了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span>分，还是做题的时候沉不下心来，不能够专注地去打完代码……今年，又结束了……</p>
-<h1 id="赛后总结"><a class="markdownIt-Anchor" href="#赛后总结"></a> 赛后总结</h1>
-<p>初二了，打了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>年的OI，却总是与目标擦肩而过……可能就要AFO了吧……</p>
-<p>初三见。</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-        <category>CSP</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>游记</tag>
-        <tag>CSP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客正式切换主题到Butterfly！</title>
     <url>/20220207/change-the-theme-to-butterfly/</url>
     <content><![CDATA[<p>博主的博客从今天起正式切换到Butterfly啦！</p>
@@ -404,6 +336,74 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
+    <title>CSP2021 游记</title>
+    <url>/20210919/csp2021-travelogue/</url>
+    <content><![CDATA[<p>又到了一年一度的CSP……</p>
+<span id="more"></span>
+<h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1>
+<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h2>
+<p>早上在学校颓whk，像我们学校怎么可能会搞集训呢……/kk<br />
+回家看了会算法书，然后去验核酸，准备考试…… <s>（口区）</s></p>
+<h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2>
+<p>早上继续颓whk……感谢各位老师送的作业（</p>
+<p>今天晚上开始放中秋假，在洛谷有题上康题目……发现自己还是不太熟悉那些阅读程序题和填代码题，瞬间慌了……<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/19/kPAHeTUV679pIYF.png" alt="image.png" /></p>
+<h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h2>
+<p>上一年报了rm只拿了个复赛2=，还是不敢上tg……早上收拾下东西，最后再看一下往年题，搜一下易考的知识点，蹲tg的大佬透露今早题目，据说手算base64？</p>
+<iframe src="/files/csp-s2021-base64.pdf#toolbar=0" width="100%" height="500px"></iframe>
+<p>下午正式开考，今年的题目除了手算base64真不会外，多数都眼瞎了……<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/gpaQrBX1u4wZ3Wc.png" alt="image.png" /><br />
+这一题没考虑好，忘记满二叉树也是完全二叉树的一种……<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/25/YL2dqTmnhClA6Jz.png" alt="image.png" /><br />
+这一题也脑残了，忘记看是最少的比较次数，从第二个开始遍历，那么最多只要比较 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 次就够了，代码如下：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> arr[<span class="number">1008616</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)cin&gt;&gt;arr[i];</span><br><span class="line">    <span class="type">int</span> ans = arr[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;<span class="comment">//遍历了n-1次</span></span><br><span class="line">        <span class="keyword">if</span>(ans&lt;arr[i])ans=arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-lazy-src="https://tse1-mm.cn.bing.net/th/id/R-C.6ee0101d16fda7a16e87aad3d0e65153?rik=uU92SeFBKr%2bBAA&amp;riu=http%3a%2f%2fwww.biaoqingb.com%2fuploads%2fimg1%2f20201003%2f86c57cddcf5b97cbf345ec50b271832a.jpg&amp;ehk=n4GQJ%2f%2bPJY9xMIOFSFcVnW1FvpgXMp5RZf0VEsUhb0Q%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="" /><br />
+这一次初赛，发现自己还是有很多不足……可能没得去复赛了/kk</p>
+<h2 id="原题预览"><a class="markdownIt-Anchor" href="#原题预览"></a> 原题预览</h2>
+<p>CSP-S：</p>
+<iframe src="/files/csp-s2021.pdf#toolbar=0" width="100%" height="500px"></iframe>
+CSP-J（仅扫描件）：
+<iframe src="/files/csp-j2021.pdf#toolbar=0" width="100%" height="500px"></iframe>
+<h2 id="day"><a class="markdownIt-Anchor" href="#day"></a> Day ??</h2>
+<p>J组63分，压着GD的线过了，好险……</p>
+<h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1>
+<h2 id="day-"><a class="markdownIt-Anchor" href="#day-"></a> Day -??</h2>
+<p>给€€£支付了260CNY……</p>
+<h2 id="day-2-2"><a class="markdownIt-Anchor" href="#day-2-2"></a> Day -2</h2>
+<p>验核酸，正常whk…</p>
+<h2 id="day-1-3"><a class="markdownIt-Anchor" href="#day-1-3"></a> Day -1</h2>
+<p>晚上准备一下CSP…</p>
+<p>好怕自己考场上一下子想不出怎么做……</p>
+<h2 id="day-1-4"><a class="markdownIt-Anchor" href="#day-1-4"></a> Day 1</h2>
+<p>蒟蒻只报了J组……</p>
+<p>又一次来到了JZ。。。约了一个华附的大佬面基，结果没面到，在这里跟那位大佬说对不起QAQ</p>
+<p>考场在旧科学馆503，同一个考场的有好几个之前一起集训的。</p>
+<p>八点半正式开考。T1分糖果暴力求，如果在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(L,R)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span>里有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数，就得<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的倍数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>，否则拿走<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>个。</p>
+<p>T2在每次修改后排序，如果没有修改就不排，但不知道为什么第二个样例过不去……</p>
+<p>T3判断是否合法后用<code>map</code>存储，但在你谷上测只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>65</mn></mrow><annotation encoding="application/x-tex">65</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">5</span></span></span></span>pts，预计是判断合法的问题。</p>
+<p>T4只会暴力，但是暴力的时候倒数第二行总是多输出一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，用<code>if</code>过掉后会死循环（fxxk!）</p>
+<h2 id="原题预览-2"><a class="markdownIt-Anchor" href="#原题预览-2"></a> 原题预览</h2>
+<p>CSP2021 S2:</p>
+<iframe src="/files/CSP2021-S2.pdf#toolbar=0" width="100%" height="500px"></iframe>
+<p>CSP2021 J2:</p>
+<iframe src="/files/CSP2021-J2.pdf#toolbar=0" width="100%" height="500px"></iframe>
+<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day ??</h2>
+<p>成绩出了，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>100</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>155</mn></mrow><annotation encoding="application/x-tex">100+0+0+55+0=155</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord">5</span></span></span></span>，比上一年多了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span>分，还是做题的时候沉不下心来，不能够专注地去打完代码……今年，又结束了……</p>
+<h1 id="赛后总结"><a class="markdownIt-Anchor" href="#赛后总结"></a> 赛后总结</h1>
+<p>初二了，打了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>年的OI，却总是与目标擦肩而过……可能就要AFO了吧……</p>
+<p>初三见。</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+        <category>CSP</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>游记</tag>
+        <tag>CSP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>本站友链交换规则</title>
     <url>/20220213/friend-links-exchange-rules/</url>
     <content><![CDATA[<p>首先，感谢您愿意交换友链！但交换友链还有以下规则，还请您详细阅读！</p>
@@ -449,33 +449,6 @@ CSP-J（仅扫描件）：
       </categories>
       <tags>
         <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何处理Git的大小写问题</title>
-    <url>/20210824/git-ignorecase/</url>
-    <content><![CDATA[<p>今天给博客搞SEO的时候，将多数的链接全部改成小写的了，然后就炸了……</p>
-<span id="more"></span>
-<h1 id="问题原因"><a class="markdownIt-Anchor" href="#问题原因"></a> 问题原因</h1>
-<p>这个问题发生是因为Windows系统对大小写不敏感，所以Git也默认大小写不敏感。但像Github这类代码托管平台用的是Linux，Linux对大小写敏感。</p>
-<h1 id="解决过程"><a class="markdownIt-Anchor" href="#解决过程"></a> 解决过程</h1>
-<p>首先，在Git本地仓库下执行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config core.ignorecase <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>这行命令表示关闭忽略大小写。</p>
-<p>然后，修改我们的本地文件/文件夹名：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/2Fd5KZvPuOjyhGt.png" alt="image.png" /></p>
-<p>修改完后push到Github上，然后查看效果：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main <span class="comment">#我用的是hexo，所以跑了hexo d，普通Git仓库push就好</span></span><br></pre></td></tr></table></figure>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/d3IhPi8JU96Lc7Z.png" alt="效果" /></p>
-<p>好家伙，之前大写的没被删掉，不过小写的成功被push上去了。</p>
-<p>目前只能一个个手动删除远程的文件/文件夹，因为本地的已经是小写了……不知道有什么解决方法😅……</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -543,6 +516,33 @@ CSP-J（仅扫描件）：
         <tag>VS Code</tag>
         <tag>Node.js</tag>
         <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何处理Git的大小写问题</title>
+    <url>/20210824/git-ignorecase/</url>
+    <content><![CDATA[<p>今天给博客搞SEO的时候，将多数的链接全部改成小写的了，然后就炸了……</p>
+<span id="more"></span>
+<h1 id="问题原因"><a class="markdownIt-Anchor" href="#问题原因"></a> 问题原因</h1>
+<p>这个问题发生是因为Windows系统对大小写不敏感，所以Git也默认大小写不敏感。但像Github这类代码托管平台用的是Linux，Linux对大小写敏感。</p>
+<h1 id="解决过程"><a class="markdownIt-Anchor" href="#解决过程"></a> 解决过程</h1>
+<p>首先，在Git本地仓库下执行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config core.ignorecase <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>这行命令表示关闭忽略大小写。</p>
+<p>然后，修改我们的本地文件/文件夹名：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/2Fd5KZvPuOjyhGt.png" alt="image.png" /></p>
+<p>修改完后push到Github上，然后查看效果：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main <span class="comment">#我用的是hexo，所以跑了hexo d，普通Git仓库push就好</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/08/24/d3IhPi8JU96Lc7Z.png" alt="效果" /></p>
+<p>好家伙，之前大写的没被删掉，不过小写的成功被push上去了。</p>
+<p>目前只能一个个手动删除远程的文件/文件夹，因为本地的已经是小写了……不知道有什么解决方法😅……</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -692,6 +692,47 @@ A:自行百度，以后会专门出一篇博客。</li>
       </tags>
   </entry>
   <entry>
+    <title>如何修复具有双BIOS的某G姓主板的BIOS</title>
+    <url>/20220123/how-to-fix-the-bios-of-gigabyte-motherboards-which-has-dual-bios/</url>
+    <content><![CDATA[<p>前几天不知道主板抽什么风，BIOS又炸了。</p>
+<span id="more"></span>
+<h1 id="起因"><a class="markdownIt-Anchor" href="#起因"></a> 起因</h1>
+<p>博主现在用着的是一块某G姓品牌的GA-Z77P-D3（如下图，图源网络）</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://tse2-mm.cn.bing.net/th/id/OIP-C.SFe2Z2eqAyM_RSvWil62igAAAA?pid=ImgDet&amp;rs=1" alt="" /></p>
+<p>这块主板搭载了双BIOS（位于主板右下角SATA接口上），在主BIOS故障时，可以通过Backup BIOS进行恢复。但博主之前不知道，第一次卡BIOS时，还拿出去给奸商大砍30大洋，血一样的教训……</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://tse1-mm.cn.bing.net/th/id/R-C.d8bdfffe0f30196ce2b3573fde1055dd?rik=KZtUo6qNbIw1pw&amp;riu=http%3a%2f%2fwww.youqu5.net%2fd%2ffile%2f2019-08-09%2fccd1183a06ac60d2241dade12521383e.jpg&amp;ehk=OBd%2buw%2fNdxu0H0hmBpg9cYJWJ%2f1hZo9RKoHFFMKuvhM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" alt="" /></p>
+<p>现在第二次卡BIOS，终于知道了有双BIOS，这次就直接恢复试试。</p>
+<h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1>
+<p>博主没有别人短接BIOS针脚的实力，也没有断电几分钟自动恢复的运气，只能踏踏实实的恢复BIOS。</p>
+<ol>
+<li>
+<p>将计算机关机</p>
+</li>
+<li>
+<p>长按开机键，开机后不要断开</p>
+</li>
+<li>
+<p>等待约10秒后计算机自动断电重启</p>
+</li>
+<li>
+<p>进入BIOS恢复页面等待</p>
+</li>
+</ol>
+<p>Tip:有时候长按开机键后，CPU风扇刚刚起转就断电了，这种情况可能需要多试几次。</p>
+<p>等待进度条跑完，重启，电脑成功启动进入系统。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2022/01/6db340b7eb1b818b.png" alt="" /></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>奇淫技巧</category>
+      </categories>
+      <tags>
+        <tag>主板</tag>
+        <tag>维修</tag>
+        <tag>技嘉</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何将你的Hexo博客部署到Google Firebase上</title>
     <url>/20220208/how-to-deploy-your-hexo-blog-on-firebase/</url>
     <content><![CDATA[<p>博主最近在 <s>白嫖万恶的资本</s> 将博客部署到新的CDN上，所以在寻找免费的静态Web应用部署工具，发现了Google Firebase。</p>
@@ -761,47 +802,6 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
-    <title>如何修复具有双BIOS的某G姓主板的BIOS</title>
-    <url>/20220123/how-to-fix-the-bios-of-gigabyte-motherboards-which-has-dual-bios/</url>
-    <content><![CDATA[<p>前几天不知道主板抽什么风，BIOS又炸了。</p>
-<span id="more"></span>
-<h1 id="起因"><a class="markdownIt-Anchor" href="#起因"></a> 起因</h1>
-<p>博主现在用着的是一块某G姓品牌的GA-Z77P-D3（如下图，图源网络）</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://tse2-mm.cn.bing.net/th/id/OIP-C.SFe2Z2eqAyM_RSvWil62igAAAA?pid=ImgDet&amp;rs=1" alt="" /></p>
-<p>这块主板搭载了双BIOS（位于主板右下角SATA接口上），在主BIOS故障时，可以通过Backup BIOS进行恢复。但博主之前不知道，第一次卡BIOS时，还拿出去给奸商大砍30大洋，血一样的教训……</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://tse1-mm.cn.bing.net/th/id/R-C.d8bdfffe0f30196ce2b3573fde1055dd?rik=KZtUo6qNbIw1pw&amp;riu=http%3a%2f%2fwww.youqu5.net%2fd%2ffile%2f2019-08-09%2fccd1183a06ac60d2241dade12521383e.jpg&amp;ehk=OBd%2buw%2fNdxu0H0hmBpg9cYJWJ%2f1hZo9RKoHFFMKuvhM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" alt="" /></p>
-<p>现在第二次卡BIOS，终于知道了有双BIOS，这次就直接恢复试试。</p>
-<h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1>
-<p>博主没有别人短接BIOS针脚的实力，也没有断电几分钟自动恢复的运气，只能踏踏实实的恢复BIOS。</p>
-<ol>
-<li>
-<p>将计算机关机</p>
-</li>
-<li>
-<p>长按开机键，开机后不要断开</p>
-</li>
-<li>
-<p>等待约10秒后计算机自动断电重启</p>
-</li>
-<li>
-<p>进入BIOS恢复页面等待</p>
-</li>
-</ol>
-<p>Tip:有时候长按开机键后，CPU风扇刚刚起转就断电了，这种情况可能需要多试几次。</p>
-<p>等待进度条跑完，重启，电脑成功启动进入系统。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2022/01/6db340b7eb1b818b.png" alt="" /></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-        <category>奇淫技巧</category>
-      </categories>
-      <tags>
-        <tag>主板</tag>
-        <tag>维修</tag>
-        <tag>技嘉</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022年Microsoft 365开发者E5订阅白嫖教程</title>
     <url>/20220503/how-to-get-a-microsoft-365-e5-account/</url>
     <content><![CDATA[<p>最近想要白嫖一个Microsoft 365授权，用着别人的服务总是不放心，决定自己开发私家车🤔</p>
@@ -868,6 +868,49 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
+    <title>给静态博客加入链接安全跳转页</title>
+    <url>/20220109/how-to-use-go-jumper/</url>
+    <content><![CDATA[<p>在逛别人的博客的时候，发现了有一种叫<code>go.php</code>的东西，可以经过自己站点的网页再跳转出去，方便SEO优化。但是像Hexo这类静态博客，想要从源HTML修改链接难度有点大，这里我们采用JavaScript动态修改。</p>
+<span id="more"></span>
+<h1 id="部署go-jumper到github-pages"><a class="markdownIt-Anchor" href="#部署go-jumper到github-pages"></a> 部署Go Jumper到Github Pages</h1>
+<p>博主根据<a href="https://mkblog.cn/701/">这个大佬的博客</a>里的二次跳转，魔改了一个静态版：<a href="https://github.com/pai233/go-jumper">Go Jumper</a><br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/4LTcE2wAXrmvkKZ.png" alt="image.png" /></p>
+<p>所以，现在登陆你的Github账号，Fork这个仓库，选择你的个人账户。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/EblcdQUOof9sBZH.png" alt="image.png" /></p>
+<p>Fork完毕后，点击Settings-&gt;Pages，将原分支从<code>none</code>修改为<code>master</code>，目录保持为<code>/(root)</code>，然后Save。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/23sepgmSiFvbhGw.png" alt="image.png" /></p>
+<p>这样，你自己的Go Jumper就成功部署在<code>https://[你的Github用户名].github.io/go-jumper/</code>了。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/5tML3zhxuHOlPfr.png" alt="image.png" /></p>
+<p>当然，你也可以绑定自己的域名，或者部署到其他的平台，这里不展开赘述。</p>
+<h1 id="修改indexjs"><a class="markdownIt-Anchor" href="#修改indexjs"></a> 修改<code>index.js</code></h1>
+<p>为了方便，我们这边直接在线修改：打开<code>https://github.com/[你的Github用户名]/go-jumper/edit/master/js/index.js</code>，修改以下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&quot;loading-text&quot;</span>)[<span class="number">0</span>].<span class="property">innerHTML</span> = <span class="string">&quot;参数错误，将跳转至pai233の小窝&lt;dot&gt;...&lt;/dot&gt;&quot;</span><span class="comment">//修改为你自己的提示</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&quot;https://blog.pai233.top/&quot;</span><span class="comment">//修改为你自己的主页</span></span><br><span class="line">&#125;,<span class="number">5000</span>)</span><br><span class="line"><span class="string">``</span><span class="string">`      </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line"><span class="keyword">if</span>(<span class="comment">/*referrer[referrer.length-3]+&quot;.&quot;+ 二级域名可选*/</span>referrer[referrer.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+referrer[referrer.<span class="property">length</span>-<span class="number">1</span>]!=<span class="string">&quot;pai233.top&quot;</span><span class="comment">/*修改为你的博客的根/二级域名，二级域名需要去掉前面的注释*/</span> || <span class="variable language_">document</span>.<span class="property">referrer</span>===<span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">    swal.<span class="title function_">fire</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;确定访问？&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: <span class="string">&quot;该网址不属于咕咕小站，你确定要打开&quot;</span>+link+<span class="string">&quot;吗？&quot;</span>,<span class="comment">//修改为你自己的提示</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;warning&quot;</span>,</span><br><span class="line">        <span class="attr">showCancelButton</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">confirmButtonColor</span>: <span class="string">&quot;#DD6B55&quot;</span>,</span><br><span class="line">        <span class="attr">confirmButtonText</span>: <span class="string">&quot;确定&quot;</span>,</span><br><span class="line">        <span class="attr">cancelButtonText</span>: <span class="string">&quot;取消&quot;</span>,</span><br><span class="line">        &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">isConfirm</span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(isConfirm)</span><br><span class="line">        <span class="keyword">if</span> (isConfirm) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setTimeout&#x27;</span>)</span><br><span class="line">            <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">                <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = link</span><br><span class="line">            &#125;,<span class="number">3000</span>)</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="property">opener</span>=<span class="literal">null</span>;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;_self&#x27;</span>);</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">close</span>();</span><br><span class="line">            <span class="comment">/* 微信浏览器关闭 */</span> </span><br><span class="line">            <span class="title class_">WeixinJSBridge</span>.<span class="title function_">call</span>(<span class="string">&#x27;closeWindow&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后直接commit，现在，你可以通过<code>https://[你的Go Jumper部署地址]#[跳转网页的base64编码]</code>来测试一下。</p>
+<h1 id="博客动态修改"><a class="markdownIt-Anchor" href="#博客动态修改"></a> 博客动态修改</h1>
+<p>这里以博主使用的Hexo+NexT主题为例，新建<code>[主题根目录]/source/js/link-checker.js</code>，内容如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="title function_">checkLink</span>();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 若博客启用了Pjax请去掉注释。</span></span><br><span class="line"><span class="comment">// $(document).on(&#x27;pjax:complete&#x27;, function () &#123;</span></span><br><span class="line"><span class="comment">//     checkLink();</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLink</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> link = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;link.<span class="property">length</span>;i++)&#123;</span><br><span class="line">        <span class="comment">//如果你的博客添加了Gitter聊天窗，请去掉下方注释</span></span><br><span class="line">        <span class="keyword">if</span>(link[i].<span class="property">href</span>===<span class="string">&quot;&quot;</span> <span class="comment">/*|| link[i].className===&quot;gitter-open-chat-button&quot;*/</span>)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="keyword">await</span> <span class="title function_">checkLocalSite</span>(link[i].<span class="property">href</span>))&#123;</span><br><span class="line">            link[i].<span class="property">href</span> = <span class="string">&quot;[你的Go Jumper的部署地址]#&quot;</span>+<span class="variable language_">window</span>.<span class="title function_">btoa</span>(link[i].<span class="property">href</span>)</span><br><span class="line">            <span class="comment">//console.log(&quot;edit.&quot;)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLocalSite</span>(<span class="params">url</span>)&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="comment">//console.log(&quot;check:&quot;,url)</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="regexp">/\/\/(.*)\//g</span>)</span><br><span class="line">        <span class="keyword">let</span> domain = reg.<span class="title function_">exec</span>(url)[<span class="number">1</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">        <span class="comment">//console.log(domain,domain[domain.length-2]+&#x27;.&#x27;+domain[domain.length-1])</span></span><br><span class="line">        domain = &#123;</span><br><span class="line">            <span class="comment">//二级域名请去除下一行的注释</span></span><br><span class="line">            <span class="attr">check</span>: (<span class="comment">/*domain[domain.length-3]+&#x27;.&#x27;+*/</span>domain[domain.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+domain[domain.<span class="property">length</span>-<span class="number">1</span>]).<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>],</span><br><span class="line">            <span class="attr">original</span>: domain</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//console.log(domain)</span></span><br><span class="line">        <span class="keyword">if</span>(domain.<span class="property">check</span>===<span class="string">&quot;pai233.top&quot;</span> || domain.<span class="property">original</span>[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>]===<span class="string">&quot;localhost:4000&quot;</span>)<span class="keyword">return</span> <span class="literal">true</span>;<span class="comment">//将domain.check修改为根或二级域名，domain.original[0].split(&#x27;/&#x27;)[0]修改为本地测试页面</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;<span class="keyword">catch</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后到<code>[主题根目录]/layout/_layout.swig</code>中，在<code>&lt;/head&gt;</code>标签前加入以下内容：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/link-checker.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://blog.pai233.top/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://blog.pai233.top/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样，当博客加载完毕的时候，博客的全部外链就会被加上二级跳转，但是源HTML里的外链不变。</p>
+<h1 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h1>
+<p>在<code>index.html</code>中，博主插入了广告代码，有需要的可自行删除：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;google-ads&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ins</span> <span class="attr">class</span>=<span class="string">&quot;adsbygoogle&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">style</span>=<span class="string">&quot;display:block; text-align:center;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-layout</span>=<span class="string">&quot;in-article&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-format</span>=<span class="string">&quot;fluid&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-client</span>=<span class="string">&quot;ca-pub-1820088263747150&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-slot</span>=<span class="string">&quot;3739765077&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        (adsbygoogle = <span class="variable language_">window</span>.<span class="property">adsbygoogle</span> || []).<span class="title function_">push</span>(&#123;&#125;);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="广告"><a class="markdownIt-Anchor" href="#广告"></a> 广告</h1>
+<p>我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<a href="https://cloud.tencent.com/developer/support-plan?invite_code=j6hm8y2r61ul">点击这里</a></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://main.qcloudimg.com/raw/64733509acceb4108f98a67fd3166738.jpg" alt="" /></p>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>功能</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>美化</tag>
+        <tag>JavaScript</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【搭建Hexo博客（一）】初始化框架</title>
     <url>/20220312/init-your-hexo-blog/</url>
     <content><![CDATA[<p>前几天更换了博客主题，现在趁这个机会，来写个教程。</p>
@@ -923,51 +966,8 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       <tags>
         <tag>Blog</tag>
         <tag>Hexo</tag>
-        <tag>Git</tag>
         <tag>Node.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给静态博客加入链接安全跳转页</title>
-    <url>/20220109/how-to-use-go-jumper/</url>
-    <content><![CDATA[<p>在逛别人的博客的时候，发现了有一种叫<code>go.php</code>的东西，可以经过自己站点的网页再跳转出去，方便SEO优化。但是像Hexo这类静态博客，想要从源HTML修改链接难度有点大，这里我们采用JavaScript动态修改。</p>
-<span id="more"></span>
-<h1 id="部署go-jumper到github-pages"><a class="markdownIt-Anchor" href="#部署go-jumper到github-pages"></a> 部署Go Jumper到Github Pages</h1>
-<p>博主根据<a href="https://mkblog.cn/701/">这个大佬的博客</a>里的二次跳转，魔改了一个静态版：<a href="https://github.com/pai233/go-jumper">Go Jumper</a><br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/4LTcE2wAXrmvkKZ.png" alt="image.png" /></p>
-<p>所以，现在登陆你的Github账号，Fork这个仓库，选择你的个人账户。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/EblcdQUOof9sBZH.png" alt="image.png" /></p>
-<p>Fork完毕后，点击Settings-&gt;Pages，将原分支从<code>none</code>修改为<code>master</code>，目录保持为<code>/(root)</code>，然后Save。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/23sepgmSiFvbhGw.png" alt="image.png" /></p>
-<p>这样，你自己的Go Jumper就成功部署在<code>https://[你的Github用户名].github.io/go-jumper/</code>了。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/5tML3zhxuHOlPfr.png" alt="image.png" /></p>
-<p>当然，你也可以绑定自己的域名，或者部署到其他的平台，这里不展开赘述。</p>
-<h1 id="修改indexjs"><a class="markdownIt-Anchor" href="#修改indexjs"></a> 修改<code>index.js</code></h1>
-<p>为了方便，我们这边直接在线修改：打开<code>https://github.com/[你的Github用户名]/go-jumper/edit/master/js/index.js</code>，修改以下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&quot;loading-text&quot;</span>)[<span class="number">0</span>].<span class="property">innerHTML</span> = <span class="string">&quot;参数错误，将跳转至pai233の小窝&lt;dot&gt;...&lt;/dot&gt;&quot;</span><span class="comment">//修改为你自己的提示</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&quot;https://blog.pai233.top/&quot;</span><span class="comment">//修改为你自己的主页</span></span><br><span class="line">&#125;,<span class="number">5000</span>)</span><br><span class="line"><span class="string">``</span><span class="string">`      </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line"><span class="keyword">if</span>(<span class="comment">/*referrer[referrer.length-3]+&quot;.&quot;+ 二级域名可选*/</span>referrer[referrer.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+referrer[referrer.<span class="property">length</span>-<span class="number">1</span>]!=<span class="string">&quot;pai233.top&quot;</span><span class="comment">/*修改为你的博客的根/二级域名，二级域名需要去掉前面的注释*/</span> || <span class="variable language_">document</span>.<span class="property">referrer</span>===<span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">    swal.<span class="title function_">fire</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;确定访问？&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: <span class="string">&quot;该网址不属于咕咕小站，你确定要打开&quot;</span>+link+<span class="string">&quot;吗？&quot;</span>,<span class="comment">//修改为你自己的提示</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;warning&quot;</span>,</span><br><span class="line">        <span class="attr">showCancelButton</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">confirmButtonColor</span>: <span class="string">&quot;#DD6B55&quot;</span>,</span><br><span class="line">        <span class="attr">confirmButtonText</span>: <span class="string">&quot;确定&quot;</span>,</span><br><span class="line">        <span class="attr">cancelButtonText</span>: <span class="string">&quot;取消&quot;</span>,</span><br><span class="line">        &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">isConfirm</span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(isConfirm)</span><br><span class="line">        <span class="keyword">if</span> (isConfirm) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setTimeout&#x27;</span>)</span><br><span class="line">            <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">                <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = link</span><br><span class="line">            &#125;,<span class="number">3000</span>)</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="property">opener</span>=<span class="literal">null</span>;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;_self&#x27;</span>);</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">close</span>();</span><br><span class="line">            <span class="comment">/* 微信浏览器关闭 */</span> </span><br><span class="line">            <span class="title class_">WeixinJSBridge</span>.<span class="title function_">call</span>(<span class="string">&#x27;closeWindow&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>然后直接commit，现在，你可以通过<code>https://[你的Go Jumper部署地址]#[跳转网页的base64编码]</code>来测试一下。</p>
-<h1 id="博客动态修改"><a class="markdownIt-Anchor" href="#博客动态修改"></a> 博客动态修改</h1>
-<p>这里以博主使用的Hexo+NexT主题为例，新建<code>[主题根目录]/source/js/link-checker.js</code>，内容如下：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="title function_">checkLink</span>();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 若博客启用了Pjax请去掉注释。</span></span><br><span class="line"><span class="comment">// $(document).on(&#x27;pjax:complete&#x27;, function () &#123;</span></span><br><span class="line"><span class="comment">//     checkLink();</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLink</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> link = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;link.<span class="property">length</span>;i++)&#123;</span><br><span class="line">        <span class="comment">//如果你的博客添加了Gitter聊天窗，请去掉下方注释</span></span><br><span class="line">        <span class="keyword">if</span>(link[i].<span class="property">href</span>===<span class="string">&quot;&quot;</span> <span class="comment">/*|| link[i].className===&quot;gitter-open-chat-button&quot;*/</span>)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="keyword">await</span> <span class="title function_">checkLocalSite</span>(link[i].<span class="property">href</span>))&#123;</span><br><span class="line">            link[i].<span class="property">href</span> = <span class="string">&quot;[你的Go Jumper的部署地址]#&quot;</span>+<span class="variable language_">window</span>.<span class="title function_">btoa</span>(link[i].<span class="property">href</span>)</span><br><span class="line">            <span class="comment">//console.log(&quot;edit.&quot;)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLocalSite</span>(<span class="params">url</span>)&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="comment">//console.log(&quot;check:&quot;,url)</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="regexp">/\/\/(.*)\//g</span>)</span><br><span class="line">        <span class="keyword">let</span> domain = reg.<span class="title function_">exec</span>(url)[<span class="number">1</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">        <span class="comment">//console.log(domain,domain[domain.length-2]+&#x27;.&#x27;+domain[domain.length-1])</span></span><br><span class="line">        domain = &#123;</span><br><span class="line">            <span class="comment">//二级域名请去除下一行的注释</span></span><br><span class="line">            <span class="attr">check</span>: (<span class="comment">/*domain[domain.length-3]+&#x27;.&#x27;+*/</span>domain[domain.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+domain[domain.<span class="property">length</span>-<span class="number">1</span>]).<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>],</span><br><span class="line">            <span class="attr">original</span>: domain</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//console.log(domain)</span></span><br><span class="line">        <span class="keyword">if</span>(domain.<span class="property">check</span>===<span class="string">&quot;pai233.top&quot;</span> || domain.<span class="property">original</span>[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>]===<span class="string">&quot;localhost:4000&quot;</span>)<span class="keyword">return</span> <span class="literal">true</span>;<span class="comment">//将domain.check修改为根或二级域名，domain.original[0].split(&#x27;/&#x27;)[0]修改为本地测试页面</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;<span class="keyword">catch</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>最后到<code>[主题根目录]/layout/_layout.swig</code>中，在<code>&lt;/head&gt;</code>标签前加入以下内容：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/link-checker.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://blog.pai233.top/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://blog.pai233.top/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这样，当博客加载完毕的时候，博客的全部外链就会被加上二级跳转，但是源HTML里的外链不变。</p>
-<h1 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h1>
-<p>在<code>index.html</code>中，博主插入了广告代码，有需要的可自行删除：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;google-ads&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ins</span> <span class="attr">class</span>=<span class="string">&quot;adsbygoogle&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">style</span>=<span class="string">&quot;display:block; text-align:center;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-layout</span>=<span class="string">&quot;in-article&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-format</span>=<span class="string">&quot;fluid&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-client</span>=<span class="string">&quot;ca-pub-1820088263747150&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-slot</span>=<span class="string">&quot;3739765077&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        (adsbygoogle = <span class="variable language_">window</span>.<span class="property">adsbygoogle</span> || []).<span class="title function_">push</span>(&#123;&#125;);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="广告"><a class="markdownIt-Anchor" href="#广告"></a> 广告</h1>
-<p>我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<a href="https://cloud.tencent.com/developer/support-plan?invite_code=j6hm8y2r61ul">点击这里</a></p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://main.qcloudimg.com/raw/64733509acceb4108f98a67fd3166738.jpg" alt="" /></p>
-]]></content>
-      <categories>
-        <category>博客美化</category>
-        <category>功能</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>美化</tag>
-        <tag>JavaScript</tag>
-        <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1051,6 +1051,38 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
+    <title>【洛谷 P1601】A+B Problem（高精）</title>
+    <url>/20210802/luogu-p1601/</url>
+    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
+<span id="more"></span>
+<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
+<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
+<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
+<p>既然如此，我们就可以得到以下代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
+<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
+<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
+<p>代码如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
+<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
+<p>参考：</p>
+<ol>
+<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>高精度</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【洛谷 P2393】yyy loves Maths II</title>
     <url>/20210803/luogu-p2393/</url>
     <content><![CDATA[<p>这一道题要排坑的是关于精度的问题。</p>
@@ -1091,38 +1123,6 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
         <tag>C++</tag>
         <tag>题解</tag>
         <tag>洛谷</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【洛谷 P1601】A+B Problem（高精）</title>
-    <url>/20210802/luogu-p1601/</url>
-    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
-<span id="more"></span>
-<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
-<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
-<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
-<p>既然如此，我们就可以得到以下代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
-<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
-<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
-<p>代码如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
-<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
-<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
-<p>参考：</p>
-<ol>
-<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>高精度</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1198,22 +1198,6 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       </tags>
   </entry>
   <entry>
-    <title>博客服务器切换至Cloudflare Pages</title>
-    <url>/20210829/server-changing-to-cloudflare-pages/</url>
-    <content><![CDATA[<p>UPD：部署已切换完毕，网站已恢复正常。</p>
-<p>由于Github Pages的不稳定，博客部署将会切换至Cloudflare Pages。</p>
-<span id="more"></span>
-<p>在切换部署中途可能会出现网络波动的问题，不便之处，敬请原谅！</p>
-]]></content>
-      <categories>
-        <category>咕咕小站</category>
-        <category>博客动态</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>pai233の小窝正式建站</title>
     <url>/20210728/pai233%E3%81%AE%E5%B0%8F%E7%AA%9D%E6%AD%A3%E5%BC%8F%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<p>pai233の小窝正式建站了！本博客基于Hexo搭建，托管于Github Pages上。</p>
@@ -1228,6 +1212,22 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
 <li>页面下方中可以播放音乐（较老的浏览器可能不支持）。（网易云歌单：<a href="https://music.163.com/#/playlist?id=6888258472">Click Here</a>）</li>
 </ul>
 <p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/03/09/VBmOqyIPEHSZ2Nl.gif" alt="qwq" /></p>
+]]></content>
+      <categories>
+        <category>咕咕小站</category>
+        <category>博客动态</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客服务器切换至Cloudflare Pages</title>
+    <url>/20210829/server-changing-to-cloudflare-pages/</url>
+    <content><![CDATA[<p>UPD：部署已切换完毕，网站已恢复正常。</p>
+<p>由于Github Pages的不稳定，博客部署将会切换至Cloudflare Pages。</p>
+<span id="more"></span>
+<p>在切换部署中途可能会出现网络波动的问题，不便之处，敬请原谅！</p>
 ]]></content>
       <categories>
         <category>咕咕小站</category>
@@ -1290,8 +1290,8 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
       <tags>
         <tag>Blog</tag>
         <tag>Hexo</tag>
-        <tag>Git</tag>
         <tag>Node.js</tag>
+        <tag>Git</tag>
         <tag>主题</tag>
       </tags>
   </entry>
@@ -1317,33 +1317,6 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
 <p>但是在遇到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>8</mn></mrow><annotation encoding="application/x-tex">8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span></span></span></span> 的倍数会出现一点问题，我个菜鸡不知道为啥，所以用了特判/kk</p>
 <h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,d,a[<span class="number">8</span>]=&#123;<span class="number">14</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">11</span>,<span class="number">13</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;moobuzz.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;moobuzz.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	d=n/<span class="number">8</span>;</span><br><span class="line">	<span class="keyword">if</span>(n%<span class="number">8</span>&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,d*<span class="number">15</span>+a[n%<span class="number">8</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,d*<span class="number">15</span><span class="number">-1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>模拟</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>C++</tag>
-        <tag>题解</tag>
-        <tag>USACO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【USACO19FEB Bronze】Measuring Traffic</title>
-    <url>/20211010/usaco2019feb-bronze-measuring-traffic/</url>
-    <content><![CDATA[<p>USACOの模拟小题。</p>
-<span id="more"></span>
-<h1 id="题目详情"><a class="markdownIt-Anchor" href="#题目详情"></a> 题目详情</h1>
-<p>原题链接（英文题面）：<a href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=917">http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=917</a></p>
-<p>中文翻译：</p>
-<p>Farmer John的农场边上的高速公路最近出现了引人注目的流量上升，或者至少Farmer John看起来是这样的。为了证实这件事，他打算用一组传感器测量公路上的车流量，每个传感器被用来测量一小段路面上的车流量的数值。</p>
-<p>不幸的是，某一天经过牛棚的时候，Farmer John被绊倒了，装有传感器的盒子掉进了一个巨大的奶缸，之后它们就不能正常工作了。比起之前可以产生一个精确的车流量读数，现在每个传感器只能输出一个可能结果的范围。例如，一个传感器可能会给出范围 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">[</mo><mn>7</mn><mo separator="true">,</mo><mn>13</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[7,13]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">7</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">3</span><span class="mclose">]</span></span></span></span> ，表示在这段路面上的车流量不小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> ，并且不大于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>13</mn></mrow><annotation encoding="application/x-tex">13</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">3</span></span></span></span> 。</p>
-<p>高速公路经过农场的这一段长 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里，车辆仅从一个方向通过公路，从第1英里驶向第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里。Farmer John想要安装N个传感器——每一个监测高速公路上1英里长的路段。在其中某些路段上，有能够使得车辆进入高速公路的上匝道；在所有这样的路段上，Farmer John会将传感器装在上匝道上，测量流入的（近似）车流量。在某些路段上有能够使得车辆离开高速公路的下匝道；在所有这样的路段上，Farmer John会将传感器装在下匝道上。每一个路段包含至多一个匝道。如果在公路的一个路段上没有上匝道或下匝道，Farmer John就将传感器装在高速公路的主路上。</p>
-<p>给定Farmer John的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个传感器的读数，请求出在高速公路第1英里之前和第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里之后车流量的最为准确的可能范围。这些范围应当与所有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个传感器的读数相一致。</p>
-<h1 id="做法"><a class="markdownIt-Anchor" href="#做法"></a> 做法</h1>
-<p>处理两次，第一次从后往前确定一个范围（即1公里时的车流量），而第二次反过来，从前往后确定范围（得出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 公里时的车流量）即可。</p>
-<h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,a[<span class="number">105</span>],b[<span class="number">105</span>];</span><br><span class="line">string status[<span class="number">105</span>]; </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">// freopen(&quot;traffic.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">	<span class="comment">// freopen(&quot;traffic.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)cin&gt;&gt;status[i]&gt;&gt;a[i]&gt;&gt;b[i];	 </span><br><span class="line">	<span class="type">int</span> left=INT_MIN,right=INT_MAX;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=n;i&gt;=<span class="number">1</span>;i--) &#123;<span class="comment">//从后往前</span></span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;none&quot;</span>)&#123;</span><br><span class="line">			left=<span class="built_in">max</span>(left,a[i]);</span><br><span class="line">			right=<span class="built_in">min</span>(right,b[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;off&quot;</span>)&#123;</span><br><span class="line">			left+=a[i];</span><br><span class="line">			right+=b[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;on&quot;</span>)&#123;</span><br><span class="line">			left-=b[i];</span><br><span class="line">			right-=a[i];</span><br><span class="line">			left=<span class="built_in">max</span>(<span class="number">0</span>,left);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;left&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;right&lt;&lt;endl;</span><br><span class="line">	left=INT_MIN,right=INT_MAX;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//从前往后</span></span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;none&quot;</span>)&#123;</span><br><span class="line">			left=<span class="built_in">max</span>(left,a[i]);</span><br><span class="line">			right=<span class="built_in">min</span>(right,b[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;on&quot;</span>)&#123;</span><br><span class="line">			left+=a[i];</span><br><span class="line">			right+=b[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;off&quot;</span>)&#123;</span><br><span class="line">			left-=b[i];</span><br><span class="line">			right-=a[i];</span><br><span class="line">			left=<span class="built_in">max</span>(<span class="number">0</span>,left);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;left&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;right&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>算法学习</category>
         <category>模拟</category>
@@ -1397,6 +1370,33 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
         <tag>反向代理</tag>
         <tag>Cloudflare</tag>
         <tag>Proxy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【USACO19FEB Bronze】Measuring Traffic</title>
+    <url>/20211010/usaco2019feb-bronze-measuring-traffic/</url>
+    <content><![CDATA[<p>USACOの模拟小题。</p>
+<span id="more"></span>
+<h1 id="题目详情"><a class="markdownIt-Anchor" href="#题目详情"></a> 题目详情</h1>
+<p>原题链接（英文题面）：<a href="http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=917">http://www.usaco.org/index.php?page=viewproblem2&amp;cpid=917</a></p>
+<p>中文翻译：</p>
+<p>Farmer John的农场边上的高速公路最近出现了引人注目的流量上升，或者至少Farmer John看起来是这样的。为了证实这件事，他打算用一组传感器测量公路上的车流量，每个传感器被用来测量一小段路面上的车流量的数值。</p>
+<p>不幸的是，某一天经过牛棚的时候，Farmer John被绊倒了，装有传感器的盒子掉进了一个巨大的奶缸，之后它们就不能正常工作了。比起之前可以产生一个精确的车流量读数，现在每个传感器只能输出一个可能结果的范围。例如，一个传感器可能会给出范围 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">[</mo><mn>7</mn><mo separator="true">,</mo><mn>13</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[7,13]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">7</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">3</span><span class="mclose">]</span></span></span></span> ，表示在这段路面上的车流量不小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> ，并且不大于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>13</mn></mrow><annotation encoding="application/x-tex">13</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">3</span></span></span></span> 。</p>
+<p>高速公路经过农场的这一段长 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里，车辆仅从一个方向通过公路，从第1英里驶向第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里。Farmer John想要安装N个传感器——每一个监测高速公路上1英里长的路段。在其中某些路段上，有能够使得车辆进入高速公路的上匝道；在所有这样的路段上，Farmer John会将传感器装在上匝道上，测量流入的（近似）车流量。在某些路段上有能够使得车辆离开高速公路的下匝道；在所有这样的路段上，Farmer John会将传感器装在下匝道上。每一个路段包含至多一个匝道。如果在公路的一个路段上没有上匝道或下匝道，Farmer John就将传感器装在高速公路的主路上。</p>
+<p>给定Farmer John的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个传感器的读数，请求出在高速公路第1英里之前和第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 英里之后车流量的最为准确的可能范围。这些范围应当与所有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个传感器的读数相一致。</p>
+<h1 id="做法"><a class="markdownIt-Anchor" href="#做法"></a> 做法</h1>
+<p>处理两次，第一次从后往前确定一个范围（即1公里时的车流量），而第二次反过来，从前往后确定范围（得出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 公里时的车流量）即可。</p>
+<h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,a[<span class="number">105</span>],b[<span class="number">105</span>];</span><br><span class="line">string status[<span class="number">105</span>]; </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">// freopen(&quot;traffic.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">	<span class="comment">// freopen(&quot;traffic.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)cin&gt;&gt;status[i]&gt;&gt;a[i]&gt;&gt;b[i];	 </span><br><span class="line">	<span class="type">int</span> left=INT_MIN,right=INT_MAX;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=n;i&gt;=<span class="number">1</span>;i--) &#123;<span class="comment">//从后往前</span></span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;none&quot;</span>)&#123;</span><br><span class="line">			left=<span class="built_in">max</span>(left,a[i]);</span><br><span class="line">			right=<span class="built_in">min</span>(right,b[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;off&quot;</span>)&#123;</span><br><span class="line">			left+=a[i];</span><br><span class="line">			right+=b[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;on&quot;</span>)&#123;</span><br><span class="line">			left-=b[i];</span><br><span class="line">			right-=a[i];</span><br><span class="line">			left=<span class="built_in">max</span>(<span class="number">0</span>,left);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;left&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;right&lt;&lt;endl;</span><br><span class="line">	left=INT_MIN,right=INT_MAX;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//从前往后</span></span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;none&quot;</span>)&#123;</span><br><span class="line">			left=<span class="built_in">max</span>(left,a[i]);</span><br><span class="line">			right=<span class="built_in">min</span>(right,b[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;on&quot;</span>)&#123;</span><br><span class="line">			left+=a[i];</span><br><span class="line">			right+=b[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status[i]==<span class="string">&quot;off&quot;</span>)&#123;</span><br><span class="line">			left-=b[i];</span><br><span class="line">			right-=a[i];</span><br><span class="line">			left=<span class="built_in">max</span>(<span class="number">0</span>,left);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;left&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;right&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>模拟</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>C++</tag>
+        <tag>题解</tag>
+        <tag>USACO</tag>
       </tags>
   </entry>
   <entry>
