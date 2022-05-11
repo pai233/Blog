@@ -9,7 +9,7 @@ async function checkLink(){
     let link = document.getElementsByTagName('a');
     //console.log(link)
     for(var i=0;i<link.length;i++){
-        if(link[i].href==="" || link[i].className==="gitter-open-chat-button")continue;
+        if(link[i].href==="" || link[i].className==="gitter-open-chat-button" || link[i].className==="twikoo-count")continue;
         if(!await checkLocalSite(link[i].href)){
             link[i].href = "https://go.pai233.top/#"+window.btoa(link[i].href)
             console.log("edit.")
