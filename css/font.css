@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Pailou';
-    src: url('https://pai233.coding.net/p/blog/d/blog/git/raw/master/fonts/Pailou.woff2');
+    src: url('/fonts/Pailou.woff2');
 }
 
 @font-face {
     font-family: 'Fredoka';
-    src: url('https://pai233.coding.net/p/blog/d/blog/git/raw/master/fonts/Fredoka.woff2');
+    src: url('/fonts/Fredoka.woff2');
 }
 
 @font-face {
     font-family: 'UbuntuMono';
-    src: url('https://pai233.coding.net/p/blog/d/blog/git/raw/master/fonts/UbuntuMono.woff2');
+    src: url('/fonts/UbuntuMono.woff2');
 }

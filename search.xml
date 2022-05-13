@@ -337,6 +337,34 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
+    <title>【奇淫技巧】 在中国大陆内更快的下载VS Code安装包</title>
+    <url>/20211011/download-vscode-faster-in-china/</url>
+    <content><![CDATA[<p>今天重装了VS Code（别问我为啥），但速度……呵呵……</p>
+<span id="more"></span>
+<h1 id="操作过程"><a class="markdownIt-Anchor" href="#操作过程"></a> 操作过程</h1>
+<p>首先，像平常一样，点击下载VS Code。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/gsvhuzaTW1GKeqx.png" alt="image.png" /></p>
+<p>开始下载以后，你的浏览器会自动创建一个下载任务，但速度可与X度网盘比拟：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/fqxr1vYiTOoRyBX.png" alt="image.png" /></p>
+<p>这时，右键下载任务（此处使用Microsoft Edge），复制下载链接：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/JVFDUkXRHQ5pSKN.png" alt="image.png" /></p>
+<p>此时，你的剪贴板里就会有一串这样的网址：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>az764295.vo.msecnd.net<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
+<p>现在，将网址里的<code>az764295.vo.msecnd.net</code>替换为<code>vscode.cdn.azure.cn</code>，变成这样：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>vscode.cdn.azure.cn<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
+<p>然后就可以直接下载了，速度++！<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/hS1G3Q7DgaHlyBj.png" alt="image.png" /></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>奇淫技巧</category>
+      </categories>
+      <tags>
+        <tag>VS Code</tag>
+        <tag>奇淫技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【小报】CCF报名官网出现严重Bug，多地OIer可随意发布新闻</title>
     <url>/20211012/cspsj-noi-cn-has-some-bugs/</url>
     <content><![CDATA[<p>今日，CCF报名官网出现严重Bug，多地的OIer可在报名官网的新闻栏目随意发布新闻（博主身处GD，目前只剩这条了）：<br />
@@ -373,34 +401,6 @@ CSP-J（仅扫描件）：
       <tags>
         <tag>CCF</tag>
         <tag>小报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【奇淫技巧】 在中国大陆内更快的下载VS Code安装包</title>
-    <url>/20211011/download-vscode-faster-in-china/</url>
-    <content><![CDATA[<p>今天重装了VS Code（别问我为啥），但速度……呵呵……</p>
-<span id="more"></span>
-<h1 id="操作过程"><a class="markdownIt-Anchor" href="#操作过程"></a> 操作过程</h1>
-<p>首先，像平常一样，点击下载VS Code。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/gsvhuzaTW1GKeqx.png" alt="image.png" /></p>
-<p>开始下载以后，你的浏览器会自动创建一个下载任务，但速度可与X度网盘比拟：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/fqxr1vYiTOoRyBX.png" alt="image.png" /></p>
-<p>这时，右键下载任务（此处使用Microsoft Edge），复制下载链接：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/JVFDUkXRHQ5pSKN.png" alt="image.png" /></p>
-<p>此时，你的剪贴板里就会有一串这样的网址：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>az764295.vo.msecnd.net<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
-<p>现在，将网址里的<code>az764295.vo.msecnd.net</code>替换为<code>vscode.cdn.azure.cn</code>，变成这样：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>vscode.cdn.azure.cn<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
-<p>然后就可以直接下载了，速度++！<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/hS1G3Q7DgaHlyBj.png" alt="image.png" /></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-        <category>奇淫技巧</category>
-      </categories>
-      <tags>
-        <tag>VS Code</tag>
-        <tag>奇淫技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -1051,38 +1051,6 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
-    <title>【洛谷 P1601】A+B Problem（高精）</title>
-    <url>/20210802/luogu-p1601/</url>
-    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
-<span id="more"></span>
-<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
-<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
-<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
-<p>既然如此，我们就可以得到以下代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
-<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
-<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
-<p>代码如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
-<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
-<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
-<p>参考：</p>
-<ol>
-<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>高精度</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【洛谷 P2393】yyy loves Maths II</title>
     <url>/20210803/luogu-p2393/</url>
     <content><![CDATA[<p>这一道题要排坑的是关于精度的问题。</p>
@@ -1123,6 +1091,38 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
         <tag>C++</tag>
         <tag>题解</tag>
         <tag>洛谷</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【洛谷 P1601】A+B Problem（高精）</title>
+    <url>/20210802/luogu-p1601/</url>
+    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
+<span id="more"></span>
+<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
+<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
+<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
+<p>既然如此，我们就可以得到以下代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
+<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
+<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
+<p>代码如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
+<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
+<p>参考：</p>
+<ol>
+<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>高精度</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>

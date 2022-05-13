@@ -517,20 +517,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/tags/CCF/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/tags/%E5%B0%8F%E6%8A%A5/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/tags/VS-Code/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -539,6 +525,20 @@
   
   <url>
     <loc>https://blog.pai233.top/tags/%E5%A5%87%E6%B7%AB%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/tags/CCF/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/tags/%E5%B0%8F%E6%8A%A5/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -813,7 +813,7 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%92%95%E5%92%95%E5%B0%8F%E6%8A%A5/</loc>
+    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%A5%87%E6%B7%AB%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -827,13 +827,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E9%AB%98%E7%B2%BE%E5%BA%A6/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%A8%A1%E6%8B%9F/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -841,7 +834,14 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%A5%87%E6%B7%AB%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E9%AB%98%E7%B2%BE%E5%BA%A6/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%92%95%E5%92%95%E5%B0%8F%E6%8A%A5/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
