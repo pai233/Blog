@@ -1,4 +1,14 @@
 @font-face {
-    font-family: 'cool';
-    src: url('/fonts/font.woff2');
+    font-family: 'Pailou';
+    src: url('/fonts/Pailou.woff2');
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/fonts/Fredoka.woff2');
+}
+
+@font-face {
+    font-family: 'UbuntuMono';
+    src: url('/fonts/UbuntuMono.woff2');
 }
