@@ -87,6 +87,42 @@
       </tags>
   </entry>
   <entry>
+    <title>【来源未知】电压放大器（amp）</title>
+    <url>/20211219/amp-solution-oi/</url>
+    <content><![CDATA[<p>这道题没认真想，一开始还爆了空间。</p>
+<span id="more"></span>
+<h1 id="题目详情"><a class="markdownIt-Anchor" href="#题目详情"></a> 题目详情</h1>
+<p>西西需要把输入的电压 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏通过一系列电压放大器放大成原来的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 倍，然后输出。<br />
+西西现在手上有两种放大器：<br />
+第一种能够把X伏的电压放大成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mi>X</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2X-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏<br />
+第二种能够把X伏的电压放大成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mi>X</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2X+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏<br />
+放大器是串联（即按顺序放在一条线路上）的。<br />
+现在西西手上有用不完的放大器，他希望能组出一个电路，使用数量最少的放大器，使得电压被放大了刚好 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 倍。</p>
+<h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1>
+<h2 id="bfsre-50分"><a class="markdownIt-Anchor" href="#bfsre-50分"></a> BFS（RE 50分）</h2>
+<h3 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h3>
+<p>将两种操作分别添加进队列，找到合适答案后跳出。</p>
+<h3 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h3>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">data</span>&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> which,vol;</span><br><span class="line">	data *prev;<span class="comment">//找他的上一个电压放大器</span></span><br><span class="line">&#125;QUEUE[<span class="number">5000005</span>];</span><br><span class="line"><span class="type">int</span> head=<span class="number">0</span>,tail=<span class="number">2</span>;</span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> ANSQUEUE[<span class="number">5000005</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">GetAnswerQueue</span><span class="params">()</span></span>&#123;<span class="comment">//获取答案</span></span><br><span class="line">	data *now=&amp;QUEUE[tail];</span><br><span class="line">	<span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(now!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">		len++;</span><br><span class="line">		ANSQUEUE[len]=now-&gt;which;<span class="comment">//指针访问</span></span><br><span class="line">		now=now-&gt;prev;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> len;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Output</span><span class="params">(<span class="type">int</span> len)</span></span>&#123;<span class="comment">//输出答案</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,len<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=len<span class="number">-1</span>;i&gt;=<span class="number">1</span>;i--)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>,ANSQUEUE[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	QUEUE[<span class="number">1</span>].vol=<span class="number">1</span>;</span><br><span class="line">	QUEUE[<span class="number">1</span>].which=<span class="number">0</span>;</span><br><span class="line">	QUEUE[<span class="number">1</span>].prev=<span class="literal">NULL</span>;<span class="comment">//头结点没有上一个</span></span><br><span class="line">	<span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">		head++;</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[head].vol&gt;n)<span class="keyword">break</span>;<span class="comment">//目前数据超过了N</span></span><br><span class="line">		QUEUE[tail].vol=QUEUE[head].vol*<span class="number">2</span><span class="number">-1</span>;</span><br><span class="line">		QUEUE[tail].which=<span class="number">1</span>;</span><br><span class="line">		QUEUE[tail].prev=&amp;QUEUE[head];</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[tail].vol==n)&#123;</span><br><span class="line">			<span class="type">int</span> len=<span class="built_in">GetAnswerQueue</span>();</span><br><span class="line">			<span class="built_in">Output</span>(len);</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		tail++;</span><br><span class="line">		QUEUE[tail].vol=QUEUE[head].vol*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line">		QUEUE[tail].which=<span class="number">2</span>;</span><br><span class="line">		QUEUE[tail].prev=&amp;QUEUE[head];</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[tail].vol==n)&#123;</span><br><span class="line">			<span class="type">int</span> len=<span class="built_in">GetAnswerQueue</span>();</span><br><span class="line">			<span class="built_in">Output</span>(len);</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		tail++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;No solution&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="判断奇偶性ac-100分"><a class="markdownIt-Anchor" href="#判断奇偶性ac-100分"></a> 判断奇偶性（AC 100分）</h2>
+<h3 id="思路-2"><a class="markdownIt-Anchor" href="#思路-2"></a> 思路</h3>
+<p>由于能够出现答案的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 都是奇数，所以提前特判，然后倒推。</p>
+<h3 id="代码-2"><a class="markdownIt-Anchor" href="#代码-2"></a> 代码</h3>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> ans[<span class="number">1008616</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;No solution&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(n!=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(((n<span class="number">-1</span>)/<span class="number">2</span>+<span class="number">1</span>)%<span class="number">2</span>==<span class="number">1</span>)n=(n+<span class="number">1</span>)/<span class="number">2</span>,ans[++ans[<span class="number">0</span>]]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> n=(n<span class="number">-1</span>)/<span class="number">2</span>,ans[++ans[<span class="number">0</span>]]=<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ans[<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=ans[<span class="number">0</span>];i&gt;=<span class="number">1</span>;i--)<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,ans[i]);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>这道题明显一开始想复杂了，没有细推数据，下次还是要注意。</p>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>数论</category>
+      </categories>
+      <tags>
+        <tag>来源未知</tag>
+        <tag>OI</tag>
+        <tag>C++</tag>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Butterfly主题】添加二级跳转页</title>
     <url>/20220503/butterfly-go-jumper/</url>
     <content><![CDATA[<p>在逛别人的博客的时候，发现了有一种叫<code>go.php</code>的东西，可以经过自己站点的网页再跳转出去，方便SEO优化。但是像Hexo这类静态博客，想要从源HTML修改链接难度有点大，这里我们采用JavaScript动态修改。</p>
@@ -124,42 +160,6 @@
         <tag>JavaScript</tag>
         <tag>Hexo</tag>
         <tag>Butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【来源未知】电压放大器（amp）</title>
-    <url>/20211219/amp-solution-oi/</url>
-    <content><![CDATA[<p>这道题没认真想，一开始还爆了空间。</p>
-<span id="more"></span>
-<h1 id="题目详情"><a class="markdownIt-Anchor" href="#题目详情"></a> 题目详情</h1>
-<p>西西需要把输入的电压 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏通过一系列电压放大器放大成原来的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 倍，然后输出。<br />
-西西现在手上有两种放大器：<br />
-第一种能够把X伏的电压放大成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mi>X</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2X-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏<br />
-第二种能够把X伏的电压放大成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mi>X</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2X+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 伏<br />
-放大器是串联（即按顺序放在一条线路上）的。<br />
-现在西西手上有用不完的放大器，他希望能组出一个电路，使用数量最少的放大器，使得电压被放大了刚好 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 倍。</p>
-<h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1>
-<h2 id="bfsre-50分"><a class="markdownIt-Anchor" href="#bfsre-50分"></a> BFS（RE 50分）</h2>
-<h3 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h3>
-<p>将两种操作分别添加进队列，找到合适答案后跳出。</p>
-<h3 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h3>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">data</span>&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> which,vol;</span><br><span class="line">	data *prev;<span class="comment">//找他的上一个电压放大器</span></span><br><span class="line">&#125;QUEUE[<span class="number">5000005</span>];</span><br><span class="line"><span class="type">int</span> head=<span class="number">0</span>,tail=<span class="number">2</span>;</span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> ANSQUEUE[<span class="number">5000005</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">GetAnswerQueue</span><span class="params">()</span></span>&#123;<span class="comment">//获取答案</span></span><br><span class="line">	data *now=&amp;QUEUE[tail];</span><br><span class="line">	<span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(now!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">		len++;</span><br><span class="line">		ANSQUEUE[len]=now-&gt;which;<span class="comment">//指针访问</span></span><br><span class="line">		now=now-&gt;prev;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> len;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Output</span><span class="params">(<span class="type">int</span> len)</span></span>&#123;<span class="comment">//输出答案</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,len<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=len<span class="number">-1</span>;i&gt;=<span class="number">1</span>;i--)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%lld &quot;</span>,ANSQUEUE[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	QUEUE[<span class="number">1</span>].vol=<span class="number">1</span>;</span><br><span class="line">	QUEUE[<span class="number">1</span>].which=<span class="number">0</span>;</span><br><span class="line">	QUEUE[<span class="number">1</span>].prev=<span class="literal">NULL</span>;<span class="comment">//头结点没有上一个</span></span><br><span class="line">	<span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">		head++;</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[head].vol&gt;n)<span class="keyword">break</span>;<span class="comment">//目前数据超过了N</span></span><br><span class="line">		QUEUE[tail].vol=QUEUE[head].vol*<span class="number">2</span><span class="number">-1</span>;</span><br><span class="line">		QUEUE[tail].which=<span class="number">1</span>;</span><br><span class="line">		QUEUE[tail].prev=&amp;QUEUE[head];</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[tail].vol==n)&#123;</span><br><span class="line">			<span class="type">int</span> len=<span class="built_in">GetAnswerQueue</span>();</span><br><span class="line">			<span class="built_in">Output</span>(len);</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		tail++;</span><br><span class="line">		QUEUE[tail].vol=QUEUE[head].vol*<span class="number">2</span>+<span class="number">1</span>;</span><br><span class="line">		QUEUE[tail].which=<span class="number">2</span>;</span><br><span class="line">		QUEUE[tail].prev=&amp;QUEUE[head];</span><br><span class="line">		<span class="keyword">if</span>(QUEUE[tail].vol==n)&#123;</span><br><span class="line">			<span class="type">int</span> len=<span class="built_in">GetAnswerQueue</span>();</span><br><span class="line">			<span class="built_in">Output</span>(len);</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		tail++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;No solution&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="判断奇偶性ac-100分"><a class="markdownIt-Anchor" href="#判断奇偶性ac-100分"></a> 判断奇偶性（AC 100分）</h2>
-<h3 id="思路-2"><a class="markdownIt-Anchor" href="#思路-2"></a> 思路</h3>
-<p>由于能够出现答案的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 都是奇数，所以提前特判，然后倒推。</p>
-<h3 id="代码-2"><a class="markdownIt-Anchor" href="#代码-2"></a> 代码</h3>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> ans[<span class="number">1008616</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line">	<span class="built_in">freopen</span>(<span class="string">&quot;amp.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;n);</span><br><span class="line">	<span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;No solution&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(n!=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(((n<span class="number">-1</span>)/<span class="number">2</span>+<span class="number">1</span>)%<span class="number">2</span>==<span class="number">1</span>)n=(n+<span class="number">1</span>)/<span class="number">2</span>,ans[++ans[<span class="number">0</span>]]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> n=(n<span class="number">-1</span>)/<span class="number">2</span>,ans[++ans[<span class="number">0</span>]]=<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ans[<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=ans[<span class="number">0</span>];i&gt;=<span class="number">1</span>;i--)<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,ans[i]);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<p>这道题明显一开始想复杂了，没有细推数据，下次还是要注意。</p>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>数论</category>
-      </categories>
-      <tags>
-        <tag>来源未知</tag>
-        <tag>OI</tag>
-        <tag>C++</tag>
-        <tag>题解</tag>
       </tags>
   </entry>
   <entry>
@@ -234,6 +234,41 @@
       </tags>
   </entry>
   <entry>
+    <title>博客正式切换主题到Butterfly！</title>
+    <url>/20220207/change-the-theme-to-butterfly/</url>
+    <content><![CDATA[<p>博主的博客从今天起正式切换到Butterfly啦！</p>
+<span id="more"></span>
+<h1 id="新特性"><a class="markdownIt-Anchor" href="#新特性"></a> 新特性</h1>
+<p>更换主题后，在保留原有功能的同时，还增加了许多新功能：</p>
+<ol>
+<li>支持双系统评论！（Twikoo/Gitalk）</li>
+<li>文章结尾支持自动推荐</li>
+<li>新增了“咕言咕语”、“留言板”等栏目</li>
+<li>等你发现 <s>（才不是我不记得了）</s></li>
+</ol>
+<h1 id="新增了几个cdn"><a class="markdownIt-Anchor" href="#新增了几个cdn"></a> 新增了几个CDN</h1>
+<ol>
+<li>Render</li>
+<li>Forge</li>
+<li>Hostman</li>
+<li>Google Firebase</li>
+</ol>
+<h1 id="google-adsense"><a class="markdownIt-Anchor" href="#google-adsense"></a> Google AdSense</h1>
+<p>这个东西的自动广告真的太迷惑了，在调了在调了😅</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/03/09/VBmOqyIPEHSZ2Nl.gif" alt="qwq" /></p>
+<h1 id="the-old-one"><a class="markdownIt-Anchor" href="#the-old-one"></a> The Old One</h1>
+<p>原NexT主题的博客页面已经备份好了：<a href="https://old.blog.pai233.top/">https://old.blog.pai233.top/</a></p>
+<p>但是应该不会再更新了……</p>
+]]></content>
+      <categories>
+        <category>咕咕小站</category>
+        <category>博客动态</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSP2021 游记</title>
     <url>/20210919/csp2021-travelogue/</url>
     <content><![CDATA[<p>又到了一年一度的CSP……</p>
@@ -302,41 +337,6 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
-    <title>博客正式切换主题到Butterfly！</title>
-    <url>/20220207/change-the-theme-to-butterfly/</url>
-    <content><![CDATA[<p>博主的博客从今天起正式切换到Butterfly啦！</p>
-<span id="more"></span>
-<h1 id="新特性"><a class="markdownIt-Anchor" href="#新特性"></a> 新特性</h1>
-<p>更换主题后，在保留原有功能的同时，还增加了许多新功能：</p>
-<ol>
-<li>支持双系统评论！（Twikoo/Gitalk）</li>
-<li>文章结尾支持自动推荐</li>
-<li>新增了“咕言咕语”、“留言板”等栏目</li>
-<li>等你发现 <s>（才不是我不记得了）</s></li>
-</ol>
-<h1 id="新增了几个cdn"><a class="markdownIt-Anchor" href="#新增了几个cdn"></a> 新增了几个CDN</h1>
-<ol>
-<li>Render</li>
-<li>Forge</li>
-<li>Hostman</li>
-<li>Google Firebase</li>
-</ol>
-<h1 id="google-adsense"><a class="markdownIt-Anchor" href="#google-adsense"></a> Google AdSense</h1>
-<p>这个东西的自动广告真的太迷惑了，在调了在调了😅</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/03/09/VBmOqyIPEHSZ2Nl.gif" alt="qwq" /></p>
-<h1 id="the-old-one"><a class="markdownIt-Anchor" href="#the-old-one"></a> The Old One</h1>
-<p>原NexT主题的博客页面已经备份好了：<a href="https://old.blog.pai233.top/">https://old.blog.pai233.top/</a></p>
-<p>但是应该不会再更新了……</p>
-]]></content>
-      <categories>
-        <category>咕咕小站</category>
-        <category>博客动态</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【小报】CCF报名官网出现严重Bug，多地OIer可随意发布新闻</title>
     <url>/20211012/cspsj-noi-cn-has-some-bugs/</url>
     <content><![CDATA[<p>今日，CCF报名官网出现严重Bug，多地的OIer可在报名官网的新闻栏目随意发布新闻（博主身处GD，目前只剩这条了）：<br />
@@ -401,6 +401,54 @@ CSP-J（仅扫描件）：
       <tags>
         <tag>VS Code</tag>
         <tag>奇淫技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站友链交换规则</title>
+    <url>/20220213/friend-links-exchange-rules/</url>
+    <content><![CDATA[<p>首先，感谢您愿意交换友链！但交换友链还有以下规则，还请您详细阅读！</p>
+<h1 id="域名"><a class="markdownIt-Anchor" href="#域名"></a> 域名</h1>
+<p>对于一个网站来说，域名相当于它的门户。所以，一个好的域名非常重要。因此，博主拒绝以下类型的域名交换友链：</p>
+<ol>
+<li>使用免费域名的</li>
+<li>域名中有违反中华人民共和国法律的字眼的</li>
+<li><code>.onion</code>等无法通过正常互联网访问的</li>
+<li>其他此处未考虑到，但经审核后拒绝的情节</li>
+</ol>
+<h2 id="免费域名"><a class="markdownIt-Anchor" href="#免费域名"></a> 免费域名</h2>
+<p>免费域名包括但<strong>不限于</strong>以下几种：</p>
+<ol>
+<li>由Freenom公司所运营的<code>.tk</code>、<code>.cf</code>、<code>.ga</code>、<code>.ml</code>等免费域名</li>
+<li>由 Joshua Anderson 运营的 Afraid FreeDNS 提供的免费子域名</li>
+<li>其它不包括在<a href="https://publicsuffix.org/list/public_suffix_list.dat">PUBLIC SUFFIX LIST</a>中的<strong>免费子域名</strong>服务</li>
+</ol>
+<div class="note warning flat"><p><strong>请注意</strong>，由于国内的部分Pages服务，如Gitee Pages（<code>gitee.io</code>）拒绝提交其域名至PUBLIC SUFFIX LIST，根据第三条的定义，此类申请将被拒绝。我们建议您将博客部署到其他平台，如Cloudflare Pages、Vercel等。</p>
+</div>
+<p>免费域名<strong>不包括</strong>以下定义：</p>
+<ol>
+<li>在Freenom付费购买的<code>.tk</code>等域名（需提供凭证）</li>
+<li>Github Pages服务的免费子域名（<code>github.io</code>）</li>
+<li>Cloudflare Pages服务的免费子域名（<code>pages.dev</code>）</li>
+<li>其他已纳入PUBLIC SUFFIX LIST的免费子域名服务</li>
+</ol>
+<h1 id="内容"><a class="markdownIt-Anchor" href="#内容"></a> 内容</h1>
+<p>对于一个博客，优质内容也是很重要的一个关键。请保证您的博客有 <strong>实质性</strong> 内容，博主拒绝站点内容多为采集、抄袭的站点交换友链。博客可以长草，但不能滥竽充数。</p>
+<p>另外，如果您的网站出现冒用备案、传播违反中华人民共和国法律的内容时，博主将拒绝此类友链并举报至相关部门。</p>
+<h1 id="网络"><a class="markdownIt-Anchor" href="#网络"></a> 网络</h1>
+<p>由于本站主要向中国大陆地区用户，因此，您需要保证您的博客在中国大陆地区访问正常，未出现<code>css</code>样式丢失，大量图片<code>404</code>等严重影响用户体验的情况。<br />
+同时，为了保证访问的安全性，您的博客需要开启<code>https</code>。目前多数主流平台均以支持一键开启<code>https</code>，您可以搜索🔍您的平台如何开启<code>https</code>。</p>
+<h1 id="faq"><a class="markdownIt-Anchor" href="#faq"></a> FAQ</h1>
+<ol>
+<li>我的免费域名已经用很久了，怎么办？<br />
+如果您正在使用免费域名，我们会审核您的文章内容情况，如果文章内容优质且均为原创，博主依旧会添加您的友链。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>咕咕小站</category>
+        <category>博客动态</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
       </tags>
   </entry>
   <entry>
@@ -522,54 +570,6 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
-    <title>本站友链交换规则</title>
-    <url>/20220213/friend-links-exchange-rules/</url>
-    <content><![CDATA[<p>首先，感谢您愿意交换友链！但交换友链还有以下规则，还请您详细阅读！</p>
-<h1 id="域名"><a class="markdownIt-Anchor" href="#域名"></a> 域名</h1>
-<p>对于一个网站来说，域名相当于它的门户。所以，一个好的域名非常重要。因此，博主拒绝以下类型的域名交换友链：</p>
-<ol>
-<li>使用免费域名的</li>
-<li>域名中有违反中华人民共和国法律的字眼的</li>
-<li><code>.onion</code>等无法通过正常互联网访问的</li>
-<li>其他此处未考虑到，但经审核后拒绝的情节</li>
-</ol>
-<h2 id="免费域名"><a class="markdownIt-Anchor" href="#免费域名"></a> 免费域名</h2>
-<p>免费域名包括但<strong>不限于</strong>以下几种：</p>
-<ol>
-<li>由Freenom公司所运营的<code>.tk</code>、<code>.cf</code>、<code>.ga</code>、<code>.ml</code>等免费域名</li>
-<li>由 Joshua Anderson 运营的 Afraid FreeDNS 提供的免费子域名</li>
-<li>其它不包括在<a href="https://publicsuffix.org/list/public_suffix_list.dat">PUBLIC SUFFIX LIST</a>中的<strong>免费子域名</strong>服务</li>
-</ol>
-<div class="note warning flat"><p><strong>请注意</strong>，由于国内的部分Pages服务，如Gitee Pages（<code>gitee.io</code>）拒绝提交其域名至PUBLIC SUFFIX LIST，根据第三条的定义，此类申请将被拒绝。我们建议您将博客部署到其他平台，如Cloudflare Pages、Vercel等。</p>
-</div>
-<p>免费域名<strong>不包括</strong>以下定义：</p>
-<ol>
-<li>在Freenom付费购买的<code>.tk</code>等域名（需提供凭证）</li>
-<li>Github Pages服务的免费子域名（<code>github.io</code>）</li>
-<li>Cloudflare Pages服务的免费子域名（<code>pages.dev</code>）</li>
-<li>其他已纳入PUBLIC SUFFIX LIST的免费子域名服务</li>
-</ol>
-<h1 id="内容"><a class="markdownIt-Anchor" href="#内容"></a> 内容</h1>
-<p>对于一个博客，优质内容也是很重要的一个关键。请保证您的博客有 <strong>实质性</strong> 内容，博主拒绝站点内容多为采集、抄袭的站点交换友链。博客可以长草，但不能滥竽充数。</p>
-<p>另外，如果您的网站出现冒用备案、传播违反中华人民共和国法律的内容时，博主将拒绝此类友链并举报至相关部门。</p>
-<h1 id="网络"><a class="markdownIt-Anchor" href="#网络"></a> 网络</h1>
-<p>由于本站主要向中国大陆地区用户，因此，您需要保证您的博客在中国大陆地区访问正常，未出现<code>css</code>样式丢失，大量图片<code>404</code>等严重影响用户体验的情况。<br />
-同时，为了保证访问的安全性，您的博客需要开启<code>https</code>。目前多数主流平台均以支持一键开启<code>https</code>，您可以搜索🔍您的平台如何开启<code>https</code>。</p>
-<h1 id="faq"><a class="markdownIt-Anchor" href="#faq"></a> FAQ</h1>
-<ol>
-<li>我的免费域名已经用很久了，怎么办？<br />
-如果您正在使用免费域名，我们会审核您的文章内容情况，如果文章内容优质且均为原创，博主依旧会添加您的友链。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>咕咕小站</category>
-        <category>博客动态</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【NexT主题美化】点击页面浮现24字核心价值观</title>
     <url>/20210815/hexo-clicker/</url>
     <content><![CDATA[<p>在许多时候，我们希望用户点击页面时会有一定的反馈（如浮现字幕、放烟花）。这次，我们来实现一下如何使用户点击页面时，弹出24字核心价值观。</p>
@@ -598,6 +598,97 @@ CSP-J（仅扫描件）：
         <tag>JavaScript</tag>
         <tag>Hexo</tag>
         <tag>JQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Hexo】博客数学公式解决方案，亲测有效</title>
+    <url>/20210930/hexo-katex/</url>
+    <content><![CDATA[<p>自从打开了Pjax后，我的博客的LaTeX加载就非常闹心……</p>
+<span id="more"></span>
+<h1 id="原因"><a class="markdownIt-Anchor" href="#原因"></a> 原因</h1>
+<p>我的博客一开始使用的是MathJax，一开始还行，后来为了搞音乐播放器，开启了Pjax，噩梦的开始……</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/06/bPD6V19SlYKhUIA.png" alt="image.png" /></p>
+<p>Pjax动态加载会导致部分JavaScript文件无法自动运行，这很常见……像MathJax这类的需要在页面打开后再渲染的，自然属于这一类。</p>
+<h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h1>
+<p>打开主题的配置文件，找到有关于数学公式的配置（这里使用的是NexT主题）：</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/06/Ugw8hneT4vzVxCX.png" alt="image.png" /></p>
+<p>将其修改，关闭所有选项：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="comment"># Default (true) will load mathjax / katex script on demand.</span></span><br><span class="line">  <span class="comment"># That is it only render those page which has `mathjax: true` in Front-matter.</span></span><br><span class="line">  <span class="comment"># If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://mhchem.github.io/MathJax-mhchem/</span></span><br><span class="line">    <span class="attr">mhchem:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>随后打开<code>\themes\next\layout\_layout.swig</code>，在<code>&lt;head&gt;</code>处添加以下两行：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css&quot;</span> <span class="attr">integrity</span>=<span class="string">&quot;sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js&quot;</span> <span class="attr">integrity</span>=<span class="string">&quot;sha384-4z8mjH4yIpuK9dIQGR1JwbrfYsStrNK6MP+2Enhue4eyo0XlBDXOIPc8b6ZU0ajz&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样可以将我们的博客的数学公式渲染切换到KaTeX，至于为什么不使用自带的KaTeX……在博主这里渲染一直有问题qaq</p>
+<h1 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h1>
+<p>切换完后，就来看看效果……</p>
+<h2 id="行内公式"><a class="markdownIt-Anchor" href="#行内公式"></a> 行内公式</h2>
+<p>众所周知，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1+1=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">2+2=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>，因此，我们可以得到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>+</mo><mi>a</mi><mo>=</mo><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">a+a=2a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">a</span></span></span></span>。</p>
+<p>勾股定理的公式是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p>在C++中，定义一个数组<code>a[n]</code>（假设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>已知），那么这个数组下标实际为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>3</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub><mo separator="true">,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_1,a_2,a_3,...,a_{n-2},a_{n-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="行间公式"><a class="markdownIt-Anchor" href="#行间公式"></a> 行间公式</h2>
+<p>勾股定理的公式是：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9474379999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="一大段的文字"><a class="markdownIt-Anchor" href="#一大段的文字"></a> 一大段的文字</h2>
+<p>根据勾股定理的公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，我们可以得到以下的伪代码，通过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span>，计算出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> _ = <span class="number">3</span>,$$ = <span class="number">4</span>;<span class="comment">//a,b</span></span><br><span class="line"><span class="type">int</span> $$$_233 = <span class="built_in">sqrt</span>(_*_+$$*$$)<span class="comment">//c</span></span><br></pre></td></tr></table></figure>
+<p>可见效果还不戳qaq</p>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>功能</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>美化</tag>
+        <tag>Hexo</tag>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Hexo+NexT主题】弹出欢迎弹窗</title>
+    <url>/20210912/hexo-pop-welcome-window/</url>
+    <content><![CDATA[<p>写这篇博客的缘故是因为看到cnblogs上的<code>live2d</code>模型可以自动欢迎，但是自己又不会魔改<code>Hexo</code>的<code>live2d</code>，就想到了以弹窗的方式来欢迎。</p>
+<span id="more"></span>
+<div class="note info flat"><p>Tips：本文基于Hexo+NexT主题，且开启Pjax局部刷新技术，其他主题的修改可能会有所不同，请自行了解文件对应位置.</p>
+</div>
+<p>最终的实现效果如下：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/wNWvtQrYG5MaE6V.png" alt="image.png" /></p>
+<h1 id="选择一个好看的弹窗"><a class="markdownIt-Anchor" href="#选择一个好看的弹窗"></a> 选择一个好看的弹窗</h1>
+<p>首先，你既然要弹窗，就要好看，而不是<code>JavaScript</code>里的<code>alert()</code>函数，在洛谷上做题的时候，看到“提交成功”的弹窗还比较好看，就查找了一下来源（<a href="https://sweetalert.js.org/">详情</a>），然后选定了这个，感觉还不错。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/RVUlJSnHkbPrcL2.png" alt="image.png" /></p>
+<h1 id="获取javascript和css文件"><a class="markdownIt-Anchor" href="#获取javascript和css文件"></a> 获取JavaScript和CSS文件</h1>
+<p>我们需要将<code>sweetalert.js</code>和<code>sweetalert.css</code>放到自己博客下，防止CDN炸裂导致的错误：</p>
+<h2 id="新建javascript文件"><a class="markdownIt-Anchor" href="#新建javascript文件"></a> 新建JavaScript文件</h2>
+<p>在博客根目录往下找到<code>\themes\next\source\js</code>文件夹，新建<code>sweetalert.js</code>，文件内容<a href="/js/sweetalert.js">请看这里</a>，觉得复制麻烦的可以直接按<code>Crtl+S</code>进行保存。</p>
+<h2 id="新建css文件"><a class="markdownIt-Anchor" href="#新建css文件"></a> 新建CSS文件</h2>
+<p>在博客根目录往下找到<code>\themes\next\source\css</code>文件夹，新建<code>sweetalert.css</code>，文件内容<a href="/css/sweetalert.css">请看这里</a>。</p>
+<p>保存完后的结构如下：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/oZS7vfPhQ6dyOzN.png" alt="image.png" /></p>
+<h1 id="引入到主题中"><a class="markdownIt-Anchor" href="#引入到主题中"></a> 引入到主题中</h1>
+<p>打开<code>\themes\next\layout\_layout.swig</code>，在<code>&lt;head&gt;</code>标签内插入以下语句：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/FhMQZHkf5NvEU1o.png" alt="image.png" /><br />
+这样就完成了引入。</p>
+<h1 id="自动弹窗"><a class="markdownIt-Anchor" href="#自动弹窗"></a> 自动弹窗</h1>
+<p>在博客根目录往下找到<code>\themes\next\source\js</code>文件夹，新建<code>welcome.js</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">welcome</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> welcome_text = <span class="string">&#x27;欢迎光顾本蒟蒻的小窝~&#x27;</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">document</span>.<span class="property">referrer</span>!==<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> referrer=<span class="variable language_">document</span>.<span class="property">referrer</span>.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>];</span><br><span class="line">        welcome_text=<span class="string">&quot;欢迎你，来自&quot;</span>+referrer.<span class="title function_">toUpperCase</span>()+<span class="string">&quot;的用户！&quot;</span>;<span class="comment">//获取用户来源域名</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">swal</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot; 欢迎！&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: welcome_text+<span class="string">&#x27;\n打开页面下方音乐以获得更佳体验！&#x27;</span>,<span class="comment">//欢迎文本，可自行修改</span></span><br><span class="line">        <span class="attr">imageUrl</span>: <span class="string">&quot;/images/avatar.jpg&quot;</span>,<span class="comment">//图片，自行修改位置</span></span><br><span class="line">        <span class="attr">timer</span>: <span class="number">3000</span>,<span class="comment">//弹出时间</span></span><br><span class="line">        <span class="attr">showConfirmButton</span>: <span class="literal">false</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="function">()=&gt;</span>&#123;<span class="comment">//若未引用JQuery，请引用</span></span><br><span class="line">    <span class="title function_">welcome</span>()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这样，就大功告成了。</p>
+<h1 id="qa"><a class="markdownIt-Anchor" href="#qa"></a> Q&amp;A</h1>
+<ul>
+<li>Q:为什么要开Pjax？<br />
+A:Pjax局部刷新技术不会导致每进一个页面就弹出一次窗口，而且对于我来说还有其他特别的用处~当然你也可以判定一下是不是弹过了（通过Cookies），诸如此类。</li>
+<li>Q:不会开Pjax怎么办？<br />
+A:自行百度，以后会专门出一篇博客。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>功能</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>美化</tag>
+        <tag>Hexo</tag>
+        <tag>Sweetalert</tag>
       </tags>
   </entry>
   <entry>
@@ -880,134 +971,6 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
-    <title>【Hexo+NexT主题】弹出欢迎弹窗</title>
-    <url>/20210912/hexo-pop-welcome-window/</url>
-    <content><![CDATA[<p>写这篇博客的缘故是因为看到cnblogs上的<code>live2d</code>模型可以自动欢迎，但是自己又不会魔改<code>Hexo</code>的<code>live2d</code>，就想到了以弹窗的方式来欢迎。</p>
-<span id="more"></span>
-<div class="note info flat"><p>Tips：本文基于Hexo+NexT主题，且开启Pjax局部刷新技术，其他主题的修改可能会有所不同，请自行了解文件对应位置.</p>
-</div>
-<p>最终的实现效果如下：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/wNWvtQrYG5MaE6V.png" alt="image.png" /></p>
-<h1 id="选择一个好看的弹窗"><a class="markdownIt-Anchor" href="#选择一个好看的弹窗"></a> 选择一个好看的弹窗</h1>
-<p>首先，你既然要弹窗，就要好看，而不是<code>JavaScript</code>里的<code>alert()</code>函数，在洛谷上做题的时候，看到“提交成功”的弹窗还比较好看，就查找了一下来源（<a href="https://sweetalert.js.org/">详情</a>），然后选定了这个，感觉还不错。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/RVUlJSnHkbPrcL2.png" alt="image.png" /></p>
-<h1 id="获取javascript和css文件"><a class="markdownIt-Anchor" href="#获取javascript和css文件"></a> 获取JavaScript和CSS文件</h1>
-<p>我们需要将<code>sweetalert.js</code>和<code>sweetalert.css</code>放到自己博客下，防止CDN炸裂导致的错误：</p>
-<h2 id="新建javascript文件"><a class="markdownIt-Anchor" href="#新建javascript文件"></a> 新建JavaScript文件</h2>
-<p>在博客根目录往下找到<code>\themes\next\source\js</code>文件夹，新建<code>sweetalert.js</code>，文件内容<a href="/js/sweetalert.js">请看这里</a>，觉得复制麻烦的可以直接按<code>Crtl+S</code>进行保存。</p>
-<h2 id="新建css文件"><a class="markdownIt-Anchor" href="#新建css文件"></a> 新建CSS文件</h2>
-<p>在博客根目录往下找到<code>\themes\next\source\css</code>文件夹，新建<code>sweetalert.css</code>，文件内容<a href="/css/sweetalert.css">请看这里</a>。</p>
-<p>保存完后的结构如下：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/oZS7vfPhQ6dyOzN.png" alt="image.png" /></p>
-<h1 id="引入到主题中"><a class="markdownIt-Anchor" href="#引入到主题中"></a> 引入到主题中</h1>
-<p>打开<code>\themes\next\layout\_layout.swig</code>，在<code>&lt;head&gt;</code>标签内插入以下语句：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/09/12/FhMQZHkf5NvEU1o.png" alt="image.png" /><br />
-这样就完成了引入。</p>
-<h1 id="自动弹窗"><a class="markdownIt-Anchor" href="#自动弹窗"></a> 自动弹窗</h1>
-<p>在博客根目录往下找到<code>\themes\next\source\js</code>文件夹，新建<code>welcome.js</code>：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">welcome</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> welcome_text = <span class="string">&#x27;欢迎光顾本蒟蒻的小窝~&#x27;</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">document</span>.<span class="property">referrer</span>!==<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> referrer=<span class="variable language_">document</span>.<span class="property">referrer</span>.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>)[<span class="number">2</span>];</span><br><span class="line">        welcome_text=<span class="string">&quot;欢迎你，来自&quot;</span>+referrer.<span class="title function_">toUpperCase</span>()+<span class="string">&quot;的用户！&quot;</span>;<span class="comment">//获取用户来源域名</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">swal</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot; 欢迎！&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: welcome_text+<span class="string">&#x27;\n打开页面下方音乐以获得更佳体验！&#x27;</span>,<span class="comment">//欢迎文本，可自行修改</span></span><br><span class="line">        <span class="attr">imageUrl</span>: <span class="string">&quot;/images/avatar.jpg&quot;</span>,<span class="comment">//图片，自行修改位置</span></span><br><span class="line">        <span class="attr">timer</span>: <span class="number">3000</span>,<span class="comment">//弹出时间</span></span><br><span class="line">        <span class="attr">showConfirmButton</span>: <span class="literal">false</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="function">()=&gt;</span>&#123;<span class="comment">//若未引用JQuery，请引用</span></span><br><span class="line">    <span class="title function_">welcome</span>()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>这样，就大功告成了。</p>
-<h1 id="qa"><a class="markdownIt-Anchor" href="#qa"></a> Q&amp;A</h1>
-<ul>
-<li>Q:为什么要开Pjax？<br />
-A:Pjax局部刷新技术不会导致每进一个页面就弹出一次窗口，而且对于我来说还有其他特别的用处~当然你也可以判定一下是不是弹过了（通过Cookies），诸如此类。</li>
-<li>Q:不会开Pjax怎么办？<br />
-A:自行百度，以后会专门出一篇博客。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客美化</category>
-        <category>功能</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>美化</tag>
-        <tag>Hexo</tag>
-        <tag>Sweetalert</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【洛谷 P1141】01迷宫</title>
-    <url>/20211013/luogu-p1141/</url>
-    <content><![CDATA[<p>这道题可以用DFS，也可以用BFS，这里我采用了DFS（因为懒）。</p>
-<span id="more"></span>
-<h1 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h1>
-<p>给定一个只含<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的迷宫：</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">n</span>=<span class="number">4</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="attribute">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>从每一个为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>的位置，可以走到相邻的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>处；从每一个为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>的位置，可以走到相邻的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>处。即上一个走过来的格子不能与现在的格子相同。</p>
-<p>接下来有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>次查询，每次查询给定一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>，表示迷宫里第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>行第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>列的格子，询问从这里开始最多能走到几个格子（包括自身）。</p>
-<h1 id="做法"><a class="markdownIt-Anchor" href="#做法"></a> 做法</h1>
-<h2 id="普通dfs"><a class="markdownIt-Anchor" href="#普通dfs"></a> 普通DFS</h2>
-<p>根据题意，很容易得到第一版的DFS代码：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">bool</span> Map[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> mapBooker[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">bool</span> last)</span></span>&#123;</span><br><span class="line">    <span class="comment">/*判定是否越界、已经搜索过*/</span></span><br><span class="line">    <span class="keyword">if</span>(last==Map[x][y] <span class="keyword">or</span> x&lt;<span class="number">1</span> <span class="keyword">or</span> x&gt;n <span class="keyword">or</span> y&lt;<span class="number">1</span> <span class="keyword">or</span> y&gt;n <span class="keyword">or</span> !mapBooker[x][y])<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    mapBooker[x][y]=<span class="number">1</span>;<span class="comment">//标记</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">search</span>(x<span class="number">-1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x+<span class="number">1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x,y+<span class="number">1</span>,id,Map[x][y])+<span class="built_in">search</span>(x,y<span class="number">-1</span>,id,Map[x][y])+<span class="number">1</span>;<span class="comment">//继续搜索，搜索周围四个点，同时算上自己</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> tmp;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);<span class="comment">//加快cin的读入</span></span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;tmp;</span><br><span class="line">            Map[i][j]=(tmp==<span class="string">&#x27;0&#x27;</span>?<span class="literal">false</span>:<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(mapBooker,<span class="number">0</span>,<span class="built_in">sizeof</span>(mapBooker));<span class="comment">//清空标记数组</span></span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        cout&lt;&lt;<span class="built_in">search</span>(x,y,!Map[x][y])&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>但这样的代码只拿了70分，剩下的三个点全部超时。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/qRzP5AVNryladKu.png" alt="image.png" /></p>
-<h2 id="dfs联通块"><a class="markdownIt-Anchor" href="#dfs联通块"></a> DFS+联通块</h2>
-<p>我们可以发现，在同一个块里的点都能相互联通，所以，只要这一个块里的其中一个点被搜过了，其它的点其实已经得出来了：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/NntmRr1395a4UuQ.png" alt="image.png" /><br />
-在上图，红框框起来的点都可以互相到达，所以他们最多能走到的格子都一样，即这个联通块内的坐标个数——<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span>个。</p>
-<p>这样，可以得出第二版代码：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">bool</span> Map[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> mapBooker[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> answerQueue[<span class="number">100005</span>];</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> id,<span class="type">bool</span> last)</span></span>&#123;</span><br><span class="line">    <span class="comment">/*判定是否越界、已经搜索过*/</span></span><br><span class="line">    <span class="keyword">if</span>(last==Map[x][y] <span class="keyword">or</span> x&lt;<span class="number">1</span> <span class="keyword">or</span> x&gt;n <span class="keyword">or</span> y&lt;<span class="number">1</span> <span class="keyword">or</span> y&gt;n <span class="keyword">or</span> mapBooker[x][y]!=<span class="number">-1</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    mapBooker[x][y]=id;<span class="comment">//标记联通块编号</span></span><br><span class="line">    <span class="keyword">return</span> answerQueue[id]=<span class="built_in">search</span>(x<span class="number">-1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x+<span class="number">1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x,y+<span class="number">1</span>,id,Map[x][y])+<span class="built_in">search</span>(x,y<span class="number">-1</span>,id,Map[x][y])+<span class="number">1</span>;<span class="comment">//搜索，同时将答案放入答案区</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> tmp;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(mapBooker,<span class="number">-1</span>,<span class="built_in">sizeof</span>(mapBooker));</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;tmp;</span><br><span class="line">            Map[i][j]=(tmp==<span class="string">&#x27;0&#x27;</span>?<span class="literal">false</span>:<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        <span class="keyword">if</span>(mapBooker[x][y]!=<span class="number">-1</span>)&#123;<span class="comment">//已经被搜过了</span></span><br><span class="line">            cout&lt;&lt;answerQueue[mapBooker[x][y]]&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> cout&lt;&lt;<span class="built_in">search</span>(x,y,i,!Map[x][y])&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>由于联通块的特性，我们不需要每次都清空<code>mapBooker</code>数组，因为只要搜过的地方就没必要再搜了。</p>
-<p>再次提交，成功AC。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/9zx8dABDmPErjSJ.png" alt="image.png" /></p>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>搜索</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>C++</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Hexo】博客数学公式解决方案，亲测有效</title>
-    <url>/20210930/hexo-katex/</url>
-    <content><![CDATA[<p>自从打开了Pjax后，我的博客的LaTeX加载就非常闹心……</p>
-<span id="more"></span>
-<h1 id="原因"><a class="markdownIt-Anchor" href="#原因"></a> 原因</h1>
-<p>我的博客一开始使用的是MathJax，一开始还行，后来为了搞音乐播放器，开启了Pjax，噩梦的开始……</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/06/bPD6V19SlYKhUIA.png" alt="image.png" /></p>
-<p>Pjax动态加载会导致部分JavaScript文件无法自动运行，这很常见……像MathJax这类的需要在页面打开后再渲染的，自然属于这一类。</p>
-<h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h1>
-<p>打开主题的配置文件，找到有关于数学公式的配置（这里使用的是NexT主题）：</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/06/Ugw8hneT4vzVxCX.png" alt="image.png" /></p>
-<p>将其修改，关闭所有选项：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="comment"># Default (true) will load mathjax / katex script on demand.</span></span><br><span class="line">  <span class="comment"># That is it only render those page which has `mathjax: true` in Front-matter.</span></span><br><span class="line">  <span class="comment"># If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://mhchem.github.io/MathJax-mhchem/</span></span><br><span class="line">    <span class="attr">mhchem:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>随后打开<code>\themes\next\layout\_layout.swig</code>，在<code>&lt;head&gt;</code>处添加以下两行：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css&quot;</span> <span class="attr">integrity</span>=<span class="string">&quot;sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js&quot;</span> <span class="attr">integrity</span>=<span class="string">&quot;sha384-4z8mjH4yIpuK9dIQGR1JwbrfYsStrNK6MP+2Enhue4eyo0XlBDXOIPc8b6ZU0ajz&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这样可以将我们的博客的数学公式渲染切换到KaTeX，至于为什么不使用自带的KaTeX……在博主这里渲染一直有问题qaq</p>
-<h1 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> 效果</h1>
-<p>切换完后，就来看看效果……</p>
-<h2 id="行内公式"><a class="markdownIt-Anchor" href="#行内公式"></a> 行内公式</h2>
-<p>众所周知，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1+1=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">2+2=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span>，因此，我们可以得到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>+</mo><mi>a</mi><mo>=</mo><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">a+a=2a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">a</span></span></span></span>。</p>
-<p>勾股定理的公式是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>。</p>
-<p>在C++中，定义一个数组<code>a[n]</code>（假设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>已知），那么这个数组下标实际为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>3</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub><mo separator="true">,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_1,a_2,a_3,...,a_{n-2},a_{n-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.301108em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span></p>
-<h2 id="行间公式"><a class="markdownIt-Anchor" href="#行间公式"></a> 行间公式</h2>
-<p>勾股定理的公式是：</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9474379999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
-<h2 id="一大段的文字"><a class="markdownIt-Anchor" href="#一大段的文字"></a> 一大段的文字</h2>
-<p>根据勾股定理的公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，我们可以得到以下的伪代码，通过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span>，计算出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span>：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> _ = <span class="number">3</span>,$$ = <span class="number">4</span>;<span class="comment">//a,b</span></span><br><span class="line"><span class="type">int</span> $$$_233 = <span class="built_in">sqrt</span>(_*_+$$*$$)<span class="comment">//c</span></span><br></pre></td></tr></table></figure>
-<p>可见效果还不戳qaq</p>
-]]></content>
-      <categories>
-        <category>博客美化</category>
-        <category>功能</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>美化</tag>
-        <tag>Hexo</tag>
-        <tag>LaTeX</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【被墙检测】IT狗被墙检测API调用</title>
     <url>/20210831/itdog-gfw-api/</url>
     <content><![CDATA[<p>最近有一个检测网站是否被墙的需求，找了几个网站，发现IT狗的API比较方便。</p>
@@ -1048,6 +1011,75 @@ A:自行百度，以后会专门出一篇博客。</li>
       <tags>
         <tag>API</tag>
         <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【洛谷 P1141】01迷宫</title>
+    <url>/20211013/luogu-p1141/</url>
+    <content><![CDATA[<p>这道题可以用DFS，也可以用BFS，这里我采用了DFS（因为懒）。</p>
+<span id="more"></span>
+<h1 id="题目大意"><a class="markdownIt-Anchor" href="#题目大意"></a> 题目大意</h1>
+<p>给定一个只含<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的迷宫：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">n</span>=<span class="number">4</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line"><span class="attribute">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"><span class="attribute">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>从每一个为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>的位置，可以走到相邻的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>处；从每一个为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>的位置，可以走到相邻的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>处。即上一个走过来的格子不能与现在的格子相同。</p>
+<p>接下来有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>次查询，每次查询给定一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x,y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>，表示迷宫里第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>行第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span>列的格子，询问从这里开始最多能走到几个格子（包括自身）。</p>
+<h1 id="做法"><a class="markdownIt-Anchor" href="#做法"></a> 做法</h1>
+<h2 id="普通dfs"><a class="markdownIt-Anchor" href="#普通dfs"></a> 普通DFS</h2>
+<p>根据题意，很容易得到第一版的DFS代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">bool</span> Map[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> mapBooker[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">bool</span> last)</span></span>&#123;</span><br><span class="line">    <span class="comment">/*判定是否越界、已经搜索过*/</span></span><br><span class="line">    <span class="keyword">if</span>(last==Map[x][y] <span class="keyword">or</span> x&lt;<span class="number">1</span> <span class="keyword">or</span> x&gt;n <span class="keyword">or</span> y&lt;<span class="number">1</span> <span class="keyword">or</span> y&gt;n <span class="keyword">or</span> !mapBooker[x][y])<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    mapBooker[x][y]=<span class="number">1</span>;<span class="comment">//标记</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">search</span>(x<span class="number">-1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x+<span class="number">1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x,y+<span class="number">1</span>,id,Map[x][y])+<span class="built_in">search</span>(x,y<span class="number">-1</span>,id,Map[x][y])+<span class="number">1</span>;<span class="comment">//继续搜索，搜索周围四个点，同时算上自己</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> tmp;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);<span class="comment">//加快cin的读入</span></span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;tmp;</span><br><span class="line">            Map[i][j]=(tmp==<span class="string">&#x27;0&#x27;</span>?<span class="literal">false</span>:<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(mapBooker,<span class="number">0</span>,<span class="built_in">sizeof</span>(mapBooker));<span class="comment">//清空标记数组</span></span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        cout&lt;&lt;<span class="built_in">search</span>(x,y,!Map[x][y])&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但这样的代码只拿了70分，剩下的三个点全部超时。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/qRzP5AVNryladKu.png" alt="image.png" /></p>
+<h2 id="dfs联通块"><a class="markdownIt-Anchor" href="#dfs联通块"></a> DFS+联通块</h2>
+<p>我们可以发现，在同一个块里的点都能相互联通，所以，只要这一个块里的其中一个点被搜过了，其它的点其实已经得出来了：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/NntmRr1395a4UuQ.png" alt="image.png" /><br />
+在上图，红框框起来的点都可以互相到达，所以他们最多能走到的格子都一样，即这个联通块内的坐标个数——<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span>个。</p>
+<p>这样，可以得出第二版代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">bool</span> Map[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> mapBooker[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> answerQueue[<span class="number">100005</span>];</span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">search</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> id,<span class="type">bool</span> last)</span></span>&#123;</span><br><span class="line">    <span class="comment">/*判定是否越界、已经搜索过*/</span></span><br><span class="line">    <span class="keyword">if</span>(last==Map[x][y] <span class="keyword">or</span> x&lt;<span class="number">1</span> <span class="keyword">or</span> x&gt;n <span class="keyword">or</span> y&lt;<span class="number">1</span> <span class="keyword">or</span> y&gt;n <span class="keyword">or</span> mapBooker[x][y]!=<span class="number">-1</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    mapBooker[x][y]=id;<span class="comment">//标记联通块编号</span></span><br><span class="line">    <span class="keyword">return</span> answerQueue[id]=<span class="built_in">search</span>(x<span class="number">-1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x+<span class="number">1</span>,y,id,Map[x][y])+<span class="built_in">search</span>(x,y+<span class="number">1</span>,id,Map[x][y])+<span class="built_in">search</span>(x,y<span class="number">-1</span>,id,Map[x][y])+<span class="number">1</span>;<span class="comment">//搜索，同时将答案放入答案区</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> tmp;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(mapBooker,<span class="number">-1</span>,<span class="built_in">sizeof</span>(mapBooker));</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            cin&gt;&gt;tmp;</span><br><span class="line">            Map[i][j]=(tmp==<span class="string">&#x27;0&#x27;</span>?<span class="literal">false</span>:<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        <span class="keyword">if</span>(mapBooker[x][y]!=<span class="number">-1</span>)&#123;<span class="comment">//已经被搜过了</span></span><br><span class="line">            cout&lt;&lt;answerQueue[mapBooker[x][y]]&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> cout&lt;&lt;<span class="built_in">search</span>(x,y,i,!Map[x][y])&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于联通块的特性，我们不需要每次都清空<code>mapBooker</code>数组，因为只要搜过的地方就没必要再搜了。</p>
+<p>再次提交，成功AC。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/9zx8dABDmPErjSJ.png" alt="image.png" /></p>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>搜索</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>C++</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【洛谷 P1601】A+B Problem（高精）</title>
+    <url>/20210802/luogu-p1601/</url>
+    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
+<span id="more"></span>
+<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
+<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
+<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
+<p>既然如此，我们就可以得到以下代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
+<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
+<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
+<p>代码如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
+<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
+<p>参考：</p>
+<ol>
+<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>高精度</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1365,38 +1397,6 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
         <tag>反向代理</tag>
         <tag>Cloudflare</tag>
         <tag>Proxy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【洛谷 P1601】A+B Problem（高精）</title>
-    <url>/20210802/luogu-p1601/</url>
-    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
-<span id="more"></span>
-<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
-<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
-<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
-<p>既然如此，我们就可以得到以下代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
-<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
-<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
-<p>代码如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
-<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
-<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
-<p>参考：</p>
-<ol>
-<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>高精度</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
