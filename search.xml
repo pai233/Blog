@@ -337,34 +337,6 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
-    <title>【奇淫技巧】 在中国大陆内更快的下载VS Code安装包</title>
-    <url>/20211011/download-vscode-faster-in-china/</url>
-    <content><![CDATA[<p>今天重装了VS Code（别问我为啥），但速度……呵呵……</p>
-<span id="more"></span>
-<h1 id="操作过程"><a class="markdownIt-Anchor" href="#操作过程"></a> 操作过程</h1>
-<p>首先，像平常一样，点击下载VS Code。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/gsvhuzaTW1GKeqx.png" alt="image.png" /></p>
-<p>开始下载以后，你的浏览器会自动创建一个下载任务，但速度可与X度网盘比拟：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/fqxr1vYiTOoRyBX.png" alt="image.png" /></p>
-<p>这时，右键下载任务（此处使用Microsoft Edge），复制下载链接：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/JVFDUkXRHQ5pSKN.png" alt="image.png" /></p>
-<p>此时，你的剪贴板里就会有一串这样的网址：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>az764295.vo.msecnd.net<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
-<p>现在，将网址里的<code>az764295.vo.msecnd.net</code>替换为<code>vscode.cdn.azure.cn</code>，变成这样：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>vscode.cdn.azure.cn<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
-<p>然后就可以直接下载了，速度++！<br />
-<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/hS1G3Q7DgaHlyBj.png" alt="image.png" /></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-        <category>奇淫技巧</category>
-      </categories>
-      <tags>
-        <tag>VS Code</tag>
-        <tag>奇淫技巧</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【小报】CCF报名官网出现严重Bug，多地OIer可随意发布新闻</title>
     <url>/20211012/cspsj-noi-cn-has-some-bugs/</url>
     <content><![CDATA[<p>今日，CCF报名官网出现严重Bug，多地的OIer可在报名官网的新闻栏目随意发布新闻（博主身处GD，目前只剩这条了）：<br />
@@ -401,6 +373,34 @@ CSP-J（仅扫描件）：
       <tags>
         <tag>CCF</tag>
         <tag>小报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【奇淫技巧】 在中国大陆内更快的下载VS Code安装包</title>
+    <url>/20211011/download-vscode-faster-in-china/</url>
+    <content><![CDATA[<p>今天重装了VS Code（别问我为啥），但速度……呵呵……</p>
+<span id="more"></span>
+<h1 id="操作过程"><a class="markdownIt-Anchor" href="#操作过程"></a> 操作过程</h1>
+<p>首先，像平常一样，点击下载VS Code。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/gsvhuzaTW1GKeqx.png" alt="image.png" /></p>
+<p>开始下载以后，你的浏览器会自动创建一个下载任务，但速度可与X度网盘比拟：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/fqxr1vYiTOoRyBX.png" alt="image.png" /></p>
+<p>这时，右键下载任务（此处使用Microsoft Edge），复制下载链接：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/JVFDUkXRHQ5pSKN.png" alt="image.png" /></p>
+<p>此时，你的剪贴板里就会有一串这样的网址：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>az764295.vo.msecnd.net<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
+<p>现在，将网址里的<code>az764295.vo.msecnd.net</code>替换为<code>vscode.cdn.azure.cn</code>，变成这样：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">https:<span class="regexp">//</span>vscode.cdn.azure.cn<span class="regexp">/stable/</span>ee8c7def80afc00dd6e593ef12f37756d8f504ea/VSCodeUserSetup-x64-<span class="number">1.61</span>.<span class="number">0</span>.exe</span><br></pre></td></tr></table></figure>
+<p>然后就可以直接下载了，速度++！<br />
+<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/11/hS1G3Q7DgaHlyBj.png" alt="image.png" /></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+        <category>奇淫技巧</category>
+      </categories>
+      <tags>
+        <tag>VS Code</tag>
+        <tag>奇淫技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -601,6 +601,75 @@ CSP-J（仅扫描件）：
       </tags>
   </entry>
   <entry>
+    <title>如何将你的Hexo博客部署到Google Firebase上</title>
+    <url>/20220208/how-to-deploy-your-hexo-blog-on-firebase/</url>
+    <content><![CDATA[<p>博主最近在 <s>白嫖万恶的资本</s> 将博客部署到新的CDN上，所以在寻找免费的静态Web应用部署工具，发现了Google Firebase。</p>
+<span id="more"></span>
+<h1 id="google-firebase"><a class="markdownIt-Anchor" href="#google-firebase"></a> Google Firebase</h1>
+<blockquote>
+<p>以下内容摘取自<a href="https://www.wikipedia.org/">Wikipedia</a>。<br />
+Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者平台，在2014年被Google收购。<br />
+截至2020年3月，Firebase平台拥有19项产品，它们被超过150万个应用程序采用。</p>
+</blockquote>
+<p>这 <s>万恶资本</s> Google的坑，怎么能不白嫖呢😏</p>
+<p><strong>Tip: 以下内容在中国大陆需要掌握浏览世界的方法（嘘🤫——</strong></p>
+<h1 id="新建项目"><a class="markdownIt-Anchor" href="#新建项目"></a> 新建项目</h1>
+<p>打开<a href="https://firebase.google.com/">Firebase官网</a>，登陆账号并转到控制台。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/zup1nxeh.png" alt="" /></p>
+<p>选择“添加项目”，输入您的项目名称，如果你喜欢，可以编辑您项目的唯一标识符（位于名称框的左下角）</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/8N1PLfg0.png" alt="" /></p>
+<p>点击下一步，到询问是否启用分析页面，这里根据你个人的喜好来吧~</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/N9f6FPMQ.png" alt="" /></p>
+<p>选择完后，项目开始创建（如果您启用了分析，可能还要选择账户）。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/5j0QsL4j.png" alt="" /></p>
+<p>然后会进入到选择计划的页面（由于博主先前已经创建过了，并没有弹出），按照你的喜好来 <s>（不会有人给Google交钱吧）</s>，选择完后整个项目就OK了。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/o1m0xdWC.png" alt="" /></p>
+<h1 id="安装hexo插件"><a class="markdownIt-Anchor" href="#安装hexo插件"></a> 安装Hexo插件</h1>
+<p>因为Hexo在之前并没有将博客发布到Firebase的插件，博主就自己做了一个<a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a>，但在使用前，还需要你安装Firebase CLI。</p>
+<h2 id="安装firebase-cli命令行工具"><a class="markdownIt-Anchor" href="#安装firebase-cli命令行工具"></a> 安装Firebase CLI命令行工具</h2>
+<p>Firebase CLI在官网上提供了两种安装方式，分别是安装包安装和<code>npm</code>安装。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/06/ADzfV8Z1.png" alt="" /></p>
+<p>我们既然都用Hexo了，那么肯定装好了npm了吧（</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i -g firebase-tools</span><br></pre></td></tr></table></figure>
+<p>按照你想用的方式安装好，在命令行中运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firebase login</span><br></pre></td></tr></table></figure>
+<p>如果你无权访问<code>localhost</code>（个人电脑应该都可以吧），可以使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firebase login --no-localhost</span><br></pre></td></tr></table></figure>
+<p>登陆您项目所对应的Google账号，登陆完后，这一步就OK了。</p>
+<h2 id="安装插件"><a class="markdownIt-Anchor" href="#安装插件"></a> 安装插件</h2>
+<p>将命令行切换到您的博客根目录下，运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-deployer-firebase --save</span><br></pre></td></tr></table></figure>
+<p>安装插件。等待进度条跑完，即安装成功。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/dBQv8rdB.png" alt="" /></p>
+<h1 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h1>
+<p>打开Hexo的<code>_config.yml</code>文件，在您的<code>deploy</code>处进行配置：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">firebase</span></span><br><span class="line">      <span class="attr">id:</span> <span class="comment">#你Firebase项目的标识符</span></span><br></pre></td></tr></table></figure>
+<p>例如博主的是这个样子：<br />
+<img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/s4G3udAw.png" alt="" /></p>
+<p>现在，你可以愉快的将博客发布到Google Firebase上啦~</p>
+<h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1>
+<ol>
+<li><a href="https://zh.wikipedia.org/wiki/Firebase">Firebase - 维基百科</a></li>
+<li><a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a></li>
+</ol>
+<p>能完成这个项目，需要感谢：</p>
+<ol>
+<li><a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
+<li><a href="https://hexo.io/zh-cn/api/">Hexo API</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>部署</category>
+      </categories>
+      <tags>
+        <tag>白嫖</tag>
+        <tag>部署</tag>
+        <tag>Blog</tag>
+        <tag>Firebase</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Hexo】博客数学公式解决方案，亲测有效</title>
     <url>/20210930/hexo-katex/</url>
     <content><![CDATA[<p>自从打开了Pjax后，我的博客的LaTeX加载就非常闹心……</p>
@@ -692,75 +761,6 @@ A:自行百度，以后会专门出一篇博客。</li>
       </tags>
   </entry>
   <entry>
-    <title>如何将你的Hexo博客部署到Google Firebase上</title>
-    <url>/20220208/how-to-deploy-your-hexo-blog-on-firebase/</url>
-    <content><![CDATA[<p>博主最近在 <s>白嫖万恶的资本</s> 将博客部署到新的CDN上，所以在寻找免费的静态Web应用部署工具，发现了Google Firebase。</p>
-<span id="more"></span>
-<h1 id="google-firebase"><a class="markdownIt-Anchor" href="#google-firebase"></a> Google Firebase</h1>
-<blockquote>
-<p>以下内容摘取自<a href="https://www.wikipedia.org/">Wikipedia</a>。<br />
-Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者平台，在2014年被Google收购。<br />
-截至2020年3月，Firebase平台拥有19项产品，它们被超过150万个应用程序采用。</p>
-</blockquote>
-<p>这 <s>万恶资本</s> Google的坑，怎么能不白嫖呢😏</p>
-<p><strong>Tip: 以下内容在中国大陆需要掌握浏览世界的方法（嘘🤫——</strong></p>
-<h1 id="新建项目"><a class="markdownIt-Anchor" href="#新建项目"></a> 新建项目</h1>
-<p>打开<a href="https://firebase.google.com/">Firebase官网</a>，登陆账号并转到控制台。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/zup1nxeh.png" alt="" /></p>
-<p>选择“添加项目”，输入您的项目名称，如果你喜欢，可以编辑您项目的唯一标识符（位于名称框的左下角）</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/8N1PLfg0.png" alt="" /></p>
-<p>点击下一步，到询问是否启用分析页面，这里根据你个人的喜好来吧~</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/N9f6FPMQ.png" alt="" /></p>
-<p>选择完后，项目开始创建（如果您启用了分析，可能还要选择账户）。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/5j0QsL4j.png" alt="" /></p>
-<p>然后会进入到选择计划的页面（由于博主先前已经创建过了，并没有弹出），按照你的喜好来 <s>（不会有人给Google交钱吧）</s>，选择完后整个项目就OK了。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/o1m0xdWC.png" alt="" /></p>
-<h1 id="安装hexo插件"><a class="markdownIt-Anchor" href="#安装hexo插件"></a> 安装Hexo插件</h1>
-<p>因为Hexo在之前并没有将博客发布到Firebase的插件，博主就自己做了一个<a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a>，但在使用前，还需要你安装Firebase CLI。</p>
-<h2 id="安装firebase-cli命令行工具"><a class="markdownIt-Anchor" href="#安装firebase-cli命令行工具"></a> 安装Firebase CLI命令行工具</h2>
-<p>Firebase CLI在官网上提供了两种安装方式，分别是安装包安装和<code>npm</code>安装。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/06/ADzfV8Z1.png" alt="" /></p>
-<p>我们既然都用Hexo了，那么肯定装好了npm了吧（</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i -g firebase-tools</span><br></pre></td></tr></table></figure>
-<p>按照你想用的方式安装好，在命令行中运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firebase login</span><br></pre></td></tr></table></figure>
-<p>如果你无权访问<code>localhost</code>（个人电脑应该都可以吧），可以使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firebase login --no-localhost</span><br></pre></td></tr></table></figure>
-<p>登陆您项目所对应的Google账号，登陆完后，这一步就OK了。</p>
-<h2 id="安装插件"><a class="markdownIt-Anchor" href="#安装插件"></a> 安装插件</h2>
-<p>将命令行切换到您的博客根目录下，运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i hexo-deployer-firebase --save</span><br></pre></td></tr></table></figure>
-<p>安装插件。等待进度条跑完，即安装成功。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/dBQv8rdB.png" alt="" /></p>
-<h1 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h1>
-<p>打开Hexo的<code>_config.yml</code>文件，在您的<code>deploy</code>处进行配置：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">firebase</span></span><br><span class="line">      <span class="attr">id:</span> <span class="comment">#你Firebase项目的标识符</span></span><br></pre></td></tr></table></figure>
-<p>例如博主的是这个样子：<br />
-<img src= "/img/loading.gif" data-lazy-src="https://img1.imgtp.com/2022/02/08/s4G3udAw.png" alt="" /></p>
-<p>现在，你可以愉快的将博客发布到Google Firebase上啦~</p>
-<h1 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h1>
-<ol>
-<li><a href="https://zh.wikipedia.org/wiki/Firebase">Firebase - 维基百科</a></li>
-<li><a href="https://github.com/pai233/hexo-deployer-firebase">hexo-deployer-firebase</a></li>
-</ol>
-<p>能完成这个项目，需要感谢：</p>
-<ol>
-<li><a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></li>
-<li><a href="https://hexo.io/zh-cn/api/">Hexo API</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客美化</category>
-        <category>部署</category>
-      </categories>
-      <tags>
-        <tag>白嫖</tag>
-        <tag>部署</tag>
-        <tag>Blog</tag>
-        <tag>Firebase</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何修复具有双BIOS的某G姓主板的BIOS</title>
     <url>/20220123/how-to-fix-the-bios-of-gigabyte-motherboards-which-has-dual-bios/</url>
     <content><![CDATA[<p>前几天不知道主板抽什么风，BIOS又炸了。</p>
@@ -799,6 +799,49 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <tag>主板</tag>
         <tag>维修</tag>
         <tag>技嘉</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给静态博客加入链接安全跳转页</title>
+    <url>/20220109/how-to-use-go-jumper/</url>
+    <content><![CDATA[<p>在逛别人的博客的时候，发现了有一种叫<code>go.php</code>的东西，可以经过自己站点的网页再跳转出去，方便SEO优化。但是像Hexo这类静态博客，想要从源HTML修改链接难度有点大，这里我们采用JavaScript动态修改。</p>
+<span id="more"></span>
+<h1 id="部署go-jumper到github-pages"><a class="markdownIt-Anchor" href="#部署go-jumper到github-pages"></a> 部署Go Jumper到Github Pages</h1>
+<p>博主根据<a href="https://mkblog.cn/701/">这个大佬的博客</a>里的二次跳转，魔改了一个静态版：<a href="https://github.com/pai233/go-jumper">Go Jumper</a><br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/4LTcE2wAXrmvkKZ.png" alt="image.png" /></p>
+<p>所以，现在登陆你的Github账号，Fork这个仓库，选择你的个人账户。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/EblcdQUOof9sBZH.png" alt="image.png" /></p>
+<p>Fork完毕后，点击Settings-&gt;Pages，将原分支从<code>none</code>修改为<code>master</code>，目录保持为<code>/(root)</code>，然后Save。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/23sepgmSiFvbhGw.png" alt="image.png" /></p>
+<p>这样，你自己的Go Jumper就成功部署在<code>https://[你的Github用户名].github.io/go-jumper/</code>了。<br />
+<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/5tML3zhxuHOlPfr.png" alt="image.png" /></p>
+<p>当然，你也可以绑定自己的域名，或者部署到其他的平台，这里不展开赘述。</p>
+<h1 id="修改indexjs"><a class="markdownIt-Anchor" href="#修改indexjs"></a> 修改<code>index.js</code></h1>
+<p>为了方便，我们这边直接在线修改：打开<code>https://github.com/[你的Github用户名]/go-jumper/edit/master/js/index.js</code>，修改以下内容：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&quot;loading-text&quot;</span>)[<span class="number">0</span>].<span class="property">innerHTML</span> = <span class="string">&quot;参数错误，将跳转至pai233の小窝&lt;dot&gt;...&lt;/dot&gt;&quot;</span><span class="comment">//修改为你自己的提示</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&quot;https://blog.pai233.top/&quot;</span><span class="comment">//修改为你自己的主页</span></span><br><span class="line">&#125;,<span class="number">5000</span>)</span><br><span class="line"><span class="string">``</span><span class="string">`      </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line"><span class="keyword">if</span>(<span class="comment">/*referrer[referrer.length-3]+&quot;.&quot;+ 二级域名可选*/</span>referrer[referrer.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+referrer[referrer.<span class="property">length</span>-<span class="number">1</span>]!=<span class="string">&quot;pai233.top&quot;</span><span class="comment">/*修改为你的博客的根/二级域名，二级域名需要去掉前面的注释*/</span> || <span class="variable language_">document</span>.<span class="property">referrer</span>===<span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">    swal.<span class="title function_">fire</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;确定访问？&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: <span class="string">&quot;该网址不属于咕咕小站，你确定要打开&quot;</span>+link+<span class="string">&quot;吗？&quot;</span>,<span class="comment">//修改为你自己的提示</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;warning&quot;</span>,</span><br><span class="line">        <span class="attr">showCancelButton</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">confirmButtonColor</span>: <span class="string">&quot;#DD6B55&quot;</span>,</span><br><span class="line">        <span class="attr">confirmButtonText</span>: <span class="string">&quot;确定&quot;</span>,</span><br><span class="line">        <span class="attr">cancelButtonText</span>: <span class="string">&quot;取消&quot;</span>,</span><br><span class="line">        &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">isConfirm</span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(isConfirm)</span><br><span class="line">        <span class="keyword">if</span> (isConfirm) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setTimeout&#x27;</span>)</span><br><span class="line">            <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">                <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = link</span><br><span class="line">            &#125;,<span class="number">3000</span>)</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="property">opener</span>=<span class="literal">null</span>;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;_self&#x27;</span>);</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">close</span>();</span><br><span class="line">            <span class="comment">/* 微信浏览器关闭 */</span> </span><br><span class="line">            <span class="title class_">WeixinJSBridge</span>.<span class="title function_">call</span>(<span class="string">&#x27;closeWindow&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后直接commit，现在，你可以通过<code>https://[你的Go Jumper部署地址]#[跳转网页的base64编码]</code>来测试一下。</p>
+<h1 id="博客动态修改"><a class="markdownIt-Anchor" href="#博客动态修改"></a> 博客动态修改</h1>
+<p>这里以博主使用的Hexo+NexT主题为例，新建<code>[主题根目录]/source/js/link-checker.js</code>，内容如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="title function_">checkLink</span>();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 若博客启用了Pjax请去掉注释。</span></span><br><span class="line"><span class="comment">// $(document).on(&#x27;pjax:complete&#x27;, function () &#123;</span></span><br><span class="line"><span class="comment">//     checkLink();</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLink</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> link = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;link.<span class="property">length</span>;i++)&#123;</span><br><span class="line">        <span class="comment">//如果你的博客添加了Gitter聊天窗，请去掉下方注释</span></span><br><span class="line">        <span class="keyword">if</span>(link[i].<span class="property">href</span>===<span class="string">&quot;&quot;</span> <span class="comment">/*|| link[i].className===&quot;gitter-open-chat-button&quot;*/</span>)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="keyword">await</span> <span class="title function_">checkLocalSite</span>(link[i].<span class="property">href</span>))&#123;</span><br><span class="line">            link[i].<span class="property">href</span> = <span class="string">&quot;[你的Go Jumper的部署地址]#&quot;</span>+<span class="variable language_">window</span>.<span class="title function_">btoa</span>(link[i].<span class="property">href</span>)</span><br><span class="line">            <span class="comment">//console.log(&quot;edit.&quot;)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLocalSite</span>(<span class="params">url</span>)&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="comment">//console.log(&quot;check:&quot;,url)</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="regexp">/\/\/(.*)\//g</span>)</span><br><span class="line">        <span class="keyword">let</span> domain = reg.<span class="title function_">exec</span>(url)[<span class="number">1</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">        <span class="comment">//console.log(domain,domain[domain.length-2]+&#x27;.&#x27;+domain[domain.length-1])</span></span><br><span class="line">        domain = &#123;</span><br><span class="line">            <span class="comment">//二级域名请去除下一行的注释</span></span><br><span class="line">            <span class="attr">check</span>: (<span class="comment">/*domain[domain.length-3]+&#x27;.&#x27;+*/</span>domain[domain.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+domain[domain.<span class="property">length</span>-<span class="number">1</span>]).<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>],</span><br><span class="line">            <span class="attr">original</span>: domain</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//console.log(domain)</span></span><br><span class="line">        <span class="keyword">if</span>(domain.<span class="property">check</span>===<span class="string">&quot;pai233.top&quot;</span> || domain.<span class="property">original</span>[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>]===<span class="string">&quot;localhost:4000&quot;</span>)<span class="keyword">return</span> <span class="literal">true</span>;<span class="comment">//将domain.check修改为根或二级域名，domain.original[0].split(&#x27;/&#x27;)[0]修改为本地测试页面</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;<span class="keyword">catch</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>最后到<code>[主题根目录]/layout/_layout.swig</code>中，在<code>&lt;/head&gt;</code>标签前加入以下内容：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/link-checker.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://blog.pai233.top/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://blog.pai233.top/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这样，当博客加载完毕的时候，博客的全部外链就会被加上二级跳转，但是源HTML里的外链不变。</p>
+<h1 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h1>
+<p>在<code>index.html</code>中，博主插入了广告代码，有需要的可自行删除：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;google-ads&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ins</span> <span class="attr">class</span>=<span class="string">&quot;adsbygoogle&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">style</span>=<span class="string">&quot;display:block; text-align:center;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-layout</span>=<span class="string">&quot;in-article&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-format</span>=<span class="string">&quot;fluid&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-client</span>=<span class="string">&quot;ca-pub-1820088263747150&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-slot</span>=<span class="string">&quot;3739765077&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        (adsbygoogle = <span class="variable language_">window</span>.<span class="property">adsbygoogle</span> || []).<span class="title function_">push</span>(&#123;&#125;);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="广告"><a class="markdownIt-Anchor" href="#广告"></a> 广告</h1>
+<p>我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<a href="https://cloud.tencent.com/developer/support-plan?invite_code=j6hm8y2r61ul">点击这里</a></p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://main.qcloudimg.com/raw/64733509acceb4108f98a67fd3166738.jpg" alt="" /></p>
+]]></content>
+      <categories>
+        <category>博客美化</category>
+        <category>功能</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+        <tag>美化</tag>
+        <tag>JavaScript</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -865,49 +908,6 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <tag>白嫖</tag>
         <tag>Microsoft</tag>
         <tag>Office</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给静态博客加入链接安全跳转页</title>
-    <url>/20220109/how-to-use-go-jumper/</url>
-    <content><![CDATA[<p>在逛别人的博客的时候，发现了有一种叫<code>go.php</code>的东西，可以经过自己站点的网页再跳转出去，方便SEO优化。但是像Hexo这类静态博客，想要从源HTML修改链接难度有点大，这里我们采用JavaScript动态修改。</p>
-<span id="more"></span>
-<h1 id="部署go-jumper到github-pages"><a class="markdownIt-Anchor" href="#部署go-jumper到github-pages"></a> 部署Go Jumper到Github Pages</h1>
-<p>博主根据<a href="https://mkblog.cn/701/">这个大佬的博客</a>里的二次跳转，魔改了一个静态版：<a href="https://github.com/pai233/go-jumper">Go Jumper</a><br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/4LTcE2wAXrmvkKZ.png" alt="image.png" /></p>
-<p>所以，现在登陆你的Github账号，Fork这个仓库，选择你的个人账户。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/EblcdQUOof9sBZH.png" alt="image.png" /></p>
-<p>Fork完毕后，点击Settings-&gt;Pages，将原分支从<code>none</code>修改为<code>master</code>，目录保持为<code>/(root)</code>，然后Save。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/23sepgmSiFvbhGw.png" alt="image.png" /></p>
-<p>这样，你自己的Go Jumper就成功部署在<code>https://[你的Github用户名].github.io/go-jumper/</code>了。<br />
-<img src= "/img/loading.gif" data-lazy-src="https://s2.loli.net/2022/01/09/5tML3zhxuHOlPfr.png" alt="image.png" /></p>
-<p>当然，你也可以绑定自己的域名，或者部署到其他的平台，这里不展开赘述。</p>
-<h1 id="修改indexjs"><a class="markdownIt-Anchor" href="#修改indexjs"></a> 修改<code>index.js</code></h1>
-<p>为了方便，我们这边直接在线修改：打开<code>https://github.com/[你的Github用户名]/go-jumper/edit/master/js/index.js</code>，修改以下内容：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&quot;loading-text&quot;</span>)[<span class="number">0</span>].<span class="property">innerHTML</span> = <span class="string">&quot;参数错误，将跳转至pai233の小窝&lt;dot&gt;...&lt;/dot&gt;&quot;</span><span class="comment">//修改为你自己的提示</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&quot;https://blog.pai233.top/&quot;</span><span class="comment">//修改为你自己的主页</span></span><br><span class="line">&#125;,<span class="number">5000</span>)</span><br><span class="line"><span class="string">``</span><span class="string">`      </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>js</span><br><span class="line"><span class="keyword">if</span>(<span class="comment">/*referrer[referrer.length-3]+&quot;.&quot;+ 二级域名可选*/</span>referrer[referrer.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+referrer[referrer.<span class="property">length</span>-<span class="number">1</span>]!=<span class="string">&quot;pai233.top&quot;</span><span class="comment">/*修改为你的博客的根/二级域名，二级域名需要去掉前面的注释*/</span> || <span class="variable language_">document</span>.<span class="property">referrer</span>===<span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">    swal.<span class="title function_">fire</span>(&#123;</span><br><span class="line">        <span class="attr">title</span>: <span class="string">&quot;确定访问？&quot;</span>,</span><br><span class="line">        <span class="attr">text</span>: <span class="string">&quot;该网址不属于咕咕小站，你确定要打开&quot;</span>+link+<span class="string">&quot;吗？&quot;</span>,<span class="comment">//修改为你自己的提示</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&quot;warning&quot;</span>,</span><br><span class="line">        <span class="attr">showCancelButton</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">confirmButtonColor</span>: <span class="string">&quot;#DD6B55&quot;</span>,</span><br><span class="line">        <span class="attr">confirmButtonText</span>: <span class="string">&quot;确定&quot;</span>,</span><br><span class="line">        <span class="attr">cancelButtonText</span>: <span class="string">&quot;取消&quot;</span>,</span><br><span class="line">        &#125;).<span class="title function_">then</span>(<span class="keyword">function</span>(<span class="params">isConfirm</span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(isConfirm)</span><br><span class="line">        <span class="keyword">if</span> (isConfirm) &#123;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setTimeout&#x27;</span>)</span><br><span class="line">            <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">                <span class="variable language_">window</span>.<span class="property">location</span>.<span class="property">href</span> = link</span><br><span class="line">            &#125;,<span class="number">3000</span>)</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="property">opener</span>=<span class="literal">null</span>;</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;_self&#x27;</span>);</span><br><span class="line">            <span class="variable language_">window</span>.<span class="title function_">close</span>();</span><br><span class="line">            <span class="comment">/* 微信浏览器关闭 */</span> </span><br><span class="line">            <span class="title class_">WeixinJSBridge</span>.<span class="title function_">call</span>(<span class="string">&#x27;closeWindow&#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>然后直接commit，现在，你可以通过<code>https://[你的Go Jumper部署地址]#[跳转网页的base64编码]</code>来测试一下。</p>
-<h1 id="博客动态修改"><a class="markdownIt-Anchor" href="#博客动态修改"></a> 博客动态修改</h1>
-<p>这里以博主使用的Hexo+NexT主题为例，新建<code>[主题根目录]/source/js/link-checker.js</code>，内容如下：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="title function_">checkLink</span>();</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 若博客启用了Pjax请去掉注释。</span></span><br><span class="line"><span class="comment">// $(document).on(&#x27;pjax:complete&#x27;, function () &#123;</span></span><br><span class="line"><span class="comment">//     checkLink();</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLink</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> link = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;link.<span class="property">length</span>;i++)&#123;</span><br><span class="line">        <span class="comment">//如果你的博客添加了Gitter聊天窗，请去掉下方注释</span></span><br><span class="line">        <span class="keyword">if</span>(link[i].<span class="property">href</span>===<span class="string">&quot;&quot;</span> <span class="comment">/*|| link[i].className===&quot;gitter-open-chat-button&quot;*/</span>)<span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(!<span class="keyword">await</span> <span class="title function_">checkLocalSite</span>(link[i].<span class="property">href</span>))&#123;</span><br><span class="line">            link[i].<span class="property">href</span> = <span class="string">&quot;[你的Go Jumper的部署地址]#&quot;</span>+<span class="variable language_">window</span>.<span class="title function_">btoa</span>(link[i].<span class="property">href</span>)</span><br><span class="line">            <span class="comment">//console.log(&quot;edit.&quot;)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">checkLocalSite</span>(<span class="params">url</span>)&#123;</span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="comment">//console.log(&quot;check:&quot;,url)</span></span><br><span class="line">        <span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="title class_">RegExp</span>(<span class="regexp">/\/\/(.*)\//g</span>)</span><br><span class="line">        <span class="keyword">let</span> domain = reg.<span class="title function_">exec</span>(url)[<span class="number">1</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">        <span class="comment">//console.log(domain,domain[domain.length-2]+&#x27;.&#x27;+domain[domain.length-1])</span></span><br><span class="line">        domain = &#123;</span><br><span class="line">            <span class="comment">//二级域名请去除下一行的注释</span></span><br><span class="line">            <span class="attr">check</span>: (<span class="comment">/*domain[domain.length-3]+&#x27;.&#x27;+*/</span>domain[domain.<span class="property">length</span>-<span class="number">2</span>]+<span class="string">&#x27;.&#x27;</span>+domain[domain.<span class="property">length</span>-<span class="number">1</span>]).<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>],</span><br><span class="line">            <span class="attr">original</span>: domain</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//console.log(domain)</span></span><br><span class="line">        <span class="keyword">if</span>(domain.<span class="property">check</span>===<span class="string">&quot;pai233.top&quot;</span> || domain.<span class="property">original</span>[<span class="number">0</span>].<span class="title function_">split</span>(<span class="string">&#x27;/&#x27;</span>)[<span class="number">0</span>]===<span class="string">&quot;localhost:4000&quot;</span>)<span class="keyword">return</span> <span class="literal">true</span>;<span class="comment">//将domain.check修改为根或二级域名，domain.original[0].split(&#x27;/&#x27;)[0]修改为本地测试页面</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;<span class="keyword">catch</span>(err)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>最后到<code>[主题根目录]/layout/_layout.swig</code>中，在<code>&lt;/head&gt;</code>标签前加入以下内容：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/js/link-checker.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://blog.pai233.top/js/sweetalert.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://blog.pai233.top/css/sweetalert.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这样，当博客加载完毕的时候，博客的全部外链就会被加上二级跳转，但是源HTML里的外链不变。</p>
-<h1 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h1>
-<p>在<code>index.html</code>中，博主插入了广告代码，有需要的可自行删除：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;google-ads&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ins</span> <span class="attr">class</span>=<span class="string">&quot;adsbygoogle&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">style</span>=<span class="string">&quot;display:block; text-align:center;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-layout</span>=<span class="string">&quot;in-article&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-format</span>=<span class="string">&quot;fluid&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-client</span>=<span class="string">&quot;ca-pub-1820088263747150&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">data-ad-slot</span>=<span class="string">&quot;3739765077&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">ins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        (adsbygoogle = <span class="variable language_">window</span>.<span class="property">adsbygoogle</span> || []).<span class="title function_">push</span>(&#123;&#125;);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="广告"><a class="markdownIt-Anchor" href="#广告"></a> 广告</h1>
-<p>我的博客即将同步至腾讯云+社区，邀请大家一同入驻：<a href="https://cloud.tencent.com/developer/support-plan?invite_code=j6hm8y2r61ul">点击这里</a></p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://main.qcloudimg.com/raw/64733509acceb4108f98a67fd3166738.jpg" alt="" /></p>
-]]></content>
-      <categories>
-        <category>博客美化</category>
-        <category>功能</category>
-      </categories>
-      <tags>
-        <tag>Blog</tag>
-        <tag>美化</tag>
-        <tag>JavaScript</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1014,6 +1014,38 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
       </tags>
   </entry>
   <entry>
+    <title>【洛谷 P1601】A+B Problem（高精）</title>
+    <url>/20210802/luogu-p1601/</url>
+    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
+<span id="more"></span>
+<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
+<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
+<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
+<p>既然如此，我们就可以得到以下代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
+<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
+<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
+<p>代码如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
+<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
+<p>参考：</p>
+<ol>
+<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>高精度</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【洛谷 P1141】01迷宫</title>
     <url>/20211013/luogu-p1141/</url>
     <content><![CDATA[<p>这道题可以用DFS，也可以用BFS，这里我采用了DFS（因为懒）。</p>
@@ -1048,81 +1080,6 @@ Firebase是Firebase,Inc.在2011年发布的行动和网络应用程序开发者�
         <tag>C++</tag>
         <tag>题解</tag>
         <tag>洛谷</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【洛谷 P2393】yyy loves Maths II</title>
-    <url>/20210803/luogu-p2393/</url>
-    <content><![CDATA[<p>这一道题要排坑的是关于精度的问题。</p>
-<span id="more"></span>
-<p>题目很简单，要做的只有一下三点：</p>
-<ol>
-<li>读数据</li>
-<li>加数据</li>
-<li>输数据</li>
-</ol>
-<p>在<code>C++</code>中，常用的输入方式有<code>scanf()</code>和<code>cin</code>。首先我们以<code>scanf()</code>函数进行讲解，因为这两种输入方式的判断结束方式不一样。</p>
-<h1 id="使用sacnf函数"><a class="markdownIt-Anchor" href="#使用sacnf函数"></a> 使用<code>sacnf()</code>函数</h1>
-<p><code>scanf()</code>函数其在输入结束（即读不到数据时）将返回常数<code>EOF</code>（即-1），而读到数据时会返回读到数据的<strong>个数</strong>。所以我们可以得出第一版代码：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((<span class="built_in">scanf</span>(<span class="string">&quot;%Lf&quot;</span>,&amp;tmp))!=EOF)</span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp;</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.5f&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span>  <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Tips: <code>scanf()</code>函数输入<code>long double</code>类型时需使用<code>%Lf</code>占位符，但<code>printf()</code>函数无论输出<code>float</code>类型还是<code>long double</code>类型，均使用<code>%f</code>占位符。</p>
-<p>代码已经写完，交上去却只有<strong>20分</strong>。</p>
-<p><img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2021/08/589a45893f1ffb55.png" alt="" /></p>
-<p>我们可以写个程序来测试一下：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> tmp=<span class="number">1919810.1145142233</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.20Lf&quot;</span>,tmp);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>得到的输出是<code>1919810.11451422329992055893</code>，而不是我们预想的<code>1919810.1145142233</code>差的不是一丁半点。所以基本上可以判断为精度问题。</p>
-<p>所以，我们需要先将它转换为整数，随后再转换回小数，以此确保精度不会出错。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((<span class="built_in">scanf</span>(<span class="string">&quot;%Lf&quot;</span>,&amp;tmp))!=EOF)<span class="comment">//判断是否结束</span></span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp*<span class="number">1000000</span>;<span class="comment">//化成整数，防止小数的精度问题</span></span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.5Lf&quot;</span>,ans/<span class="number">1000000</span>);<span class="comment">//转换回小数</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>由于每个数最多只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span>位小数，所以这里只需要将读入的小数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\times 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，就可以转换为整数，最后因为每个数都<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\times 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，所以我们只需要将最终的答案<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>÷</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\div 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">÷</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，就可以恢复了。</p>
-<h1 id="使用cin"><a class="markdownIt-Anchor" href="#使用cin"></a> 使用<code>cin</code></h1>
-<p>前面已经说明了具体的算法，故此处不再阐述。</p>
-<p><code>cin</code>读取完毕后，会直接返回<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，而不是如同<code>scanf()</code>返回的<code>EOF</code>常数。所以，只需要修改判空部分：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((cin&gt;&gt;tmp)!=<span class="number">0</span>)<span class="comment">//判断是否结束,可以化简成while(cin&gt;&gt;tmp)</span></span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp*<span class="number">1000000</span>;</span><br><span class="line">	&#125; </span><br><span class="line">	cout&lt;&lt;fixed&lt;&lt;<span class="built_in">setprecision</span>(<span class="number">5</span>)&lt;&lt;ans/<span class="number">1000000</span>;<span class="comment">//使用cout保留小数</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="qa"><a class="markdownIt-Anchor" href="#qa"></a> Q&amp;A</h1>
-<p>Q: 为什么用了你的代码没有输出啊？<br />
-A: 您在使用标准输入输出时，程序并不知道你接下来还要不要输入，故无法判断输入是否结束。所以你需要向程序发送一个“信号”，告诉程序输入已经终止。在Windows下，这个“信号”为在程序框中输入<code>Ctrl+Z</code>再按回车，而在类<code>Unix</code>系统下，这个“信号”为直接按<code>Ctrl+D</code>。</p>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>模拟</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>C++</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【洛谷 P1601】A+B Problem（高精）</title>
-    <url>/20210802/luogu-p1601/</url>
-    <content><![CDATA[<p>众所周知，高精度这种东西，在部分语言里，根本不是问题。这里我将使用<code>Python</code>。</p>
-<span id="more"></span>
-<p>在<code>Python</code>的两个大版本（即<code>Python 2.x</code>和<code>Python 3.x</code>）中，<code>input</code>这个函数的使用方法是<strong>不同的</strong>！所以这里我会分开两个版本来进行讲解。</p>
-<h1 id="python-2"><a class="markdownIt-Anchor" href="#python-2"></a> Python 2</h1>
-<p>在<code>Python 2</code>中，有两种基本的输入方式：<code>input()</code>和<code>raw_input()</code>。其中，<code>input()</code>相当于<code>eval(raw_input(prompt))</code>，其希望能够读取到一个合法的<code>Python</code>表达式，而<code>raw_input()</code>则将所有输入当字符串处理。</p>
-<p>既然如此，我们就可以得到以下代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(a+b)</span><br></pre></td></tr></table></figure>
-<h1 id="python-3"><a class="markdownIt-Anchor" href="#python-3"></a> Python 3</h1>
-<p>在<code>Python 3</code>中，原来的<code>raw_input()</code>与<code>input()</code>进行了整合，现有的<code>input()</code>函数读取到的输入默认处理为字符串。所以，我们需要将字符串转换为数字。</p>
-<p>代码如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">a=<span class="built_in">input</span>()</span><br><span class="line">b=<span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(a)+<span class="built_in">int</span>(b))</span><br></pre></td></tr></table></figure>
-<h1 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h1>
-<p>这篇题解主要是为了区分Python两个大版本中的不同之处，方便以后排坑。两者的核心语法看似相同，但由于内部常用的函数的修改，<code>Python 2</code>的代码常常不能直接在<code>Python 3</code>上直接运行，这点需要注意。</p>
-<p>参考：</p>
-<ol>
-<li><a href="https://www.runoob.com/w3cnote/python2-python3-raw_input-and-input.html">Python2.x 和 Python3.x 中 raw_input( ) 和 input( ) 区别 | 菜鸟教程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法学习</category>
-        <category>高精度</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-        <tag>题解</tag>
-        <tag>洛谷</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1166,6 +1123,49 @@ A: 您在使用标准输入输出时，程序并不知道你接下来还要不�
         <tag>C++</tag>
         <tag>题解</tag>
         <tag>NOIP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【洛谷 P2393】yyy loves Maths II</title>
+    <url>/20210803/luogu-p2393/</url>
+    <content><![CDATA[<p>这一道题要排坑的是关于精度的问题。</p>
+<span id="more"></span>
+<p>题目很简单，要做的只有一下三点：</p>
+<ol>
+<li>读数据</li>
+<li>加数据</li>
+<li>输数据</li>
+</ol>
+<p>在<code>C++</code>中，常用的输入方式有<code>scanf()</code>和<code>cin</code>。首先我们以<code>scanf()</code>函数进行讲解，因为这两种输入方式的判断结束方式不一样。</p>
+<h1 id="使用sacnf函数"><a class="markdownIt-Anchor" href="#使用sacnf函数"></a> 使用<code>sacnf()</code>函数</h1>
+<p><code>scanf()</code>函数其在输入结束（即读不到数据时）将返回常数<code>EOF</code>（即-1），而读到数据时会返回读到数据的<strong>个数</strong>。所以我们可以得出第一版代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((<span class="built_in">scanf</span>(<span class="string">&quot;%Lf&quot;</span>,&amp;tmp))!=EOF)</span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp;</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.5f&quot;</span>,ans);</span><br><span class="line">	<span class="keyword">return</span>  <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Tips: <code>scanf()</code>函数输入<code>long double</code>类型时需使用<code>%Lf</code>占位符，但<code>printf()</code>函数无论输出<code>float</code>类型还是<code>long double</code>类型，均使用<code>%f</code>占位符。</p>
+<p>代码已经写完，交上去却只有<strong>20分</strong>。</p>
+<p><img src= "/img/loading.gif" data-lazy-src="https://i.bmp.ovh/imgs/2021/08/589a45893f1ffb55.png" alt="" /></p>
+<p>我们可以写个程序来测试一下：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> tmp=<span class="number">1919810.1145142233</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.20Lf&quot;</span>,tmp);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>得到的输出是<code>1919810.11451422329992055893</code>，而不是我们预想的<code>1919810.1145142233</code>差的不是一丁半点。所以基本上可以判断为精度问题。</p>
+<p>所以，我们需要先将它转换为整数，随后再转换回小数，以此确保精度不会出错。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((<span class="built_in">scanf</span>(<span class="string">&quot;%Lf&quot;</span>,&amp;tmp))!=EOF)<span class="comment">//判断是否结束</span></span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp*<span class="number">1000000</span>;<span class="comment">//化成整数，防止小数的精度问题</span></span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%.5Lf&quot;</span>,ans/<span class="number">1000000</span>);<span class="comment">//转换回小数</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于每个数最多只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span></span></span></span>位小数，所以这里只需要将读入的小数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\times 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，就可以转换为整数，最后因为每个数都<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\times 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，所以我们只需要将最终的答案<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>÷</mo><mn>1000000</mn></mrow><annotation encoding="application/x-tex">\div 1000000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">÷</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，就可以恢复了。</p>
+<h1 id="使用cin"><a class="markdownIt-Anchor" href="#使用cin"></a> 使用<code>cin</code></h1>
+<p>前面已经说明了具体的算法，故此处不再阐述。</p>
+<p><code>cin</code>读取完毕后，会直接返回<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，而不是如同<code>scanf()</code>返回的<code>EOF</code>常数。所以，只需要修改判空部分：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">double</span> ans,tmp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">while</span>((cin&gt;&gt;tmp)!=<span class="number">0</span>)<span class="comment">//判断是否结束,可以化简成while(cin&gt;&gt;tmp)</span></span><br><span class="line">	&#123;</span><br><span class="line">		ans+=tmp*<span class="number">1000000</span>;</span><br><span class="line">	&#125; </span><br><span class="line">	cout&lt;&lt;fixed&lt;&lt;<span class="built_in">setprecision</span>(<span class="number">5</span>)&lt;&lt;ans/<span class="number">1000000</span>;<span class="comment">//使用cout保留小数</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="qa"><a class="markdownIt-Anchor" href="#qa"></a> Q&amp;A</h1>
+<p>Q: 为什么用了你的代码没有输出啊？<br />
+A: 您在使用标准输入输出时，程序并不知道你接下来还要不要输入，故无法判断输入是否结束。所以你需要向程序发送一个“信号”，告诉程序输入已经终止。在Windows下，这个“信号”为在程序框中输入<code>Ctrl+Z</code>再按回车，而在类<code>Unix</code>系统下，这个“信号”为直接按<code>Ctrl+D</code>。</p>
+]]></content>
+      <categories>
+        <category>算法学习</category>
+        <category>模拟</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+        <tag>C++</tag>
+        <tag>题解</tag>
+        <tag>洛谷</tag>
       </tags>
   </entry>
   <entry>
