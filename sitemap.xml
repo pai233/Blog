@@ -489,20 +489,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/tags/jsDelivr/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/tags/%E6%B8%B8%E8%AE%B0/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -531,6 +517,20 @@
   </url>
   
   <url>
+    <loc>https://blog.pai233.top/tags/jsDelivr/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/tags/VS-Code/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -539,13 +539,6 @@
   
   <url>
     <loc>https://blog.pai233.top/tags/%E5%A5%87%E6%B7%AB%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/tags/Git/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -574,6 +567,13 @@
   
   <url>
     <loc>https://blog.pai233.top/tags/%E6%89%A9%E5%B1%95/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/tags/Git/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -664,14 +664,14 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/tags/USACO/</loc>
+    <loc>https://blog.pai233.top/tags/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/tags/%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://blog.pai233.top/tags/USACO/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -729,13 +729,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/categories/%E6%B8%B8%E8%AE%B0/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -743,7 +736,21 @@
   </url>
   
   <url>
+    <loc>https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%95%B0%E8%AE%BA/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/CDN/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -764,13 +771,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/CDN/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%A1%B5%E9%9D%A2/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -779,6 +779,13 @@
   
   <url>
     <loc>https://blog.pai233.top/categories/%E5%92%95%E5%92%95%E5%B0%8F%E7%AB%99/%E5%8D%9A%E5%AE%A2%E5%8A%A8%E6%80%81/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/categories/%E6%B8%B8%E8%AE%B0/CSP/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -799,7 +806,14 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E6%B8%B8%E8%AE%B0/CSP/</loc>
+    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%92%95%E5%92%95%E5%B0%8F%E6%8A%A5/</loc>
+    <lastmod>2022-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Hexo%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -807,13 +821,6 @@
   
   <url>
     <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/GFW/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%92%95%E5%92%95%E5%B0%8F%E6%8A%A5/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -848,13 +855,6 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Git/</loc>
-    <lastmod>2022-05-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E6%B4%9B%E8%B0%B7API/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -869,7 +869,7 @@
   </url>
   
   <url>
-    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Hexo%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/Git/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
