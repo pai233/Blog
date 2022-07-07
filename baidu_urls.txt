@@ -1,3 +1,4 @@
+https://blog.pai233.top/20220707/noip2008tg-t1/
 https://blog.pai233.top/20220503/butterfly-go-jumper/
 https://blog.pai233.top/20220503/how-to-get-a-microsoft-365-e5-account/
 https://blog.pai233.top/20220409/butterfly-popup-welcome-window/
@@ -7,4 +8,3 @@ https://blog.pai233.top/20220227/change-the-cdn-of-butterfly-from-jsdelivr-to-yo
 https://blog.pai233.top/20220219/use-jsdelivr-by-cloudflare-worker/
 https://blog.pai233.top/20220213/friend-links-exchange-rules/
 https://blog.pai233.top/20220213/usaco2019dec-silver-moobuzz/
-https://blog.pai233.top/20220209/5-free-static-page-hosting/

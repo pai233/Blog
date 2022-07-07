@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.pai233.top/"/>
-  <updated>2022-05-03T11:36:11.240Z</updated>
+  <updated>2022-07-07T01:59:23.624Z</updated>
   <id>https://blog.pai233.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【NOIP2008提高组】笨小猴</title>
+    <link href="https://blog.pai233.top/20220707/noip2008tg-t1/"/>
+    <id>https://blog.pai233.top/20220707/noip2008tg-t1/</id>
+    <published>2022-07-07T01:58:38.000Z</published>
+    <updated>2022-07-07T01:59:23.624Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是NOIP2008提高组的第一题，难度在<code>普及-</code>以内，算是一道水题。</p><span id="more"></span><h1 id="题目详情"><a class="markdownIt-Anchor" href="#题目详情"></a> 题目详情</h1><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/05/02/xsj4rk3QIqM2a6K.png" alt="image.png" /></p><h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1><p>读入一个单词，遍历一遍找到出现次数最大以及出现次数最小的数（这个数 $ &gt;0 $ ），相减后判断是否为质数即可。</p><h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码：</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">char</span> word[<span class="number">105</span>];</span><br><span class="line"><span class="type">int</span> alphabet[<span class="string">&#x27;z&#x27;</span>+<span class="number">5</span>],maxnum=INT_MIN,minnum=INT_MAX,prime[<span class="number">35</span>]=&#123;<span class="number">0</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">11</span>,<span class="number">13</span>,<span class="number">17</span>,<span class="number">19</span>,<span class="number">23</span>,<span class="number">29</span>,<span class="number">31</span>,<span class="number">37</span>,<span class="number">41</span>,<span class="number">43</span>,<span class="number">47</span>,<span class="number">53</span>,<span class="number">59</span>,<span class="number">61</span>,<span class="number">67</span>,<span class="number">71</span>,<span class="number">73</span>,<span class="number">79</span>,<span class="number">83</span>,<span class="number">89</span>,<span class="number">97</span>&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;word.in&quot;</span>,<span class="string">&quot;r&quot;</span>,stdin);</span><br><span class="line"><span class="built_in">freopen</span>(<span class="string">&quot;word.out&quot;</span>,<span class="string">&quot;w&quot;</span>,stdout);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,word);</span><br><span class="line"><span class="type">int</span> len=<span class="built_in">strlen</span>(word);</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">alphabet[word[i]]++;<span class="comment">//统计数据</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">for(int i=&#x27;a&#x27;;i&lt;=&#x27;z&#x27;;i++)&#123;</span></span><br><span class="line"><span class="comment">cout&lt;&lt;(char)i&lt;&lt;&#x27; &#x27;&lt;&lt;alphabet[i]&lt;&lt;endl;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="string">&#x27;a&#x27;</span>;i&lt;=<span class="string">&#x27;z&#x27;</span>;i++)&#123;</span><br><span class="line"><span class="keyword">if</span>(maxnum&lt;alphabet[i])&#123;</span><br><span class="line">maxnum=alphabet[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(minnum&gt;alphabet[i] <span class="keyword">and</span> alphabet[i]!=<span class="number">0</span>)&#123;<span class="comment">//找出现次数最小的字母（出现次数不能是0，不然就没出现过）</span></span><br><span class="line">minnum=alphabet[i];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//cout&lt;&lt;maxnum&lt;&lt;&#x27; &#x27;&lt;&lt;minnum;</span></span><br><span class="line"><span class="comment">//cout&lt;&lt;maxnum-minnum&lt;&lt;endl;</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">25</span>;i++)&#123;<span class="comment">//判断maxnum-minnum是否为质数</span></span><br><span class="line"><span class="keyword">if</span>(maxnum-minnum==prime[i])&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Lucky Word\n%d&quot;</span>,prime[i]);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;No Answer\n0&quot;</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是NOIP2008提高组的第一题，难度在&lt;code&gt;普及-&lt;/code&gt;以内，算是一道水题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法学习" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="模拟" scheme="https://blog.pai233.top/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%A8%A1%E6%8B%9F/"/>
+    
+    
+      <category term="OI" scheme="https://blog.pai233.top/tags/OI/"/>
+    
+      <category term="C++" scheme="https://blog.pai233.top/tags/C/"/>
+    
+      <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="NOIP" scheme="https://blog.pai233.top/tags/NOIP/"/>
+    
+  </entry>
   
   <entry>
     <title>【Butterfly主题】添加二级跳转页</title>
@@ -141,9 +172,9 @@
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
-      <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
-    
       <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
+    
+      <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
       <category term="主题" scheme="https://blog.pai233.top/tags/%E4%B8%BB%E9%A2%98/"/>
     
@@ -174,9 +205,9 @@
     
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
-      <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
-    
       <category term="Git" scheme="https://blog.pai233.top/tags/Git/"/>
+    
+      <category term="Node.js" scheme="https://blog.pai233.top/tags/Node-js/"/>
     
   </entry>
   
@@ -352,11 +383,11 @@
       <category term="部署" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%83%A8%E7%BD%B2/"/>
     
     
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
       <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
     
       <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Firebase" scheme="https://blog.pai233.top/tags/Firebase/"/>
     
@@ -599,36 +630,6 @@
       <category term="题解" scheme="https://blog.pai233.top/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="洛谷" scheme="https://blog.pai233.top/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【小报】CCF报名官网出现严重Bug，多地OIer可随意发布新闻</title>
-    <link href="https://blog.pai233.top/20211012/cspsj-noi-cn-has-some-bugs/"/>
-    <id>https://blog.pai233.top/20211012/cspsj-noi-cn-has-some-bugs/</id>
-    <published>2021-10-12T14:10:18.000Z</published>
-    <updated>2022-01-31T09:08:28.515Z</updated>
-    
-    <content type="html"><![CDATA[<p>今日，CCF报名官网出现严重Bug，多地的OIer可在报名官网的新闻栏目随意发布新闻（博主身处GD，目前只剩这条了）：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/12/rxtTunqzEvMS2Hg.png" alt="image.png" /></p><p>Tips：<strong>随意发布公告可能会被禁赛</strong></p><p>一条不知道是否官方的“新闻”指路：<a href="http://cspsj.noi.cn/page/index/noiNews.php?id=103">http://cspsj.noi.cn/page/index/noiNews.php?id=103</a></p><span id="more"></span><h1 id="免责申明"><a class="markdownIt-Anchor" href="#免责申明"></a> 免责申明</h1><p>由于此博文导致的<strong>无法删除新闻</strong>、<strong>各类作死</strong>博主<strong>不承担</strong>任何责任，请各位姥爷自行衡量事情风险！</p><h1 id="bug情况"><a class="markdownIt-Anchor" href="#bug情况"></a> Bug情况</h1><p>目前，所有登录后的用户均可以在<a href="http://cspsj.noi.cn/page/sysSet/newEdit.php#_Toc17429_WPSOffice_Level1">此处</a>随意编辑公告；公告保存后，登录账户所在省的全部用户（暂定）均可查看，但可以通过枚举<code>http://cspsj.noi.cn/page/index/noiNews.php?id=</code>后面的<code>id</code>进行查看（Example：<code>http://cspsj.noi.cn/page/index/noiNews.php?id=139</code>、<code>http://cspsj.noi.cn/page/index/noiNews.php?id=103</code>）。</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/12/2Hn5aGhDAJqPeyK.png" alt="image.png" /></p><p>此Bug发现后，一时间，各省的新闻栏如同垃圾场，涌现了一堆无意义新闻（下列图片来源于网络）：<br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/12/mSUaCpsTJVBdgoP.png" alt="image.png" /><br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/12/5AaiqsIbXjKFr6w.png" alt="" /><br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/12/C3lkeOKvI4TwAfN.png" alt="image.png" /><br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/q2GCcPHQ8UzASbk.png" alt="image.png" /><br /><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2021/10/13/wGygQTBRikfLZcs.png" alt="image.png" /></p><p>这里博主再次提示，请勿以身试法，防止禁三。</p><p>目前此Bug已被紧急修复。</p><p>Updated at 2021/10/13 09:20:</p><ol><li>更新了各省战况图片两张</li></ol><p>Updated at 2021/10/13 21:13:</p><ol><li>Bug已被修复</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今日，CCF报名官网出现严重Bug，多地的OIer可在报名官网的新闻栏目随意发布新闻（博主身处GD，目前只剩这条了）：&lt;br /&gt;
-&lt;img src=&quot;https://i.loli.net/2021/10/12/rxtTunqzEvMS2Hg.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Tips：&lt;strong&gt;随意发布公告可能会被禁赛&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一条不知道是否官方的“新闻”指路：&lt;a href=&quot;http://cspsj.noi.cn/page/index/noiNews.php?id=103&quot;&gt;http://cspsj.noi.cn/page/index/noiNews.php?id=103&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="咕咕小报" scheme="https://blog.pai233.top/categories/%E9%9A%8F%E7%AC%94/%E5%92%95%E5%92%95%E5%B0%8F%E6%8A%A5/"/>
-    
-    
-      <category term="CCF" scheme="https://blog.pai233.top/tags/CCF/"/>
-    
-      <category term="小报" scheme="https://blog.pai233.top/tags/%E5%B0%8F%E6%8A%A5/"/>
     
   </entry>
   
