@@ -103,11 +103,11 @@
     
       <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
-      <category term="JavaScript" scheme="https://blog.pai233.top/tags/JavaScript/"/>
-    
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
     
       <category term="Butterfly" scheme="https://blog.pai233.top/tags/Butterfly/"/>
+    
+      <category term="JavaScript" scheme="https://blog.pai233.top/tags/JavaScript/"/>
     
   </entry>
   
@@ -269,11 +269,11 @@
     
       <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
-      <category term="Butterfly" scheme="https://blog.pai233.top/tags/Butterfly/"/>
-    
       <category term="jsDelivr" scheme="https://blog.pai233.top/tags/jsDelivr/"/>
     
       <category term="反向代理" scheme="https://blog.pai233.top/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    
+      <category term="Butterfly" scheme="https://blog.pai233.top/tags/Butterfly/"/>
     
   </entry>
   
@@ -414,11 +414,11 @@
       <category term="部署" scheme="https://blog.pai233.top/categories/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/%E9%83%A8%E7%BD%B2/"/>
     
     
+      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
+    
       <category term="白嫖" scheme="https://blog.pai233.top/tags/%E7%99%BD%E5%AB%96/"/>
     
       <category term="部署" scheme="https://blog.pai233.top/tags/%E9%83%A8%E7%BD%B2/"/>
-    
-      <category term="Blog" scheme="https://blog.pai233.top/tags/Blog/"/>
     
       <category term="Firebase" scheme="https://blog.pai233.top/tags/Firebase/"/>
     
@@ -503,9 +503,9 @@
     
       <category term="美化" scheme="https://blog.pai233.top/tags/%E7%BE%8E%E5%8C%96/"/>
     
-      <category term="JavaScript" scheme="https://blog.pai233.top/tags/JavaScript/"/>
-    
       <category term="Hexo" scheme="https://blog.pai233.top/tags/Hexo/"/>
+    
+      <category term="JavaScript" scheme="https://blog.pai233.top/tags/JavaScript/"/>
     
   </entry>
   
